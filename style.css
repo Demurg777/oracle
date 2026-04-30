@@ -1,0 +1,126 @@
+:root {
+  --bg: var(--tg-theme-bg-color, #fff);
+  --text: var(--tg-theme-text-color, #222);
+  --hint: var(--tg-theme-hint-color, #888);
+  --btn-bg: var(--tg-theme-button-color, #5288c1);
+  --btn-text: var(--tg-theme-button-text-color, #fff);
+  --secondary-bg: var(--tg-theme-secondary-bg-color, #f0f0f0);
+  --link: var(--tg-theme-link-color, #5288c1);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.screen { display: none; }
+.screen.active { display: block; }
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.hint {
+  color: var(--hint);
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 12px;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn-secondary {
+  background: var(--secondary-bg);
+  color: var(--text);
+}
+
+.btn-link {
+  background: transparent;
+  color: var(--link);
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+.card {
+  perspective: 1000px;
+  width: 85%;
+  max-width: 360px;
+  aspect-ratio: 2/3;
+  margin: 0 auto 24px;
+  cursor: pointer;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card-back {
+  background: linear-gradient(135deg, #6e3aa8, #2c1855);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 48px;
+}
+
+.card-front {
+  transform: rotateY(180deg);
+}
+
+.card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-text {
+  text-align: center;
+  margin: 0 auto 24px;
+  padding: 0 8px;
+  max-width: 480px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.card-text.visible {
+  opacity: 1;
+}

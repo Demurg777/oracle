@@ -8,16 +8,24 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="screen-home" class="screen active">
-    <h1>Метафорические карты</h1>
-    <p class="hint">Сформулируйте вопрос и выберите расклад</p>
-    <button class="btn" data-spread="1">🎴 Одна карта</button>
-    <button class="btn" data-spread="3">🔮 Три карты: прошлое — настоящее — будущее</button>
+  <div id="screen-lang" class="screen active">
+    <h1 data-i18n="chooseLang">Выберите язык / Choose language</h1>
+    <button class="btn" data-lang="ru">🇷🇺 Русский</button>
+    <button class="btn" data-lang="en">🇬🇧 English</button>
+  </div>
+
+  <div id="screen-home" class="screen">
+    <h1 data-i18n="title">Метафорические карты</h1>
+    <p class="hint" data-i18n="hint">Сформулируйте вопрос и вытяните карту</p>
+    <button class="btn" id="btn-draw" data-i18n="draw">🎴 Вытянуть карту</button>
+    <button class="btn btn-secondary" id="btn-feedback" data-i18n="feedback">💬 Оставить комментарий</button>
+    <button class="btn btn-link" id="btn-change-lang" data-i18n="changeLang">Сменить язык</button>
   </div>
 
   <div id="screen-cards" class="screen">
     <div id="cards-container"></div>
-    <button class="btn btn-secondary" id="btn-back">← Вернуться</button>
+    <button class="btn" id="btn-again" data-i18n="again">🔄 Ещё карта</button>
+    <button class="btn btn-secondary" id="btn-back" data-i18n="back">← На главную</button>
   </div>
 
   <script src="app.js"></script>
