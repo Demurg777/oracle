@@ -51,53 +51,67 @@ h3 { font-size: 17px; margin-bottom: 12px; }
 .btn-secondary { background: var(--secondary-bg); color: var(--text); }
 .btn-link { background: transparent; color: var(--link); font-size: 14px; margin-top: 16px; }
 
-/* === Прокручиваемый веер === */
-.fan-scroll {
+/* === Разложенная колода с горизонтальной прокруткой === */
+.deck-scroll {
   width: calc(100% + 40px);
-  margin: 0 -20px 24px;
+  margin: 16px -20px 24px;
+  padding: 60px 20px;
   overflow-x: auto;
-  overflow-y: hidden;
+  overflow-y: visible;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
-  height: 70vh;
-  max-height: 600px;
 }
 
-.fan-scroll::-webkit-scrollbar { display: none; }
+.deck-scroll::-webkit-scrollbar { display: none; }
 
-.fan-container {
-  position: relative;
-  height: 100%;
-  user-select: none;
-  -webkit-user-select: none;
+.deck-strip {
+  display: flex;
+  align-items: center;
+  height: 280px;
+  padding-left: 50%;
+  padding-right: 50%;
 }
 
-.fan-card {
-  position: absolute;
-  bottom: 0;
-  width: 110px;
-  aspect-ratio: 2/3;
-  margin-left: -55px;
-  border-radius: 12px;
+.deck-card {
+  flex: 0 0 auto;
+  width: 130px;
+  height: 195px;
+  margin-right: -85px;
+  border-radius: 10px;
   background-image: url("images/back.jpg");
   background-size: cover;
   background-position: center;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
   cursor: pointer;
-  transform-origin: bottom center;
-  transition: transform 0.4s cubic-bezier(0.34, 1.2, 0.5, 1), opacity 0.4s;
+  transition: transform 0.3s cubic-bezier(0.34, 1.4, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
   opacity: 0;
+  animation: cardAppear 0.5s ease forwards;
 }
 
-.fan-card.appeared { opacity: 1; }
+.deck-card:last-child { margin-right: 0; }
 
-.fan-card.flying-out {
+@keyframes cardAppear {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.deck-card:hover,
+.deck-card.lifted {
+  transform: translateY(-30px) scale(1.08);
+  z-index: 100;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+}
+
+.deck-card.flying-out {
   transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1), opacity 0.5s;
+  transform: translateY(-80vh) scale(1.4);
   opacity: 0;
   z-index: 1000;
 }
 
-/* === Карта на экране ===*/
+/* === Карта на экране === */
 .card-title {
   text-align: center;
   font-size: 22px;
@@ -165,7 +179,7 @@ h3 { font-size: 17px; margin-bottom: 12px; }
   to { opacity: 1; }
 }
 
-/* === Форма обратной связи === */
+/* === Форма === */
 .feedback-block {
   background: var(--secondary-bg);
   border-radius: 12px;
@@ -187,15 +201,8 @@ h3 { font-size: 17px; margin-bottom: 12px; }
   -webkit-appearance: none;
 }
 
-.feedback-block textarea {
-  resize: vertical;
-  min-height: 80px;
-}
-
-.feedback-block input[readonly] {
-  opacity: 0.7;
-  cursor: not-allowed;
-}
+.feedback-block textarea { resize: vertical; min-height: 80px; }
+.feedback-block input[readonly] { opacity: 0.7; cursor: not-allowed; }
 
 .feedback-status {
   text-align: center;
