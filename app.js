@@ -143,7 +143,9 @@ function renderCardScreen() {
   $("fb-card").value = title;
 
   // обработчик переключения «карта <-> текст» (вешаем на оба элемента — и на карту, и на текст)
+setTimeout(() => {
   $("card-3d").addEventListener("click", toggleCardText);
+}, 350);
 
   // показать форму отзыва
   $("btn-show-feedback").addEventListener("click", () => {
@@ -177,7 +179,9 @@ function toggleCardText() {
       $("text-stage").innerHTML = '<div class="revealed-text" id="revealed-text">' + text + '</div>';
 
       // тап по тексту возвращает карту обратно
-      $("revealed-text").addEventListener("click", toggleCardText);
+     setTimeout(() => {
+  $("revealed-text").addEventListener("click", toggleCardText);
+}, 350);
 
       const hint = $("card-hint");
       if (hint) hint.textContent = t("tapToHide");
