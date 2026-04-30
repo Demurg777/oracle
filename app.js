@@ -14,7 +14,7 @@ const i18n = {
     title: "Метафорические карты",
     hint: "Сформулируйте вопрос и начните",
     draw: "Начать",
-    pickHint: "Проведите по вееру и выберите карту",
+    pickHint: "Проведите по колоде и выберите карту",
     tapToReveal: "Нажмите на карту, чтобы увидеть текст",
     tapToHide: "Нажмите ещё раз, чтобы вернуть карту",
     feedbackTitle: "Поделиться впечатлением",
@@ -33,7 +33,7 @@ const i18n = {
     title: "Metaphorical Cards",
     hint: "Formulate your question and begin",
     draw: "Begin",
-    pickHint: "Swipe across the fan and pick a card",
+    pickHint: "Swipe through the deck and pick a card",
     tapToReveal: "Tap the card to see the text",
     tapToHide: "Tap again to bring the card back",
     feedbackTitle: "Share your reflection",
@@ -55,7 +55,6 @@ let currentLang = localStorage.getItem("lang") || null;
 let selectedCard = null;
 let isTextShown = false;
 let cardSelectedAt = 0;
-const DECK_SIZE = 18;
 const CLICK_GUARD_MS = 500;
 
 fetch("cards.json")
@@ -87,94 +86,39 @@ function localized(field, fallback) {
   return field[currentLang] || field.ru || field.en || fallback;
 }
 
-function renderFan() {
-  const container = $("fan-container");
-  container.innerHTML = "";
+function renderDeck() {
+  const strip = $("deck-strip");
+  strip.innerHTML = "";
 
   const shuffled = [...cards].sort(() => Math.random() - 0.5);
-  const deckCards = shuffled.slice(0, Math.min(DECK_SIZE, shuffled.length));
-  const total = deckCards.length;
 
-  const fanAngle = 80;
-  const radius = 320;
-  const centerY = 100;
-  const startAngle = -fanAngle / 2;
-  const step = total > 1 ? fanAngle / (total - 1) : 0;
-
-  deckCards.forEach((card, i) => {
-    const angle = startAngle + step * i;
+  shuffled.forEach(function(card, i) {
     const el = document.createElement("div");
-    el.className = "fan-card";
-    el.style.transform = "translateY(" + centerY + "px) rotate(" + angle + "deg) translateY(-" + radius + "px)";
+    el.className = "deck-card";
     el.style.zIndex = i;
+    // лёгкий случайный наклон, чтобы выглядело живо
+    const rotation = (Math.random() - 0.5) * 6;
+    el.style.transform = "rotate(" + rotation.toFixed(2) + "deg)";
+    el.dataset.baseRotation = rotation.toFixed(2);
+    el.style.animationDelay = (i * 20) + "ms";
 
     el.addEventListener("click", function(e) {
       e.stopPropagation();
       flyOutAndSelect(el, card);
     });
 
-    container.appendChild(el);
-
-    setTimeout(function() {
-      el.classList.add("appeared");
-    }, 60 * i);
+    strip.appendChild(el);
   });
 
-  attachHoverEffect(container);
-}
-
-function attachHoverEffect(container) {
-  let activeCard = null;
-
-  function findCard(x, y) {
-    const el = document.elementFromPoint(x, y);
-    if (el && el.classList && el.classList.contains("fan-card")) return el;
-    return null;
-  }
-
-  function lift(card) {
-    if (activeCard === card) return;
-    if (activeCard) activeCard.style.transform = activeCard.dataset.baseTransform;
-    if (card) {
-      if (!card.dataset.baseTransform) card.dataset.baseTransform = card.style.transform;
-      card.style.transform = card.dataset.baseTransform + " translateY(-30px) scale(1.05)";
-      if (tg.HapticFeedback && tg.HapticFeedback.selectionChanged) {
-        tg.HapticFeedback.selectionChanged();
-      }
-    }
-    activeCard = card;
-  }
-
-  container.addEventListener("touchmove", function(e) {
-    const touch = e.touches[0];
-    if (!touch) return;
-    lift(findCard(touch.clientX, touch.clientY));
-  });
-
-  container.addEventListener("touchend", function() {
-    if (activeCard) activeCard.style.transform = activeCard.dataset.baseTransform;
-    activeCard = null;
-  });
-
-  container.addEventListener("mousemove", function(e) {
-    lift(findCard(e.clientX, e.clientY));
-  });
-
-  container.addEventListener("mouseleave", function() {
-    if (activeCard) activeCard.style.transform = activeCard.dataset.baseTransform;
-    activeCard = null;
-  });
-
+  // прокрутить колоду к началу-середине
   setTimeout(function() {
-    container.querySelectorAll(".fan-card").forEach(function(c) {
-      if (!c.dataset.baseTransform) c.dataset.baseTransform = c.style.transform;
-    });
-  }, 50);
+    const scroll = $("deck-scroll");
+    if (scroll) scroll.scrollLeft = scroll.scrollWidth / 4;
+  }, 100);
 }
 
 function flyOutAndSelect(el, card) {
   el.classList.add("flying-out");
-  el.style.transform = "translateY(-50vh) rotate(0deg) scale(1.4)";
   if (tg.HapticFeedback) tg.HapticFeedback.impactOccurred("medium");
   setTimeout(function() {
     selectCard(card);
@@ -195,8 +139,11 @@ function handleCardClick() {
 }
 
 function renderCardScreen() {
+  const title = localized(selectedCard.title, "");
+
   $("card-stage").style.display = "block";
   $("card-stage").innerHTML =
+    (title ? '<div class="card-title">' + title + '</div>' : '') +
     '<div class="card-image" id="card-image">' +
       '<img src="' + selectedCard.image + '" alt="">' +
     '</div>';
@@ -220,8 +167,7 @@ function renderCardScreen() {
     '<button class="btn" id="btn-again">' + t("again") + '</button>' +
     '<button class="btn btn-secondary" id="btn-home">' + t("home") + '</button>';
 
-  const title = localized(selectedCard.title, "#" + selectedCard.id);
-  $("fb-card").value = title;
+  $("fb-card").value = title || ("#" + selectedCard.id);
 
   $("card-image").addEventListener("click", handleCardClick);
 
@@ -233,7 +179,7 @@ function renderCardScreen() {
 
   $("fb-submit").addEventListener("click", submitFeedback);
   $("btn-again").addEventListener("click", function() {
-    renderFan();
+    renderDeck();
     showScreen("screen-deck");
   });
   $("btn-home").addEventListener("click", function() {
@@ -243,6 +189,8 @@ function renderCardScreen() {
 
 function toggleCardText() {
   if (tg.HapticFeedback) tg.HapticFeedback.impactOccurred("medium");
+
+  const title = localized(selectedCard.title, "");
 
   if (!isTextShown) {
     isTextShown = true;
@@ -263,6 +211,7 @@ function toggleCardText() {
 
     $("card-stage").style.display = "block";
     $("card-stage").innerHTML =
+      (title ? '<div class="card-title">' + title + '</div>' : '') +
       '<div class="card-image" id="card-image">' +
         '<img src="' + selectedCard.image + '" alt="">' +
       '</div>';
@@ -306,7 +255,7 @@ document.querySelectorAll("[data-lang]").forEach(function(btn) {
 
 $("btn-draw").addEventListener("click", function() {
   if (cards.length === 0) return;
-  renderFan();
+  renderDeck();
   showScreen("screen-deck");
 });
 
