@@ -54,7 +54,9 @@ let cards = [];
 let currentLang = localStorage.getItem("lang") || null;
 let selectedCard = null;
 let isTextShown = false;
+let cardSelectedAt = 0;
 const DECK_SIZE = 12;
+const CLICK_GUARD_MS = 500;
 
 fetch("cards.json")
   .then(r => r.json())
@@ -106,13 +108,19 @@ function renderDeck() {
 function selectCard(card) {
   selectedCard = card;
   isTextShown = false;
+  cardSelectedAt = Date.now();
   if (tg.HapticFeedback) tg.HapticFeedback.impactOccurred("light");
   renderCardScreen();
   showScreen("screen-card");
 }
 
+function handleCardClick(e) {
+  // защита от «призрачного клика», прилетевшего сразу после выбора карты в колоде
+  if (Date.now() - cardSelectedAt < CLICK_GUARD_MS) return;
+  toggleCardText();
+}
+
 function renderCardScreen() {
-  // Сразу показываем картинку карты (без рубашки и переворота)
   $("card-stage").style.display = "block";
   $("card-stage").innerHTML =
     '<div class="card-image" id="card-image">' +
@@ -141,10 +149,8 @@ function renderCardScreen() {
   const title = localized(selectedCard.title, "#" + selectedCard.id);
   $("fb-card").value = title;
 
-  // обработчик клика навешиваем с задержкой — чтобы тап по карте в колоде не «дотёк» сюда
-  setTimeout(() => {
-    $("card-image").addEventListener("click", toggleCardText);
-  }, 400);
+  // обработчик навешиваем сразу, без задержки — защита от призрака внутри handleCardClick
+  $("card-image").addEventListener("click", handleCardClick);
 
   $("btn-show-feedback").addEventListener("click", () => {
     $("feedback-wrapper").style.display = "block";
@@ -171,9 +177,7 @@ function toggleCardText() {
     $("text-stage").style.display = "flex";
     $("text-stage").innerHTML = '<div class="revealed-text" id="revealed-text">' + text + '</div>';
 
-    setTimeout(() => {
-      $("revealed-text").addEventListener("click", toggleCardText);
-    }, 400);
+    $("revealed-text").addEventListener("click", toggleCardText);
 
     const hint = $("card-hint");
     if (hint) hint.textContent = t("tapToHide");
@@ -188,9 +192,7 @@ function toggleCardText() {
         '<img src="' + selectedCard.image + '" alt="">' +
       '</div>';
 
-    setTimeout(() => {
-      $("card-image").addEventListener("click", toggleCardText);
-    }, 400);
+    $("card-image").addEventListener("click", toggleCardText);
 
     const hint = $("card-hint");
     if (hint) hint.textContent = t("tapToReveal");
