@@ -1,26 +1,446 @@
 [
   {
     "id": 1,
-    "image": "images/Depth.jpg",
-    "title": {
-      "ru": "Дорога",
-      "en": "Road"
-    },
-    "text": {
-      "ru": "Текст на русском.",
-      "en": "Text in English."
-    }
+    "image": "images/250408_KANG_One_Step_final-white.jpg",
+    "title": { "ru": "One Step", "en": "One Step" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
   },
   {
     "id": 2,
+    "image": "images/Ada_Circle_Dance.jpg",
+    "title": { "ru": "Circle Dance", "en": "Circle Dance" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 3,
+    "image": "images/Ada_The Gift_Color.jpg",
+    "title": { "ru": "The Gift", "en": "The Gift" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 4,
+    "image": "images/Ada_Winter_color.jpg",
+    "title": { "ru": "Winter", "en": "Winter" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 5,
+    "image": "images/Atlas.jpg",
+    "title": { "ru": "Atlas", "en": "Atlas" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 6,
+    "image": "images/balance measure.jpg",
+    "title": { "ru": "Balance Measure", "en": "Balance Measure" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 7,
+    "image": "images/BoneStairwayToTheSky_Jpeg.jpg",
+    "title": { "ru": "Bone Stairway to the Sky", "en": "Bone Stairway to the Sky" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 8,
+    "image": "images/Boundaries.jpg",
+    "title": { "ru": "Boundaries", "en": "Boundaries" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 9,
+    "image": "images/Calligraphy-color-final.jpg",
+    "title": { "ru": "Calligraphy", "en": "Calligraphy" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 10,
+    "image": "images/CalmYourMindAndBody_Coloring_2_jpeg.jpg",
+    "title": { "ru": "Calm Your Mind and Body", "en": "Calm Your Mind and Body" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 11,
+    "image": "images/Cat_s Cradle.jpeg",
+    "title": { "ru": "Cat's Cradle", "en": "Cat's Cradle" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 12,
+    "image": "images/catch.jpg",
+    "title": { "ru": "Catch", "en": "Catch" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 13,
+    "image": "images/Caution_color.png",
+    "title": { "ru": "Caution", "en": "Caution" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 14,
+    "image": "images/chinnamasta wrathful goddess.jpg",
+    "title": { "ru": "Chinnamasta", "en": "Chinnamasta" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 15,
+    "image": "images/cocon_done.jpg",
+    "title": { "ru": "Cocoon", "en": "Cocoon" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 16,
+    "image": "images/dancing shiva.jpg",
+    "title": { "ru": "Dancing Shiva", "en": "Dancing Shiva" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 17,
+    "image": "images/Depth.jpg",
+    "title": { "ru": "Depth", "en": "Depth" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 18,
+    "image": "images/Desert at Night _ Sleepwalker.jpg",
+    "title": { "ru": "Desert at Night / Sleepwalker", "en": "Desert at Night / Sleepwalker" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 19,
+    "image": "images/desert by day.jpg",
+    "title": { "ru": "Desert by Day", "en": "Desert by Day" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 20,
+    "image": "images/door_done.jpg",
+    "title": { "ru": "Door", "en": "Door" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 21,
+    "image": "images/emperor.jpg",
+    "title": { "ru": "Emperor", "en": "Emperor" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 22,
+    "image": "images/Facing_Fears_Color_V2_preview.jpg",
+    "title": { "ru": "Facing Fears", "en": "Facing Fears" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 23,
+    "image": "images/Flawed Perfection Color Preview.jpg",
+    "title": { "ru": "Flawed Perfection", "en": "Flawed Perfection" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 24,
+    "image": "images/Fragility_done.jpg",
+    "title": { "ru": "Fragility", "en": "Fragility" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 25,
+    "image": "images/fulcrum_done.jpg",
+    "title": { "ru": "Fulcrum", "en": "Fulcrum" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 26,
     "image": "images/Goddess.jpg",
-    "title": {
-      "ru": "Окно",
-      "en": "Window"
-    },
-    "text": {
-      "ru": "Текст на русском.",
-      "en": "Text in English."
-    }
+    "title": { "ru": "Goddess", "en": "Goddess" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 27,
+    "image": "images/Grace_Color_preview.jpg",
+    "title": { "ru": "Grace", "en": "Grace" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 28,
+    "image": "images/Gratitude ver2.jpeg",
+    "title": { "ru": "Gratitude", "en": "Gratitude" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 29,
+    "image": "images/Grounding_Final.JPG",
+    "title": { "ru": "Grounding", "en": "Grounding" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 30,
+    "image": "images/hearth.jpg",
+    "title": { "ru": "Hearth", "en": "Hearth" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 31,
+    "image": "images/Horizon_Done.jpeg",
+    "title": { "ru": "Horizon", "en": "Horizon" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 32,
+    "image": "images/Humility_colored_final1.jpg",
+    "title": { "ru": "Humility", "en": "Humility" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 33,
+    "image": "images/Illusion_colored_final2.jpg",
+    "title": { "ru": "Illusion", "en": "Illusion" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 34,
+    "image": "images/independence_done.jpg",
+    "title": { "ru": "Independence", "en": "Independence" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 35,
+    "image": "images/jermit_done.jpg",
+    "title": { "ru": "Hermit", "en": "Hermit" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 36,
+    "image": "images/juggler_coloring.jpg",
+    "title": { "ru": "Juggler", "en": "Juggler" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 37,
+    "image": "images/Kang-Tidy Up-color-lightened.jpg",
+    "title": { "ru": "Tidy Up", "en": "Tidy Up" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 38,
+    "image": "images/lakshmis garden.jpg",
+    "title": { "ru": "Lakshmi's Garden", "en": "Lakshmi's Garden" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 39,
+    "image": "images/leap_coloring_final.jpg",
+    "title": { "ru": "Leap", "en": "Leap" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 40,
+    "image": "images/lovers.jpg",
+    "title": { "ru": "Lovers", "en": "Lovers" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 41,
+    "image": "images/Manifestation_Color_v02_Preview.jpg",
+    "title": { "ru": "Manifestation", "en": "Manifestation" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 42,
+    "image": "images/MArionette_done.jpg",
+    "title": { "ru": "Marionette", "en": "Marionette" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 43,
+    "image": "images/New Beginning_done.PNG",
+    "title": { "ru": "New Beginning", "en": "New Beginning" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 44,
+    "image": "images/new world platos cave flammarion matrix.jpg",
+    "title": { "ru": "New World", "en": "New World" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 45,
+    "image": "images/Now_colored_final2.jpg",
+    "title": { "ru": "Now", "en": "Now" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 46,
+    "image": "images/Open_Palm_Color_Preview.jpg",
+    "title": { "ru": "Open Palm", "en": "Open Palm" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 47,
+    "image": "images/pause_the_void_done.PNG",
+    "title": { "ru": "Pause / The Void", "en": "Pause / The Void" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 48,
+    "image": "images/peacemaker_done.jpg",
+    "title": { "ru": "Peacemaker", "en": "Peacemaker" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 49,
+    "image": "images/photo_2025-11-10 19.34.39.jpeg",
+    "title": { "ru": "Без названия", "en": "Untitled" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 50,
+    "image": "images/Pupil_color_v03_preview.jpg",
+    "title": { "ru": "Pupil", "en": "Pupil" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 51,
+    "image": "images/Rebel_done.jpg",
+    "title": { "ru": "Rebel", "en": "Rebel" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 52,
+    "image": "images/Resolved_Painted_Jpeg1ReFrameBetteredbegebackground.jpg",
+    "title": { "ru": "Resolved", "en": "Resolved" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 53,
+    "image": "images/Responsibility_done.jpg",
+    "title": { "ru": "Responsibility", "en": "Responsibility" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 54,
+    "image": "images/seeking allies_colored.jpg",
+    "title": { "ru": "Seeking Allies", "en": "Seeking Allies" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 55,
+    "image": "images/Shaman_colored_final2.jpg",
+    "title": { "ru": "Shaman", "en": "Shaman" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 56,
+    "image": "images/Skull.jpg",
+    "title": { "ru": "Skull", "en": "Skull" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 57,
+    "image": "images/Snake.jpg",
+    "title": { "ru": "Snake", "en": "Snake" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 58,
+    "image": "images/Stairs.jpg",
+    "title": { "ru": "Stairs", "en": "Stairs" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 59,
+    "image": "images/Sword.jpg",
+    "title": { "ru": "Sword", "en": "Sword" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 60,
+    "image": "images/Test Initiation Color Preview.jpg",
+    "title": { "ru": "Test Initiation", "en": "Test Initiation" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 61,
+    "image": "images/The Observer_colored.jpg",
+    "title": { "ru": "The Observer", "en": "The Observer" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 62,
+    "image": "images/The Omen Final.PNG",
+    "title": { "ru": "The Omen", "en": "The Omen" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 63,
+    "image": "images/The Thicket_colored1ReWorked.jpg",
+    "title": { "ru": "The Thicket", "en": "The Thicket" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 64,
+    "image": "images/the_Book_Authenticity Mirror_2.jpg",
+    "title": { "ru": "Authenticity Mirror", "en": "Authenticity Mirror" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 65,
+    "image": "images/the_Book_China_Vase1.jpg",
+    "title": { "ru": "China Vase", "en": "China Vase" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 66,
+    "image": "images/the_Book_Egypt.jpg",
+    "title": { "ru": "Egypt", "en": "Egypt" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 67,
+    "image": "images/the_Book_Facing_Fears_2.jpg",
+    "title": { "ru": "Facing Fears", "en": "Facing Fears" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 68,
+    "image": "images/the_Book_Inner_Child_2.jpg",
+    "title": { "ru": "Inner Child", "en": "Inner Child" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 69,
+    "image": "images/the_Book_Mask_2.jpg",
+    "title": { "ru": "Mask", "en": "Mask" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 70,
+    "image": "images/the_Book_Road_2.jpg",
+    "title": { "ru": "Road", "en": "Road" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 71,
+    "image": "images/the_Book_sERENITY copy copy 1.jpg",
+    "title": { "ru": "Serenity", "en": "Serenity" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 72,
+    "image": "images/Time.jpg",
+    "title": { "ru": "Time", "en": "Time" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 73,
+    "image": "images/Turtle_Done.jpeg",
+    "title": { "ru": "Turtle", "en": "Turtle" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
+  },
+  {
+    "id": 74,
+    "image": "images/Wave.jpg",
+    "title": { "ru": "Wave", "en": "Wave" },
+    "text": { "ru": "Текст карты на русском.", "en": "Card text in English." }
   }
 ]
