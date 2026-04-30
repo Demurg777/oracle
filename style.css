@@ -28,7 +28,7 @@ h3 { font-size: 17px; margin-bottom: 12px; }
 
 .hint {
   color: var(--hint);
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   text-align: center;
   font-size: 14px;
 }
@@ -51,62 +51,53 @@ h3 { font-size: 17px; margin-bottom: 12px; }
 .btn-secondary { background: var(--secondary-bg); color: var(--text); }
 .btn-link { background: transparent; color: var(--link); font-size: 14px; margin-top: 16px; }
 
-/* === Разложенная колода с горизонтальной прокруткой === */
-.deck-scroll {
+/* === Coverflow 3D === */
+.coverflow-scroll {
   width: calc(100% + 40px);
-  margin: 16px -20px 24px;
-  padding: 60px 20px;
+  margin: 0 -20px 24px;
+  padding: 0;
   overflow-x: auto;
-  overflow-y: visible;
+  overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+  perspective: 1200px;
+  height: 360px;
 }
 
-.deck-scroll::-webkit-scrollbar { display: none; }
+.coverflow-scroll::-webkit-scrollbar { display: none; }
 
-.deck-strip {
+.coverflow-track {
   display: flex;
   align-items: center;
-  height: 280px;
-  padding-left: 50%;
-  padding-right: 50%;
+  height: 100%;
+  transform-style: preserve-3d;
 }
 
-.deck-card {
+.coverflow-card {
   flex: 0 0 auto;
-  width: 130px;
-  height: 195px;
-  margin-right: -85px;
-  border-radius: 10px;
+  width: 200px;
+  height: 300px;
+  margin-right: -120px;
+  border-radius: 14px;
   background-image: url("images/back.jpg");
   background-size: cover;
   background-position: center;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
   cursor: pointer;
-  transition: transform 0.3s cubic-bezier(0.34, 1.4, 0.5, 1);
+  scroll-snap-align: center;
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, opacity 0.4s ease;
   user-select: none;
   -webkit-user-select: none;
-  opacity: 0;
-  animation: cardAppear 0.5s ease forwards;
+  will-change: transform;
 }
 
-.deck-card:last-child { margin-right: 0; }
+.coverflow-card:first-child { margin-left: 50%; transform-origin: center; }
+.coverflow-card:last-child { margin-right: calc(50% - 80px); }
 
-@keyframes cardAppear {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.deck-card:hover,
-.deck-card.lifted {
-  transform: translateY(-30px) scale(1.08);
-  z-index: 100;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
-}
-
-.deck-card.flying-out {
+.coverflow-card.flying-out {
   transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1), opacity 0.5s;
-  transform: translateY(-80vh) scale(1.4);
   opacity: 0;
   z-index: 1000;
 }
