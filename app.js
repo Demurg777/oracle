@@ -367,7 +367,7 @@ function toggleCardText() {
       hint.textContent = t("tapToReveal");
     }
   }
-}
+
 }
 
 async function submitFeedback() {
