@@ -150,4 +150,46 @@ function showCardContent() {
 
 async function submitFeedback() {
   const name = $("fb-name").value.trim();
-  const ca
+  const card = $("fb-card").value;
+  const text = $("fb-text").value.trim();
+  const status = $("fb-status");
+  if (!text) { status.textContent = "..."; return; }
+  status.textContent = "...";
+  const fd = new FormData();
+  fd.append(FEEDBACK_FIELDS.name, name);
+  fd.append(FEEDBACK_FIELDS.card, card);
+  fd.append(FEEDBACK_FIELDS.text, text);
+  try {
+    await fetch(FEEDBACK_FORM_URL, { method: "POST", body: fd, mode: "no-cors" });
+    status.textContent = t("feedbackThanks");
+    $("fb-name").value = "";
+    $("fb-text").value = "";
+  } catch (e) {
+    status.textContent = t("feedbackError");
+  }
+}
+
+document.querySelectorAll("[data-lang]").forEach(btn => {
+  btn.addEventListener("click", () => {
+    currentLang = btn.dataset.lang;
+    localStorage.setItem("lang", currentLang);
+    applyLang();
+    showScreen("screen-home");
+  });
+});
+
+$("btn-draw").addEventListener("click", () => {
+  if (cards.length === 0) return;
+  renderDeck();
+  showScreen("screen-deck");
+});
+
+$("btn-back-from-deck").addEventListener("click", () => showScreen("screen-home"));
+$("btn-change-lang").addEventListener("click", () => showScreen("screen-lang"));
+
+if (currentLang && i18n[currentLang]) {
+  applyLang();
+  showScreen("screen-home");
+} else {
+  showScreen("screen-lang");
+}
