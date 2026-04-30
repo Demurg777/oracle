@@ -1,50 +1,70 @@
-const tg = window.Telegram.WebApp;
+cconst tg = window.Telegram.WebApp;
 tg.ready();
 tg.expand();
 
-// Ссылка на Google Doc для отзывов — вставьте свою!
-const FEEDBACK_URL = "https://docs.google.com/document/d/1KW06KUVvQ_mjBHQn6L8IPoLtaYgHSrtnjBKz0vEGChU/edit?usp=sharing";
+// ===== ВСТАВЬТЕ СВОИ ЗНАЧЕНИЯ (см. Часть 7 ниже) =====
+const FEEDBACK_FORM_URL = "https://docs.google.com/forms/d/e/ВАШ_ID/formResponse";
+const FEEDBACK_FIELDS = {
+  name: "entry.1441169149",
+  card: "entry.1042147433",
+  text: "entry.1660563876"
+};
+// =====================================================
 
-// Переводы интерфейса
 const i18n = {
   ru: {
     title: "Метафорические карты",
-    hint: "Сформулируйте вопрос и вытяните карту",
-    draw: "🎴 Вытянуть карту",
-    feedback: "💬 Оставить комментарий",
-    changeLang: "Сменить язык",
+    hint: "Сформулируйте вопрос и начните",
+    draw: "🎴 Начать",
+    pickHint: "Проведите по колоде и выберите карту",
+    tapToReveal: "Нажмите на карту, чтобы перевернуть",
+    feedbackTitle: "Поделиться впечатлением",
+    feedbackName: "Ваше имя",
+    feedbackText: "Что эта карта значит для вас?",
+    feedbackSubmit: "Отправить",
+    feedbackThanks: "Спасибо за отзыв ✨",
+    feedbackError: "Не удалось отправить, попробуйте ещё раз",
     again: "🔄 Ещё карта",
-    back: "← На главную",
-    chooseLang: "Выберите язык / Choose language"
+    back: "← Назад",
+    home: "← На главную",
+    changeLang: "Сменить язык"
   },
   en: {
     title: "Metaphorical Cards",
-    hint: "Formulate your question and draw a card",
-    draw: "🎴 Draw a card",
-    feedback: "💬 Leave a comment",
-    changeLang: "Change language",
+    hint: "Formulate your question and begin",
+    draw: "🎴 Begin",
+    pickHint: "Swipe the deck and pick a card",
+    tapToReveal: "Tap the card to flip",
+    feedbackTitle: "Share your reflection",
+    feedbackName: "Your name",
+    feedbackText: "What does this card mean to you?",
+    feedbackSubmit: "Send",
+    feedbackThanks: "Thank you ✨",
+    feedbackError: "Could not send, please try again",
     again: "🔄 Another card",
-    back: "← Back to home",
-    chooseLang: "Выберите язык / Choose language"
+    back: "← Back",
+    home: "← Home",
+    changeLang: "Change language"
   }
 };
 
 let cards = [];
 let currentLang = localStorage.getItem("lang") || null;
+let selectedCard = null;
+let isRevealed = false;
+const DECK_SIZE = 12;
 
-// Загружаем карты
 fetch("cards.json")
   .then(r => r.json())
-  .then(data => { cards = data; });
+  .then(data => { cards = data; })
+  .catch(e => console.error("Не удалось загрузить cards.json:", e));
 
-const screenLang = document.getElementById("screen-lang");
-const screenHome = document.getElementById("screen-home");
-const screenCards = document.getElementById("screen-cards");
-const cardsContainer = document.getElementById("cards-container");
+const $ = id => document.getElementById(id);
+const t = key => (i18n[currentLang] && i18n[currentLang][key]) || key;
 
-function showScreen(s) {
+function showScreen(id) {
   document.querySelectorAll(".screen").forEach(x => x.classList.remove("active"));
-  s.classList.add("active");
+  $(id).classList.add("active");
   window.scrollTo(0, 0);
 }
 
@@ -55,82 +75,133 @@ function applyLang() {
       el.textContent = i18n[currentLang][key];
     }
   });
-  document.documentElement.lang = currentLang;
 }
 
-function pickRandom() {
-  return cards[Math.floor(Math.random() * cards.length)];
+function localized(field, fallback) {
+  if (!field) return fallback;
+  if (typeof field === "string") return field;
+  return field[currentLang] || field.ru || field.en || fallback;
 }
 
-function renderCard(card) {
-  const text = typeof card.text === "string" ? card.text : card.text[currentLang];
+function renderDeck() {
+  const track = $("deck-track");
+  track.innerHTML = "";
 
-  cardsContainer.innerHTML = `
-    <div class="card" id="card-el">
-      <div class="card-inner">
-        <div class="card-face card-back">✦</div>
-        <div class="card-face card-front"><img src="${card.image}" alt=""></div>
-      </div>
+  const shuffled = [...cards].sort(() => Math.random() - 0.5);
+  const deckCards = shuffled.slice(0, Math.min(DECK_SIZE, shuffled.length));
+
+  deckCards.forEach(card => {
+    const el = document.createElement("div");
+    el.className = "deck-card";
+    el.textContent = "✦";
+    el.addEventListener("click", () => selectCard(card));
+    track.appendChild(el);
+  });
+
+  setTimeout(() => {
+    const c = $("deck-container");
+    c.scrollLeft = (track.scrollWidth - c.clientWidth) / 2;
+  }, 50);
+}
+
+function selectCard(card) {
+  selectedCard = card;
+  isRevealed = false;
+  if (tg.HapticFeedback) tg.HapticFeedback.impactOccurred("light");
+  renderSelectedCard();
+  showScreen("screen-card");
+}
+
+function renderSelectedCard() {
+  $("card-stage").innerHTML = `
+    <div class="card-3d" id="card-3d">
+      <div class="card-face card-back">✦</div>
+      <div class="card-face card-front"><img src="${selectedCard.image}" alt=""></div>
     </div>
-    <div class="card-text" id="card-text-el">${text}</div>
+  `;
+  $("card-content").innerHTML = `<p class="hint">${t("tapToReveal")}</p>`;
+  $("card-3d").addEventListener("click", revealCard);
+}
+
+function revealCard() {
+  if (isRevealed) return;
+  isRevealed = true;
+  $("card-3d").classList.add("flipped");
+  if (tg.HapticFeedback) tg.HapticFeedback.impactOccurred("medium");
+  setTimeout(showCardContent, 600);
+}
+
+function showCardContent() {
+  const text = localized(selectedCard.text, "");
+  const title = localized(selectedCard.title, `#${selectedCard.id}`);
+
+  $("card-content").innerHTML = `
+    <div class="card-text">${text}</div>
+    <div class="feedback-block">
+      <h3>${t("feedbackTitle")}</h3>
+      <input type="text" id="fb-name" placeholder="${t("feedbackName")}" />
+      <input type="text" id="fb-card" value="${title}" readonly />
+      <textarea id="fb-text" placeholder="${t("feedbackText")}" rows="4"></textarea>
+      <button class="btn" id="fb-submit">${t("feedbackSubmit")}</button>
+      <p class="feedback-status" id="fb-status"></p>
+    </div>
+    <button class="btn" id="btn-again">${t("again")}</button>
+    <button class="btn btn-secondary" id="btn-home">${t("home")}</button>
   `;
 
-  const cardEl = document.getElementById("card-el");
-  const textEl = document.getElementById("card-text-el");
-
-  cardEl.addEventListener("click", () => {
-    if (cardEl.classList.contains("flipped")) return;
-    cardEl.classList.add("flipped");
-    if (tg.HapticFeedback) tg.HapticFeedback.impactOccurred("medium");
-    setTimeout(() => textEl.classList.add("visible"), 400);
+  $("fb-submit").addEventListener("click", submitFeedback);
+  $("btn-again").addEventListener("click", () => {
+    renderDeck();
+    showScreen("screen-deck");
   });
+  $("btn-home").addEventListener("click", () => showScreen("screen-home"));
 }
 
-// Выбор языка
+async function submitFeedback() {
+  const name = $("fb-name").value.trim();
+  const card = $("fb-card").value;
+  const text = $("fb-text").value.trim();
+  const status = $("fb-status");
+
+  if (!text) { status.textContent = "..."; return; }
+  status.textContent = "...";
+
+  const fd = new FormData();
+  fd.append(FEEDBACK_FIELDS.name, name);
+  fd.append(FEEDBACK_FIELDS.card, card);
+  fd.append(FEEDBACK_FIELDS.text, text);
+
+  try {
+    await fetch(FEEDBACK_FORM_URL, { method: "POST", body: fd, mode: "no-cors" });
+    status.textContent = t("feedbackThanks");
+    $("fb-name").value = "";
+    $("fb-text").value = "";
+  } catch (e) {
+    status.textContent = t("feedbackError");
+  }
+}
+
 document.querySelectorAll("[data-lang]").forEach(btn => {
   btn.addEventListener("click", () => {
     currentLang = btn.dataset.lang;
     localStorage.setItem("lang", currentLang);
     applyLang();
-    showScreen(screenHome);
+    showScreen("screen-home");
   });
 });
 
-// Вытянуть карту
-document.getElementById("btn-draw").addEventListener("click", () => {
+$("btn-draw").addEventListener("click", () => {
   if (cards.length === 0) return;
-  renderCard(pickRandom());
-  showScreen(screenCards);
+  renderDeck();
+  showScreen("screen-deck");
 });
 
-// Ещё карта
-document.getElementById("btn-again").addEventListener("click", () => {
-  renderCard(pickRandom());
-});
+$("btn-back-from-deck").addEventListener("click", () => showScreen("screen-home"));
+$("btn-change-lang").addEventListener("click", () => showScreen("screen-lang"));
 
-// На главную
-document.getElementById("btn-back").addEventListener("click", () => {
-  showScreen(screenHome);
-});
-
-// Комментарий
-document.getElementById("btn-feedback").addEventListener("click", () => {
-  if (tg.openLink) {
-    tg.openLink(FEEDBACK_URL);
-  } else {
-    window.open(FEEDBACK_URL, "_blank");
-  }
-});
-
-// Сменить язык
-document.getElementById("btn-change-lang").addEventListener("click", () => {
-  showScreen(screenLang);
-});
-
-// Стартовый экран
 if (currentLang && i18n[currentLang]) {
   applyLang();
-  showScreen(screenHome);
+  showScreen("screen-home");
 } else {
-  showScreen(screenLang);
+  showScreen("screen-lang");
 }

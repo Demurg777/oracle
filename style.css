@@ -16,21 +16,20 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   padding: 20px;
   min-height: 100vh;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .screen { display: none; }
 .screen.active { display: block; }
 
-h1 {
-  font-size: 24px;
-  margin-bottom: 12px;
-  text-align: center;
-}
+h1 { font-size: 24px; margin-bottom: 12px; text-align: center; }
+h3 { font-size: 17px; margin-bottom: 12px; }
 
 .hint {
   color: var(--hint);
-  margin-bottom: 32px;
+  margin-bottom: 24px;
   text-align: center;
+  font-size: 14px;
 }
 
 .btn {
@@ -45,40 +44,69 @@ h1 {
   font-size: 16px;
   cursor: pointer;
   font-family: inherit;
+  -webkit-appearance: none;
 }
 
-.btn-secondary {
-  background: var(--secondary-bg);
-  color: var(--text);
+.btn-secondary { background: var(--secondary-bg); color: var(--text); }
+.btn-link { background: transparent; color: var(--link); font-size: 14px; margin-top: 16px; }
+
+.deck-container {
+  width: calc(100% + 40px);
+  margin: 0 -20px 24px;
+  overflow-x: auto;
+  overflow-y: visible;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 20px 40%;
+  scrollbar-width: none;
 }
 
-.btn-link {
-  background: transparent;
-  color: var(--link);
-  font-size: 14px;
-  margin-top: 16px;
+.deck-container::-webkit-scrollbar { display: none; }
+
+.deck-track {
+  display: flex;
+  gap: 12px;
 }
 
-.card {
-  perspective: 1000px;
-  width: 85%;
-  max-width: 360px;
+.deck-card {
+  flex: 0 0 auto;
+  width: 160px;
   aspect-ratio: 2/3;
-  margin: 0 auto 24px;
+  scroll-snap-align: center;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #6e3aa8, #2c1855);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 36px;
   cursor: pointer;
+  transition: transform 0.25s ease;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  user-select: none;
+  -webkit-user-select: none;
 }
 
-.card-inner {
+.deck-card:active { transform: scale(0.94); }
+
+.card-stage {
+  perspective: 1200px;
+  width: 85%;
+  max-width: 340px;
+  aspect-ratio: 2/3;
+  margin: 16px auto 24px;
+}
+
+.card-3d {
   position: relative;
   width: 100%;
   height: 100%;
-  transition: transform 0.8s;
+  transition: transform 0.9s cubic-bezier(0.4, 0.2, 0.2, 1);
   transform-style: preserve-3d;
+  cursor: pointer;
 }
 
-.card.flipped .card-inner {
-  transform: rotateY(180deg);
-}
+.card-3d.flipped { transform: rotateY(180deg); }
 
 .card-face {
   position: absolute;
@@ -87,7 +115,7 @@ h1 {
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   overflow: hidden;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .card-back {
@@ -96,12 +124,10 @@ h1 {
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: 48px;
+  font-size: 56px;
 }
 
-.card-front {
-  transform: rotateY(180deg);
-}
+.card-front { transform: rotateY(180deg); }
 
 .card-front img {
   width: 100%;
@@ -115,12 +141,46 @@ h1 {
   margin: 0 auto 24px;
   padding: 0 8px;
   max-width: 480px;
-  opacity: 0;
-  transition: opacity 0.5s ease;
   font-size: 16px;
   line-height: 1.5;
+  opacity: 0;
+  animation: fadeIn 0.6s 0.1s forwards;
 }
 
-.card-text.visible {
-  opacity: 1;
+@keyframes fadeIn { to { opacity: 1; } }
+
+.feedback-block {
+  background: var(--secondary-bg);
+  border-radius: 12px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+.feedback-block input,
+.feedback-block textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 15px;
+  font-family: inherit;
+  -webkit-appearance: none;
+}
+
+.feedback-block textarea { resize: vertical; min-height: 80px; }
+
+.feedback-block input[readonly] {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.feedback-status {
+  text-align: center;
+  font-size: 14px;
+  color: var(--hint);
+  margin-top: 8px;
+  min-height: 20px;
 }

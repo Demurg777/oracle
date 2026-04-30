@@ -2,30 +2,36 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
   <title>Метафорические карты</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div id="screen-lang" class="screen active">
-    <h1 data-i18n="chooseLang">Выберите язык / Choose language</h1>
+    <h1>Выберите язык / Choose language</h1>
     <button class="btn" data-lang="ru">🇷🇺 Русский</button>
     <button class="btn" data-lang="en">🇬🇧 English</button>
   </div>
 
   <div id="screen-home" class="screen">
     <h1 data-i18n="title">Метафорические карты</h1>
-    <p class="hint" data-i18n="hint">Сформулируйте вопрос и вытяните карту</p>
-    <button class="btn" id="btn-draw" data-i18n="draw">🎴 Вытянуть карту</button>
-    <button class="btn btn-secondary" id="btn-feedback" data-i18n="feedback">💬 Оставить комментарий</button>
+    <p class="hint" data-i18n="hint">Сформулируйте вопрос и начните</p>
+    <button class="btn" id="btn-draw" data-i18n="draw">🎴 Начать</button>
     <button class="btn btn-link" id="btn-change-lang" data-i18n="changeLang">Сменить язык</button>
   </div>
 
-  <div id="screen-cards" class="screen">
-    <div id="cards-container"></div>
-    <button class="btn" id="btn-again" data-i18n="again">🔄 Ещё карта</button>
-    <button class="btn btn-secondary" id="btn-back" data-i18n="back">← На главную</button>
+  <div id="screen-deck" class="screen">
+    <p class="hint" data-i18n="pickHint">Проведите по колоде и выберите карту</p>
+    <div id="deck-container" class="deck-container">
+      <div id="deck-track" class="deck-track"></div>
+    </div>
+    <button class="btn btn-secondary" id="btn-back-from-deck" data-i18n="back">← Назад</button>
+  </div>
+
+  <div id="screen-card" class="screen">
+    <div id="card-stage" class="card-stage"></div>
+    <div id="card-content"></div>
   </div>
 
   <script src="app.js"></script>

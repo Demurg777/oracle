@@ -1,26 +1,26 @@
 [
   {
     "id": 1,
-    "image": "images/card_001.jpg",
+    "image": "images/Depth.jpg",
+    "title": {
+      "ru": "Дорога",
+      "en": "Road"
+    },
     "text": {
-      "ru": "Текст к первой карте на русском.",
-      "en": "Text for the first card in English."
+      "ru": "Текст на русском.",
+      "en": "Text in English."
     }
   },
   {
     "id": 2,
-    "image": "images/card_002.jpg",
+    "image": "images/Goddess.jpg",
+    "title": {
+      "ru": "Окно",
+      "en": "Window"
+    },
     "text": {
-      "ru": "Текст ко второй карте на русском.",
-      "en": "Text for the second card in English."
-    }
-  },
-  {
-    "id": 3,
-    "image": "images/card_003.jpg",
-    "text": {
-      "ru": "Текст к третьей карте на русском.",
-      "en": "Text for the third card in English."
+      "ru": "Текст на русском.",
+      "en": "Text in English."
     }
   }
 ]
