@@ -15,7 +15,8 @@ const i18n = {
     hint: "Сформулируйте вопрос и начните",
     draw: "Начать",
     pickHint: "Проведите по колоде и выберите карту",
-    tapToReveal: "Нажмите на карту, чтобы перевернуть",
+    tapToReveal: "Нажмите на карту, чтобы увидеть текст",
+    tapToHide: "Нажмите ещё раз, чтобы вернуть карту",
     feedbackTitle: "Поделиться впечатлением",
     openFeedback: "Оставить комментарий",
     feedbackName: "Ваше имя",
@@ -33,7 +34,8 @@ const i18n = {
     hint: "Formulate your question and begin",
     draw: "Begin",
     pickHint: "Swipe the deck and pick a card",
-    tapToReveal: "Tap the card to flip",
+    tapToReveal: "Tap the card to see the text",
+    tapToHide: "Tap again to bring the card back",
     feedbackTitle: "Share your reflection",
     openFeedback: "Leave a comment",
     feedbackName: "Your name",
@@ -51,7 +53,7 @@ const i18n = {
 let cards = [];
 let currentLang = localStorage.getItem("lang") || null;
 let selectedCard = null;
-let isRevealed = false;
+let isTextShown = false;
 const DECK_SIZE = 12;
 
 fetch("cards.json")
@@ -103,45 +105,31 @@ function renderDeck() {
 
 function selectCard(card) {
   selectedCard = card;
-  isRevealed = false;
+  isTextShown = false;
   if (tg.HapticFeedback) tg.HapticFeedback.impactOccurred("light");
-  renderSelectedCard();
+  renderCardScreen();
   showScreen("screen-card");
 }
 
-function renderSelectedCard() {
+function renderCardScreen() {
   $("card-stage").style.display = "block";
   $("card-stage").innerHTML =
     '<div class="card-3d" id="card-3d">' +
       '<div class="card-face card-back">*</div>' +
       '<div class="card-face card-front"><img src="' + selectedCard.image + '" alt=""></div>' +
     '</div>';
-  $("card-content").innerHTML = '<p class="hint">' + t("tapToReveal") + '</p>';
-  $("card-3d").addEventListener("click", revealCard);
-}
 
-function revealCard() {
-  if (isRevealed) return;
-  isRevealed = true;
-  $("card-3d").classList.add("flipped");
-  if (tg.HapticFeedback) tg.HapticFeedback.impactOccurred("medium");
-  setTimeout(showCardContent, 600);
-}
-
-function showCardContent() {
-  const text = localized(selectedCard.text, "");
-  const title = localized(selectedCard.title, "#" + selectedCard.id);
-
-  $("card-stage").style.display = "none";
+  $("text-stage").style.display = "none";
+  $("text-stage").innerHTML = '';
 
   $("card-content").innerHTML =
-    '<div class="revealed-text">' + text + '</div>' +
+    '<p class="hint" id="card-hint">' + t("tapToReveal") + '</p>' +
     '<button class="btn btn-secondary" id="btn-show-feedback">' + t("openFeedback") + '</button>' +
     '<div id="feedback-wrapper" style="display:none;">' +
       '<div class="feedback-block">' +
         '<h3>' + t("feedbackTitle") + '</h3>' +
         '<input type="text" id="fb-name" placeholder="' + t("feedbackName") + '" />' +
-        '<input type="text" id="fb-card" value="' + title + '" readonly />' +
+        '<input type="text" id="fb-card" readonly />' +
         '<textarea id="fb-text" placeholder="' + t("feedbackText") + '" rows="4"></textarea>' +
         '<button class="btn" id="fb-submit">' + t("feedbackSubmit") + '</button>' +
         '<p class="feedback-status" id="fb-status"></p>' +
@@ -150,6 +138,14 @@ function showCardContent() {
     '<button class="btn" id="btn-again">' + t("again") + '</button>' +
     '<button class="btn btn-secondary" id="btn-home">' + t("home") + '</button>';
 
+  // подставляем название карты в форму
+  const title = localized(selectedCard.title, "#" + selectedCard.id);
+  $("fb-card").value = title;
+
+  // обработчик переключения «карта <-> текст» (вешаем на оба элемента — и на карту, и на текст)
+  $("card-3d").addEventListener("click", toggleCardText);
+
+  // показать форму отзыва
   $("btn-show-feedback").addEventListener("click", () => {
     $("feedback-wrapper").style.display = "block";
     $("btn-show-feedback").style.display = "none";
@@ -162,6 +158,44 @@ function showCardContent() {
     showScreen("screen-deck");
   });
   $("btn-home").addEventListener("click", () => showScreen("screen-home"));
+}
+
+function toggleCardText() {
+  if (tg.HapticFeedback) tg.HapticFeedback.impactOccurred("medium");
+
+  if (!isTextShown) {
+    // показываем текст вместо карты
+    isTextShown = true;
+    const cardEl = $("card-3d");
+    cardEl.classList.add("flipped");
+
+    setTimeout(() => {
+      $("card-stage").style.display = "none";
+
+      const text = localized(selectedCard.text, "");
+      $("text-stage").style.display = "block";
+      $("text-stage").innerHTML = '<div class="revealed-text" id="revealed-text">' + text + '</div>';
+
+      // тап по тексту возвращает карту обратно
+      $("revealed-text").addEventListener("click", toggleCardText);
+
+      const hint = $("card-hint");
+      if (hint) hint.textContent = t("tapToHide");
+    }, 600);
+  } else {
+    // возвращаем карту
+    isTextShown = false;
+    $("text-stage").style.display = "none";
+    $("text-stage").innerHTML = '';
+
+    $("card-stage").style.display = "block";
+    // карта показана уже перевёрнутой (картинкой) — это нормально, пользователь её только что видел.
+    // если хочется снова рубашку — раскомментируйте:
+    // $("card-3d").classList.remove("flipped");
+
+    const hint = $("card-hint");
+    if (hint) hint.textContent = t("tapToHide");
+  }
 }
 
 async function submitFeedback() {
