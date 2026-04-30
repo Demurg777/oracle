@@ -17,6 +17,7 @@ const i18n = {
     pickHint: "Проведите по колоде и выберите карту",
     tapToReveal: "Нажмите на карту, чтобы перевернуть",
     feedbackTitle: "Поделиться впечатлением",
+    openFeedback: "Оставить комментарий",
     feedbackName: "Ваше имя",
     feedbackText: "Что эта карта значит для вас?",
     feedbackSubmit: "Отправить",
@@ -34,6 +35,7 @@ const i18n = {
     pickHint: "Swipe the deck and pick a card",
     tapToReveal: "Tap the card to flip",
     feedbackTitle: "Share your reflection",
+    openFeedback: "Leave a comment",
     feedbackName: "Your name",
     feedbackText: "What does this card mean to you?",
     feedbackSubmit: "Send",
@@ -108,6 +110,7 @@ function selectCard(card) {
 }
 
 function renderSelectedCard() {
+  $("card-stage").style.display = "block";
   $("card-stage").innerHTML =
     '<div class="card-3d" id="card-3d">' +
       '<div class="card-face card-back">*</div>' +
@@ -128,18 +131,31 @@ function revealCard() {
 function showCardContent() {
   const text = localized(selectedCard.text, "");
   const title = localized(selectedCard.title, "#" + selectedCard.id);
+
+  $("card-stage").style.display = "none";
+
   $("card-content").innerHTML =
-    '<div class="card-text">' + text + '</div>' +
-    '<div class="feedback-block">' +
-      '<h3>' + t("feedbackTitle") + '</h3>' +
-      '<input type="text" id="fb-name" placeholder="' + t("feedbackName") + '" />' +
-      '<input type="text" id="fb-card" value="' + title + '" readonly />' +
-      '<textarea id="fb-text" placeholder="' + t("feedbackText") + '" rows="4"></textarea>' +
-      '<button class="btn" id="fb-submit">' + t("feedbackSubmit") + '</button>' +
-      '<p class="feedback-status" id="fb-status"></p>' +
+    '<div class="revealed-text">' + text + '</div>' +
+    '<button class="btn btn-secondary" id="btn-show-feedback">' + t("openFeedback") + '</button>' +
+    '<div id="feedback-wrapper" style="display:none;">' +
+      '<div class="feedback-block">' +
+        '<h3>' + t("feedbackTitle") + '</h3>' +
+        '<input type="text" id="fb-name" placeholder="' + t("feedbackName") + '" />' +
+        '<input type="text" id="fb-card" value="' + title + '" readonly />' +
+        '<textarea id="fb-text" placeholder="' + t("feedbackText") + '" rows="4"></textarea>' +
+        '<button class="btn" id="fb-submit">' + t("feedbackSubmit") + '</button>' +
+        '<p class="feedback-status" id="fb-status"></p>' +
+      '</div>' +
     '</div>' +
     '<button class="btn" id="btn-again">' + t("again") + '</button>' +
     '<button class="btn btn-secondary" id="btn-home">' + t("home") + '</button>';
+
+  $("btn-show-feedback").addEventListener("click", () => {
+    $("feedback-wrapper").style.display = "block";
+    $("btn-show-feedback").style.display = "none";
+    $("fb-name").focus();
+  });
+
   $("fb-submit").addEventListener("click", submitFeedback);
   $("btn-again").addEventListener("click", () => {
     renderDeck();
