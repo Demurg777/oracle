@@ -83,12 +83,9 @@ h3 { font-size: 17px; margin-bottom: 12px; }
   aspect-ratio: 2/3;
   scroll-snap-align: center;
   border-radius: 14px;
-  background: linear-gradient(135deg, #6e3aa8, #2c1855);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 36px;
+  background-image: url("images/back.jpg");
+  background-size: cover;
+  background-position: center;
   cursor: pointer;
   transition: transform 0.25s ease;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
