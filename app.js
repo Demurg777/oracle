@@ -1,49 +1,47 @@
-cconst tg = window.Telegram.WebApp;
+const tg = window.Telegram.WebApp;
 tg.ready();
 tg.expand();
 
-// ===== ВСТАВЬТЕ СВОИ ЗНАЧЕНИЯ (см. Часть 7 ниже) =====
 const FEEDBACK_FORM_URL = "https://docs.google.com/forms/d/e/ВАШ_ID/formResponse";
 const FEEDBACK_FIELDS = {
-  name: "entry.1441169149",
-  card: "entry.1042147433",
-  text: "entry.1660563876"
+  name: "entry.0000000000",
+  card: "entry.0000000000",
+  text: "entry.0000000000"
 };
-// =====================================================
 
 const i18n = {
   ru: {
     title: "Метафорические карты",
     hint: "Сформулируйте вопрос и начните",
-    draw: "🎴 Начать",
+    draw: "Начать",
     pickHint: "Проведите по колоде и выберите карту",
     tapToReveal: "Нажмите на карту, чтобы перевернуть",
     feedbackTitle: "Поделиться впечатлением",
     feedbackName: "Ваше имя",
     feedbackText: "Что эта карта значит для вас?",
     feedbackSubmit: "Отправить",
-    feedbackThanks: "Спасибо за отзыв ✨",
+    feedbackThanks: "Спасибо за отзыв",
     feedbackError: "Не удалось отправить, попробуйте ещё раз",
-    again: "🔄 Ещё карта",
-    back: "← Назад",
-    home: "← На главную",
+    again: "Ещё карта",
+    back: "Назад",
+    home: "На главную",
     changeLang: "Сменить язык"
   },
   en: {
     title: "Metaphorical Cards",
     hint: "Formulate your question and begin",
-    draw: "🎴 Begin",
+    draw: "Begin",
     pickHint: "Swipe the deck and pick a card",
     tapToReveal: "Tap the card to flip",
     feedbackTitle: "Share your reflection",
     feedbackName: "Your name",
     feedbackText: "What does this card mean to you?",
     feedbackSubmit: "Send",
-    feedbackThanks: "Thank you ✨",
+    feedbackThanks: "Thank you",
     feedbackError: "Could not send, please try again",
-    again: "🔄 Another card",
-    back: "← Back",
-    home: "← Home",
+    again: "Another card",
+    back: "Back",
+    home: "Home",
     changeLang: "Change language"
   }
 };
@@ -86,18 +84,15 @@ function localized(field, fallback) {
 function renderDeck() {
   const track = $("deck-track");
   track.innerHTML = "";
-
   const shuffled = [...cards].sort(() => Math.random() - 0.5);
   const deckCards = shuffled.slice(0, Math.min(DECK_SIZE, shuffled.length));
-
   deckCards.forEach(card => {
     const el = document.createElement("div");
     el.className = "deck-card";
-    el.textContent = "✦";
+    el.textContent = "*";
     el.addEventListener("click", () => selectCard(card));
     track.appendChild(el);
   });
-
   setTimeout(() => {
     const c = $("deck-container");
     c.scrollLeft = (track.scrollWidth - c.clientWidth) / 2;
@@ -113,13 +108,12 @@ function selectCard(card) {
 }
 
 function renderSelectedCard() {
-  $("card-stage").innerHTML = `
-    <div class="card-3d" id="card-3d">
-      <div class="card-face card-back">✦</div>
-      <div class="card-face card-front"><img src="${selectedCard.image}" alt=""></div>
-    </div>
-  `;
-  $("card-content").innerHTML = `<p class="hint">${t("tapToReveal")}</p>`;
+  $("card-stage").innerHTML =
+    '<div class="card-3d" id="card-3d">' +
+      '<div class="card-face card-back">*</div>' +
+      '<div class="card-face card-front"><img src="' + selectedCard.image + '" alt=""></div>' +
+    '</div>';
+  $("card-content").innerHTML = '<p class="hint">' + t("tapToReveal") + '</p>';
   $("card-3d").addEventListener("click", revealCard);
 }
 
@@ -133,22 +127,19 @@ function revealCard() {
 
 function showCardContent() {
   const text = localized(selectedCard.text, "");
-  const title = localized(selectedCard.title, `#${selectedCard.id}`);
-
-  $("card-content").innerHTML = `
-    <div class="card-text">${text}</div>
-    <div class="feedback-block">
-      <h3>${t("feedbackTitle")}</h3>
-      <input type="text" id="fb-name" placeholder="${t("feedbackName")}" />
-      <input type="text" id="fb-card" value="${title}" readonly />
-      <textarea id="fb-text" placeholder="${t("feedbackText")}" rows="4"></textarea>
-      <button class="btn" id="fb-submit">${t("feedbackSubmit")}</button>
-      <p class="feedback-status" id="fb-status"></p>
-    </div>
-    <button class="btn" id="btn-again">${t("again")}</button>
-    <button class="btn btn-secondary" id="btn-home">${t("home")}</button>
-  `;
-
+  const title = localized(selectedCard.title, "#" + selectedCard.id);
+  $("card-content").innerHTML =
+    '<div class="card-text">' + text + '</div>' +
+    '<div class="feedback-block">' +
+      '<h3>' + t("feedbackTitle") + '</h3>' +
+      '<input type="text" id="fb-name" placeholder="' + t("feedbackName") + '" />' +
+      '<input type="text" id="fb-card" value="' + title + '" readonly />' +
+      '<textarea id="fb-text" placeholder="' + t("feedbackText") + '" rows="4"></textarea>' +
+      '<button class="btn" id="fb-submit">' + t("feedbackSubmit") + '</button>' +
+      '<p class="feedback-status" id="fb-status"></p>' +
+    '</div>' +
+    '<button class="btn" id="btn-again">' + t("again") + '</button>' +
+    '<button class="btn btn-secondary" id="btn-home">' + t("home") + '</button>';
   $("fb-submit").addEventListener("click", submitFeedback);
   $("btn-again").addEventListener("click", () => {
     renderDeck();
@@ -159,49 +150,4 @@ function showCardContent() {
 
 async function submitFeedback() {
   const name = $("fb-name").value.trim();
-  const card = $("fb-card").value;
-  const text = $("fb-text").value.trim();
-  const status = $("fb-status");
-
-  if (!text) { status.textContent = "..."; return; }
-  status.textContent = "...";
-
-  const fd = new FormData();
-  fd.append(FEEDBACK_FIELDS.name, name);
-  fd.append(FEEDBACK_FIELDS.card, card);
-  fd.append(FEEDBACK_FIELDS.text, text);
-
-  try {
-    await fetch(FEEDBACK_FORM_URL, { method: "POST", body: fd, mode: "no-cors" });
-    status.textContent = t("feedbackThanks");
-    $("fb-name").value = "";
-    $("fb-text").value = "";
-  } catch (e) {
-    status.textContent = t("feedbackError");
-  }
-}
-
-document.querySelectorAll("[data-lang]").forEach(btn => {
-  btn.addEventListener("click", () => {
-    currentLang = btn.dataset.lang;
-    localStorage.setItem("lang", currentLang);
-    applyLang();
-    showScreen("screen-home");
-  });
-});
-
-$("btn-draw").addEventListener("click", () => {
-  if (cards.length === 0) return;
-  renderDeck();
-  showScreen("screen-deck");
-});
-
-$("btn-back-from-deck").addEventListener("click", () => showScreen("screen-home"));
-$("btn-change-lang").addEventListener("click", () => showScreen("screen-lang"));
-
-if (currentLang && i18n[currentLang]) {
-  applyLang();
-  showScreen("screen-home");
-} else {
-  showScreen("screen-lang");
-}
+  const ca
