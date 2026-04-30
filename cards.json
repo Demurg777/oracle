@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "image": "images/250408_KANG_One_Step_final-white.jpg",
+    "text": "Текст к первой карте."
+  },
+  {
+    "id": 2,
+    "image": "images/Ada_Circle_Dance.jpg",
+    "text": "Текст ко второй карте."
+  },
+  {
+    "id": 3,
+    "image": "images/Ada_The Gift_Color.jpg",
+    "text": "Текст к третьей карте."
+  }
+]
