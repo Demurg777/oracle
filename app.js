@@ -87,38 +87,99 @@ function localized(field, fallback) {
 }
 
 function renderDeck() {
-  const strip = $("deck-strip");
-  strip.innerHTML = "";
+  const track = $("coverflow-track");
+  track.innerHTML = "";
 
   const shuffled = [...cards].sort(() => Math.random() - 0.5);
 
   shuffled.forEach(function(card, i) {
     const el = document.createElement("div");
-    el.className = "deck-card";
-    el.style.zIndex = i;
-    // лёгкий случайный наклон, чтобы выглядело живо
-    const rotation = (Math.random() - 0.5) * 6;
-    el.style.transform = "rotate(" + rotation.toFixed(2) + "deg)";
-    el.dataset.baseRotation = rotation.toFixed(2);
-    el.style.animationDelay = (i * 20) + "ms";
+    el.className = "coverflow-card";
+    el.dataset.index = i;
 
     el.addEventListener("click", function(e) {
       e.stopPropagation();
-      flyOutAndSelect(el, card);
+      // если тап по центральной карте — выбрать; если по боковой — прокрутить к ней
+      if (el.classList.contains("is-center")) {
+        flyOutAndSelect(el, card);
+      } else {
+        scrollToCard(el);
+      }
     });
 
-    strip.appendChild(el);
+    track.appendChild(el);
   });
 
-  // прокрутить колоду к началу-середине
+  // запустить обновление 3D-трансформаций при прокрутке
+  initCoverflow();
+
+  // прокрутить к первой карте
   setTimeout(function() {
-    const scroll = $("deck-scroll");
-    if (scroll) scroll.scrollLeft = scroll.scrollWidth / 4;
-  }, 100);
+    const scroll = $("coverflow-scroll");
+    if (scroll) scroll.scrollLeft = 0;
+    updateCoverflow();
+  }, 50);
+}
+
+function scrollToCard(el) {
+  const scroll = $("coverflow-scroll");
+  const cardCenter = el.offsetLeft + el.offsetWidth / 2;
+  const targetScroll = cardCenter - scroll.clientWidth / 2;
+  scroll.scrollTo({ left: targetScroll, behavior: "smooth" });
+}
+
+function initCoverflow() {
+  const scroll = $("coverflow-scroll");
+  if (!scroll) return;
+  if (scroll.dataset.coverflowInit) return;
+  scroll.dataset.coverflowInit = "1";
+
+  scroll.addEventListener("scroll", updateCoverflow, { passive: true });
+  window.addEventListener("resize", updateCoverflow);
+}
+
+function updateCoverflow() {
+  const scroll = $("coverflow-scroll");
+  if (!scroll) return;
+  const track = $("coverflow-track");
+  if (!track) return;
+
+  const scrollCenter = scroll.scrollLeft + scroll.clientWidth / 2;
+  const cardEls = track.querySelectorAll(".coverflow-card");
+
+  cardEls.forEach(function(el) {
+    const cardCenter = el.offsetLeft + el.offsetWidth / 2;
+    const distance = cardCenter - scrollCenter;
+    // нормализованное расстояние, где 1 ≈ ширина одной карты
+    const norm = distance / 100;
+    const absNorm = Math.abs(norm);
+
+    // боковые карты — повёрнуты на 60°, центральная — 0°
+    const rotateY = Math.max(-65, Math.min(65, -norm * 50));
+    // карты дальше от центра — меньше и темнее
+    const scale = Math.max(0.7, 1 - absNorm * 0.08);
+    // боковые слегка смещены к центру по Z (визуально дальше)
+    const translateZ = -Math.min(120, absNorm * 60);
+
+    el.style.transform =
+      "translateZ(" + translateZ.toFixed(0) + "px) " +
+      "rotateY(" + rotateY.toFixed(1) + "deg) " +
+      "scale(" + scale.toFixed(3) + ")";
+
+    el.style.zIndex = String(1000 - Math.round(absNorm * 100));
+    el.style.opacity = String(Math.max(0.4, 1 - absNorm * 0.15));
+
+    if (absNorm < 0.4) {
+      el.classList.add("is-center");
+    } else {
+      el.classList.remove("is-center");
+    }
+  });
 }
 
 function flyOutAndSelect(el, card) {
   el.classList.add("flying-out");
+  el.style.transform = "translateY(-80vh) scale(1.4)";
   if (tg.HapticFeedback) tg.HapticFeedback.impactOccurred("medium");
   setTimeout(function() {
     selectCard(card);
