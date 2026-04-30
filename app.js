@@ -248,6 +248,89 @@ function renderCardScreen() {
   });
 }
 
+function buildTextHTML() {
+  const lang = currentLang;
+  const card = selectedCard;
+  let html = '<div class="text-content">';
+
+  // эпиграф
+  const quote = card.quote && (card.quote[lang] || card.quote.en || card.quote.ru);
+  if (quote) {
+    html += '<div class="text-quote">' + escapeHTML(quote) + '</div>';
+  }
+
+  // основные абзацы
+  const body = card.body && (card.body[lang] || card.body.en || card.body.ru);
+  if (body) {
+    html += '<div class="text-body">';
+    if (Array.isArray(body)) {
+      body.forEach(function(p) {
+        html += '<p>' + escapeHTML(p) + '</p>';
+      });
+    } else {
+      html += '<p>' + escapeHTML(body) + '</p>';
+    }
+    html += '</div>';
+  }
+
+  // выделенная цитата (то, что в скобках)
+  const pq = card.pullquote && (card.pullquote[lang] || card.pullquote.en || card.pullquote.ru);
+  if (pq) {
+    html += '<div class="text-pullquote">' + escapeHTML(pq) + '</div>';
+  }
+
+  // финальные абзацы
+  const outro = card.outro && (card.outro[lang] || card.outro.en || card.outro.ru);
+  if (outro) {
+    html += '<div class="text-body">';
+    if (Array.isArray(outro)) {
+      outro.forEach(function(p) {
+        html += '<p>' + escapeHTML(p) + '</p>';
+      });
+    } else {
+      html += '<p>' + escapeHTML(outro) + '</p>';
+    }
+    html += '</div>';
+  }
+
+  // margins
+  const m = card.margins && (card.margins[lang] || card.margins.en || card.margins.ru);
+  if (m) {
+    html += '<div class="text-margins">';
+    if (m.presentCondition) {
+      html += '<h4>' + (lang === "ru" ? "Текущее состояние" : "Present Condition") + '</h4>';
+      html += '<p>' + escapeHTML(m.presentCondition) + '</p>';
+    }
+    if (m.hiddenProcesses && m.hiddenProcesses.length) {
+      html += '<h4>' + (lang === "ru" ? "Скрытые процессы" : "Hidden Processes") + '</h4>';
+      m.hiddenProcesses.forEach(function(item) {
+        html += '<div class="margin-item"><strong>' + escapeHTML(item.title) + '</strong> — ' + escapeHTML(item.desc) + '</div>';
+      });
+    }
+    html += '</div>';
+  }
+
+  // если структурных полей нет — показать просто text как раньше
+  if (!quote && !body && !pq && !outro && !m) {
+    const fallback = card.text && (card.text[lang] || card.text.en || card.text.ru) || "";
+    html += '<p style="font-size:16px;line-height:1.55;">' + escapeHTML(fallback) + '</p>';
+  }
+
+  html += '<div class="text-tap-hint">' + t("tapToHide") + '</div>';
+  html += '</div>';
+  return html;
+}
+
+function escapeHTML(s) {
+  if (s == null) return "";
+  return String(s)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
 function toggleCardText() {
   if (tg.HapticFeedback) tg.HapticFeedback.impactOccurred("medium");
 
@@ -257,14 +340,13 @@ function toggleCardText() {
     isTextShown = true;
     $("card-stage").style.display = "none";
 
-    const text = localized(selectedCard.text, "");
-    $("text-stage").style.display = "flex";
-    $("text-stage").innerHTML = '<div class="revealed-text" id="revealed-text">' + text + '</div>';
+    $("text-stage").style.display = "block";
+    $("text-stage").innerHTML = buildTextHTML();
 
     $("text-stage").addEventListener("click", toggleCardText, { once: true });
 
     const hint = $("card-hint");
-    if (hint) hint.textContent = t("tapToHide");
+    if (hint) hint.style.display = "none";
   } else {
     isTextShown = false;
     $("text-stage").style.display = "none";
@@ -280,8 +362,12 @@ function toggleCardText() {
     $("card-image").addEventListener("click", toggleCardText);
 
     const hint = $("card-hint");
-    if (hint) hint.textContent = t("tapToReveal");
+    if (hint) {
+      hint.style.display = "block";
+      hint.textContent = t("tapToReveal");
+    }
   }
+}
 }
 
 async function submitFeedback() {
