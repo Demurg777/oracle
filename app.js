@@ -27,7 +27,9 @@ const i18n = {
     again: "Ещё карта",
     back: "Назад",
     home: "На главную",
-    changeLang: "Сменить язык"
+    changeLang: "Сменить язык",
+    presentCondition: "Текущее состояние",
+    hiddenProcesses: "Скрытые процессы"
   },
   en: {
     title: "Metaphorical Cards",
@@ -46,7 +48,9 @@ const i18n = {
     again: "Another card",
     back: "Back",
     home: "Home",
-    changeLang: "Change language"
+    changeLang: "Change language",
+    presentCondition: "Present Condition",
+    hiddenProcesses: "Hidden Processes"
   }
 };
 
@@ -58,21 +62,21 @@ let cardSelectedAt = 0;
 const CLICK_GUARD_MS = 500;
 
 fetch("cards.json")
-  .then(r => r.json())
-  .then(data => { cards = data; })
-  .catch(e => console.error("Не удалось загрузить cards.json:", e));
+  .then(function(r) { return r.json(); })
+  .then(function(data) { cards = data; })
+  .catch(function(e) { console.error("Не удалось загрузить cards.json:", e); });
 
-const $ = id => document.getElementById(id);
-const t = key => (i18n[currentLang] && i18n[currentLang][key]) || key;
+function $(id) { return document.getElementById(id); }
+function t(key) { return (i18n[currentLang] && i18n[currentLang][key]) || key; }
 
 function showScreen(id) {
-  document.querySelectorAll(".screen").forEach(x => x.classList.remove("active"));
+  document.querySelectorAll(".screen").forEach(function(x) { x.classList.remove("active"); });
   $(id).classList.add("active");
   window.scrollTo(0, 0);
 }
 
 function applyLang() {
-  document.querySelectorAll("[data-i18n]").forEach(el => {
+  document.querySelectorAll("[data-i18n]").forEach(function(el) {
     const key = el.dataset.i18n;
     if (i18n[currentLang] && i18n[currentLang][key]) {
       el.textContent = i18n[currentLang][key];
@@ -86,11 +90,22 @@ function localized(field, fallback) {
   return field[currentLang] || field.ru || field.en || fallback;
 }
 
+function escapeHTML(s) {
+  if (s == null) return "";
+  return String(s)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
 function renderDeck() {
   const track = $("coverflow-track");
+  if (!track) return;
   track.innerHTML = "";
 
-  const shuffled = [...cards].sort(() => Math.random() - 0.5);
+  const shuffled = [].concat(cards).sort(function() { return Math.random() - 0.5; });
 
   shuffled.forEach(function(card, i) {
     const el = document.createElement("div");
@@ -99,7 +114,6 @@ function renderDeck() {
 
     el.addEventListener("click", function(e) {
       e.stopPropagation();
-      // если тап по центральной карте — выбрать; если по боковой — прокрутить к ней
       if (el.classList.contains("is-center")) {
         flyOutAndSelect(el, card);
       } else {
@@ -110,10 +124,8 @@ function renderDeck() {
     track.appendChild(el);
   });
 
-  // запустить обновление 3D-трансформаций при прокрутке
   initCoverflow();
 
-  // прокрутить к первой карте
   setTimeout(function() {
     const scroll = $("coverflow-scroll");
     if (scroll) scroll.scrollLeft = 0;
@@ -133,7 +145,6 @@ function initCoverflow() {
   if (!scroll) return;
   if (scroll.dataset.coverflowInit) return;
   scroll.dataset.coverflowInit = "1";
-
   scroll.addEventListener("scroll", updateCoverflow, { passive: true });
   window.addEventListener("resize", updateCoverflow);
 }
@@ -150,15 +161,11 @@ function updateCoverflow() {
   cardEls.forEach(function(el) {
     const cardCenter = el.offsetLeft + el.offsetWidth / 2;
     const distance = cardCenter - scrollCenter;
-    // нормализованное расстояние, где 1 ≈ ширина одной карты
     const norm = distance / 100;
     const absNorm = Math.abs(norm);
 
-    // боковые карты — повёрнуты на 60°, центральная — 0°
     const rotateY = Math.max(-65, Math.min(65, -norm * 50));
-    // карты дальше от центра — меньше и темнее
     const scale = Math.max(0.7, 1 - absNorm * 0.08);
-    // боковые слегка смещены к центру по Z (визуально дальше)
     const translateZ = -Math.min(120, absNorm * 60);
 
     el.style.transform =
@@ -204,7 +211,7 @@ function renderCardScreen() {
 
   $("card-stage").style.display = "block";
   $("card-stage").innerHTML =
-    (title ? '<div class="card-title">' + title + '</div>' : '') +
+    (title ? '<div class="card-title">' + escapeHTML(title) + '</div>' : '') +
     '<div class="card-image" id="card-image">' +
       '<img src="' + selectedCard.image + '" alt="">' +
     '</div>';
@@ -253,13 +260,11 @@ function buildTextHTML() {
   const card = selectedCard;
   let html = '<div class="text-content">';
 
-  // эпиграф
   const quote = card.quote && (card.quote[lang] || card.quote.en || card.quote.ru);
   if (quote) {
     html += '<div class="text-quote">' + escapeHTML(quote) + '</div>';
   }
 
-  // основные абзацы
   const body = card.body && (card.body[lang] || card.body.en || card.body.ru);
   if (body) {
     html += '<div class="text-body">';
@@ -273,13 +278,11 @@ function buildTextHTML() {
     html += '</div>';
   }
 
-  // выделенная цитата (то, что в скобках)
   const pq = card.pullquote && (card.pullquote[lang] || card.pullquote.en || card.pullquote.ru);
   if (pq) {
     html += '<div class="text-pullquote">' + escapeHTML(pq) + '</div>';
   }
 
-  // финальные абзацы
   const outro = card.outro && (card.outro[lang] || card.outro.en || card.outro.ru);
   if (outro) {
     html += '<div class="text-body">';
@@ -293,16 +296,15 @@ function buildTextHTML() {
     html += '</div>';
   }
 
-  // margins
   const m = card.margins && (card.margins[lang] || card.margins.en || card.margins.ru);
   if (m) {
     html += '<div class="text-margins">';
     if (m.presentCondition) {
-      html += '<h4>' + (lang === "ru" ? "Текущее состояние" : "Present Condition") + '</h4>';
+      html += '<h4>' + t("presentCondition") + '</h4>';
       html += '<p>' + escapeHTML(m.presentCondition) + '</p>';
     }
     if (m.hiddenProcesses && m.hiddenProcesses.length) {
-      html += '<h4>' + (lang === "ru" ? "Скрытые процессы" : "Hidden Processes") + '</h4>';
+      html += '<h4>' + t("hiddenProcesses") + '</h4>';
       m.hiddenProcesses.forEach(function(item) {
         html += '<div class="margin-item"><strong>' + escapeHTML(item.title) + '</strong> — ' + escapeHTML(item.desc) + '</div>';
       });
@@ -310,25 +312,14 @@ function buildTextHTML() {
     html += '</div>';
   }
 
-  // если структурных полей нет — показать просто text как раньше
   if (!quote && !body && !pq && !outro && !m) {
-    const fallback = card.text && (card.text[lang] || card.text.en || card.text.ru) || "";
+    const fallback = (card.text && (card.text[lang] || card.text.en || card.text.ru)) || "";
     html += '<p style="font-size:16px;line-height:1.55;">' + escapeHTML(fallback) + '</p>';
   }
 
   html += '<div class="text-tap-hint">' + t("tapToHide") + '</div>';
   html += '</div>';
   return html;
-}
-
-function escapeHTML(s) {
-  if (s == null) return "";
-  return String(s)
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#39;");
 }
 
 function toggleCardText() {
@@ -342,7 +333,6 @@ function toggleCardText() {
 
     $("text-stage").style.display = "block";
     $("text-stage").innerHTML = buildTextHTML();
-
     $("text-stage").addEventListener("click", toggleCardText, { once: true });
 
     const hint = $("card-hint");
@@ -354,7 +344,7 @@ function toggleCardText() {
 
     $("card-stage").style.display = "block";
     $("card-stage").innerHTML =
-      (title ? '<div class="card-title">' + title + '</div>' : '') +
+      (title ? '<div class="card-title">' + escapeHTML(title) + '</div>' : '') +
       '<div class="card-image" id="card-image">' +
         '<img src="' + selectedCard.image + '" alt="">' +
       '</div>';
@@ -367,7 +357,6 @@ function toggleCardText() {
       hint.textContent = t("tapToReveal");
     }
   }
-
 }
 
 async function submitFeedback() {
