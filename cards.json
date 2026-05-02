@@ -408,20 +408,34 @@
       "en": "Balance Measure"
     },
     "text": {
-      "ru": "Текст карты на русском.",
-      "en": "Card text in English."
+      "ru": "Проверь баланс.\n\nТы не перегибаешь? Не залипаешь? Не тащишь всё на себе — и не уходишь ли в избегание? Насколько ты действуешь из представлений, а не из реальности момента.\n\nБаланс — это не 50 на 50.\n\nИногда 20 на 80. Иногда достаточно 5% вместо 0.\n\nЭта карта не про равенство, а про соответствие ситуации. Про умение видеть крайности и осознанно выбирать меру, которая сейчас уместна. Где-то нужно больше усилия и ответственности, где-то — больше отпускания и доверия.\n\nБаланс — это состояние внутренней уверенности, когда ты чувствуешь опору и не мечешься между полюсами. Действовать не по инерции или «правильно», а настраиваешься под реальность такой, какая она есть.\n\nНастроение: Устойчивость, спокойствие, честность, внутренняя уверенность, трезвость взгляда/оценки без предубеждений\n\nCall to Action: Проверь весы. Найди свою меру в этой ситуации и действуй из неё.",
+      "en": "Check the balance.\n\nAre you overdoing it? Are you stuck? Are you carrying everything yourself—or drifting into avoidance? How much are you acting from assumptions rather than from the reality of the moment?\n\nBalance is not fifty-fifty.\n\nSometimes it is twenty-eighty. Sometimes five percent is enough instead of zero.\n\nThis card is not about equality, but about proportionality to the situation. It is about seeing extremes and consciously choosing the measure that is appropriate now. Somewhere more effort and responsibility are needed; somewhere else, more release and trust.\n\nBalance is a state of inner confidence, when you feel your footing and stop swinging between poles. Do not act by inertia or by what seems “right”; attune yourself to reality as it is.\n\nMood: Stability, calm, honesty, inner confidence, sober judgment without prejudice.\n\nCall to Action: Check the scales. Find your measure in this situation and act from it."
     },
     "quote": {
       "ru": "",
       "en": ""
     },
     "body": {
-      "ru": [],
-      "en": []
+      "ru": [
+        "Проверь баланс.",
+        "Ты не перегибаешь? Не залипаешь? Не тащишь всё на себе — и не уходишь ли в избегание? Насколько ты действуешь из представлений, а не из реальности момента.",
+        "Баланс — это не 50 на 50.",
+        "Иногда 20 на 80. Иногда достаточно 5% вместо 0.",
+        "Эта карта не про равенство, а про соответствие ситуации. Про умение видеть крайности и осознанно выбирать меру, которая сейчас уместна. Где-то нужно больше усилия и ответственности, где-то — больше отпускания и доверия.",
+        "Баланс — это состояние внутренней уверенности, когда ты чувствуешь опору и не мечешься между полюсами. Действовать не по инерции или «правильно», а настраиваешься под реальность такой, какая она есть."
+      ],
+      "en": [
+        "Check the balance.",
+        "Are you overdoing it? Are you stuck? Are you carrying everything yourself—or drifting into avoidance? How much are you acting from assumptions rather than from the reality of the moment?",
+        "Balance is not fifty-fifty.",
+        "Sometimes it is twenty-eighty. Sometimes five percent is enough instead of zero.",
+        "This card is not about equality, but about proportionality to the situation. It is about seeing extremes and consciously choosing the measure that is appropriate now. Somewhere more effort and responsibility are needed; somewhere else, more release and trust.",
+        "Balance is a state of inner confidence, when you feel your footing and stop swinging between poles. Do not act by inertia or by what seems “right”; attune yourself to reality as it is."
+      ]
     },
     "pullquote": {
-      "ru": "",
-      "en": ""
+      "ru": "Проверь весы. Найди свою меру в этой ситуации и действуй из неё.",
+      "en": "Check the scales. Find your measure in this situation and act from it."
     },
     "outro": {
       "ru": [],
@@ -429,11 +443,11 @@
     },
     "margins": {
       "ru": {
-        "presentCondition": "",
+        "presentCondition": "Настроение: Устойчивость, спокойствие, честность, внутренняя уверенность, трезвость взгляда/оценки без предубеждений",
         "hiddenProcesses": []
       },
       "en": {
-        "presentCondition": "",
+        "presentCondition": "Mood: Stability, calm, honesty, inner confidence, sober judgment without prejudice.",
         "hiddenProcesses": []
       }
     },
@@ -441,7 +455,12 @@
       "ru": "",
       "en": ""
     },
-    "_ru_translation_status": "untranslated"
+    "_ru_translation_status": "filled_from_ideas_docx",
+    "contentTitle": {
+      "ru": "Баланс (или ясность)",
+      "en": "Balance (or Clarity)"
+    },
+    "_ideas_source_section": "2.  Баланс (или ясность)"
   },
   {
     "id": 7,
@@ -528,20 +547,24 @@
       "en": "Boundaries"
     },
     "text": {
-      "ru": "Текст карты на русском.",
-      "en": "Card text in English."
+      "ru": "Иногда сила — это не в том, чтобы делать больше, а в том, чтобы сказать «нет». Эта стратегия — про внутреннюю территорию. Про осознание, где заканчиваешься ты и начинается другое. Границы — не про враждебность, а про уважение: к себе, к своим ритмам, потребностям, боли. Они могут быть мягкими, но они должны быть. Без границ ты растворяешься в чужих ожиданиях и тревогах. С границами — обретаешь ясность, где твоя ответственность, а где — уже не твоя.\n\nНастроение: Чёткость, достоинство, уважение к себе, спокойная сила, очерчивание, ясность\n\nCall to Action: Обозначь, что твоё. Назови, что — нет. Защити своё пространство. Отдели своё. Не прячься. Не растворяйся.",
+      "en": "Sometimes strength is not about doing more, but about saying “no.” This strategy is about inner territory. It is about recognizing where you end and something else begins. Boundaries are not hostility; they are respect: for yourself, your rhythms, your needs, your pain. They may be soft, but they must exist. Without boundaries, you dissolve into other people’s expectations and anxieties. With boundaries, you regain clarity about what is your responsibility and what is not.\n\nMood: Clarity, dignity, self-respect, quiet strength, delineation, precision.\n\nCall to Action: Name what is yours. Name what is not. Protect your space. Separate what belongs to you. Do not hide. Do not dissolve."
     },
     "quote": {
       "ru": "",
       "en": ""
     },
     "body": {
-      "ru": [],
-      "en": []
+      "ru": [
+        "Иногда сила — это не в том, чтобы делать больше, а в том, чтобы сказать «нет». Эта стратегия — про внутреннюю территорию. Про осознание, где заканчиваешься ты и начинается другое. Границы — не про враждебность, а про уважение: к себе, к своим ритмам, потребностям, боли. Они могут быть мягкими, но они должны быть. Без границ ты растворяешься в чужих ожиданиях и тревогах. С границами — обретаешь ясность, где твоя ответственность, а где — уже не твоя."
+      ],
+      "en": [
+        "Sometimes strength is not about doing more, but about saying “no.” This strategy is about inner territory. It is about recognizing where you end and something else begins. Boundaries are not hostility; they are respect: for yourself, your rhythms, your needs, your pain. They may be soft, but they must exist. Without boundaries, you dissolve into other people’s expectations and anxieties. With boundaries, you regain clarity about what is your responsibility and what is not."
+      ]
     },
     "pullquote": {
-      "ru": "",
-      "en": ""
+      "ru": "Обозначь, что твоё. Назови, что — нет. Защити своё пространство. Отдели своё. Не прячься. Не растворяйся.",
+      "en": "Name what is yours. Name what is not. Protect your space. Separate what belongs to you. Do not hide. Do not dissolve."
     },
     "outro": {
       "ru": [],
@@ -549,11 +572,11 @@
     },
     "margins": {
       "ru": {
-        "presentCondition": "",
+        "presentCondition": "Настроение: Чёткость, достоинство, уважение к себе, спокойная сила, очерчивание, ясность",
         "hiddenProcesses": []
       },
       "en": {
-        "presentCondition": "",
+        "presentCondition": "Mood: Clarity, dignity, self-respect, quiet strength, delineation, precision.",
         "hiddenProcesses": []
       }
     },
@@ -561,7 +584,12 @@
       "ru": "",
       "en": ""
     },
-    "_ru_translation_status": "untranslated"
+    "_ru_translation_status": "filled_from_ideas_docx",
+    "contentTitle": {
+      "ru": "Провести границы",
+      "en": "Set Boundaries"
+    },
+    "_ideas_source_section": "57. Провести границы"
   },
   {
     "id": 9,
@@ -729,16 +757,24 @@
       "en": "Cat's Cradle"
     },
     "text": {
-      "ru": "Текст карты на русском.",
-      "en": "Card text in English."
+      "ru": "TIGHTROPE WALKER (aka CAT’S CRADLE)\n\nТут примерно такое пришло по смыслу: Неизвестно, какими дорогами надо блуждать и сколько бродить по запутанной колыбели для кошки, чтоб добраться до своей истины. За каждым поворотом жизнь слепила что-то персонально для человека, выданное ему лично в руки для его осознаний, скроенных по его уникальному лекалу. Свернуть «не туда» невозможно, «выбрать неверную дорогу» нельзя – они все ведут к самому себе, и в руках бога. Но пути проложены неплотно, есть в них паузы, провалы, развилки и поросшие бурьяном зоны умолчания, в которых вообще неизвестно что – и человеку страшно, как слепому канатоходцу. Но при чутком отношении к мироустройству, он иногда слышит, откуда для него играет дудочка Кришны и двигается на зов с напряженной пластикой лунатика.\n\n+ найти цитату про man proceeds in the fog, but when he looks back, the path looks perfectly clear to him, good visibility all the way… he sees the path, he sees the people proceeding, he sees mistakes, but not the fog",
+      "en": "TIGHTROPE WALKER (aka CAT’S CRADLE)\n\nThe meaning is roughly this: no one knows which roads must be wandered, or how long one must move through the tangled cat’s cradle before reaching one’s own truth. Around every turn, life has shaped something personally for the seeker, placed directly into their hands for their own recognition, cut to their unique pattern. It is impossible to turn “the wrong way”; it is impossible to “choose the wrong road”—they all lead back to the self, and they are all in the hands of God. But the paths are not laid tightly. There are pauses, gaps, forks, and overgrown zones of omission where it is impossible to know what waits—and the person becomes afraid, like a blind tightrope walker. Yet with a sensitive relationship to the order of the world, he sometimes hears where Krishna’s flute is playing for him and moves toward the call with the tense grace of a sleepwalker.\n\nFind the quote about a man proceeding in fog, but when he looks back, the path appears perfectly clear to him: good visibility all the way. He sees the path, the people proceeding, the mistakes—but not the fog."
     },
     "quote": {
       "ru": "",
       "en": ""
     },
     "body": {
-      "ru": [],
-      "en": []
+      "ru": [
+        "TIGHTROPE WALKER (aka CAT’S CRADLE)",
+        "Тут примерно такое пришло по смыслу: Неизвестно, какими дорогами надо блуждать и сколько бродить по запутанной колыбели для кошки, чтоб добраться до своей истины. За каждым поворотом жизнь слепила что-то персонально для человека, выданное ему лично в руки для его осознаний, скроенных по его уникальному лекалу. Свернуть «не туда» невозможно, «выбрать неверную дорогу» нельзя – они все ведут к самому себе, и в руках бога. Но пути проложены неплотно, есть в них паузы, провалы, развилки и поросшие бурьяном зоны умолчания, в которых вообще неизвестно что – и человеку страшно, как слепому канатоходцу. Но при чутком отношении к мироустройству, он иногда слышит, откуда для него играет дудочка Кришны и двигается на зов с напряженной пластикой лунатика.",
+        "+ найти цитату про man proceeds in the fog, but when he looks back, the path looks perfectly clear to him, good visibility all the way… he sees the path, he sees the people proceeding, he sees mistakes, but not the fog"
+      ],
+      "en": [
+        "TIGHTROPE WALKER (aka CAT’S CRADLE)",
+        "The meaning is roughly this: no one knows which roads must be wandered, or how long one must move through the tangled cat’s cradle before reaching one’s own truth. Around every turn, life has shaped something personally for the seeker, placed directly into their hands for their own recognition, cut to their unique pattern. It is impossible to turn “the wrong way”; it is impossible to “choose the wrong road”—they all lead back to the self, and they are all in the hands of God. But the paths are not laid tightly. There are pauses, gaps, forks, and overgrown zones of omission where it is impossible to know what waits—and the person becomes afraid, like a blind tightrope walker. Yet with a sensitive relationship to the order of the world, he sometimes hears where Krishna’s flute is playing for him and moves toward the call with the tense grace of a sleepwalker.",
+        "Find the quote about a man proceeding in fog, but when he looks back, the path appears perfectly clear to him: good visibility all the way. He sees the path, the people proceeding, the mistakes—but not the fog."
+      ]
     },
     "pullquote": {
       "ru": "",
@@ -762,7 +798,12 @@
       "ru": "",
       "en": ""
     },
-    "_ru_translation_status": "untranslated"
+    "_ru_translation_status": "filled_from_ideas_docx",
+    "contentTitle": {
+      "ru": "Cat’s cradle",
+      "en": "Cat’s Cradle"
+    },
+    "_ideas_source_section": "50. Cat’s cradle"
   },
   {
     "id": 12,
@@ -772,20 +813,26 @@
       "en": "Catch"
     },
     "text": {
-      "ru": "Текст карты на русском.",
-      "en": "Card text in English."
+      "ru": "Иногда новое начинается не с внутреннего импульса, а с того, что реальная возможность уже появилась или скоро появится. Это может быть предложение, ресурс, идея или конкретный вариант действия.\n\nЭта карта про момент выбора: признать возможность и взять её — или отказаться. Если ты решаешься взять, важно помнить, что иногда рост начинается с малого и не требует немедленного результата.\n\nНастроение: Практичность, осторожный оптимизм, заземлённость, потенциал, спокойная готовность, внимание к реальному\n\nCall to Action: Возможность уже рядом. Реши: берёшь или нет.",
+      "en": "Sometimes a new beginning does not start with an inner impulse, but with the fact that a real opportunity has already appeared, or is about to appear. It may be an offer, a resource, an idea, or a concrete option for action.\n\nThis card is about a moment of choice: to recognize the opportunity and take it, or to refuse it. If you decide to take it, remember that growth sometimes begins small and does not require an immediate result.\n\nMood: Practicality, cautious optimism, groundedness, potential, calm readiness, attention to the real.\n\nCall to Action: The opportunity is near. Decide: will you take it or not?"
     },
     "quote": {
       "ru": "",
       "en": ""
     },
     "body": {
-      "ru": [],
-      "en": []
+      "ru": [
+        "Иногда новое начинается не с внутреннего импульса, а с того, что реальная возможность уже появилась или скоро появится. Это может быть предложение, ресурс, идея или конкретный вариант действия.",
+        "Эта карта про момент выбора: признать возможность и взять её — или отказаться. Если ты решаешься взять, важно помнить, что иногда рост начинается с малого и не требует немедленного результата."
+      ],
+      "en": [
+        "Sometimes a new beginning does not start with an inner impulse, but with the fact that a real opportunity has already appeared, or is about to appear. It may be an offer, a resource, an idea, or a concrete option for action.",
+        "This card is about a moment of choice: to recognize the opportunity and take it, or to refuse it. If you decide to take it, remember that growth sometimes begins small and does not require an immediate result."
+      ]
     },
     "pullquote": {
-      "ru": "",
-      "en": ""
+      "ru": "Возможность уже рядом. Реши: берёшь или нет.",
+      "en": "The opportunity is near. Decide: will you take it or not?"
     },
     "outro": {
       "ru": [],
@@ -793,11 +840,11 @@
     },
     "margins": {
       "ru": {
-        "presentCondition": "",
+        "presentCondition": "Настроение: Практичность, осторожный оптимизм, заземлённость, потенциал, спокойная готовность, внимание к реальному",
         "hiddenProcesses": []
       },
       "en": {
-        "presentCondition": "",
+        "presentCondition": "Mood: Practicality, cautious optimism, groundedness, potential, calm readiness, attention to the real.",
         "hiddenProcesses": []
       }
     },
@@ -805,7 +852,12 @@
       "ru": "",
       "en": ""
     },
-    "_ru_translation_status": "untranslated"
+    "_ru_translation_status": "filled_from_ideas_docx",
+    "contentTitle": {
+      "ru": "The catch",
+      "en": "The Catch"
+    },
+    "_ideas_source_section": "86. The catch"
   },
   {
     "id": 13,
@@ -908,20 +960,24 @@
       "en": "Chinnamasta"
     },
     "text": {
-      "ru": "Текст карты на русском.",
-      "en": "Card text in English."
+      "ru": "Пара к танцующей богине, такая же фигура, но другие атрибуты. Не всё, что живо, должно остаться. Эта стратегия — про силу, с которой ты разрушаешь старое, ненужное, мёртвое. Не из ярости, а из ясности. Ты становишься тем, кто говорит: «Хватит». Кто рубит по живому, потому что знает — за этим придёт обновление. Это не про истерику и бунт. Это про волю. Про способность быть орудием перерождения. Кали не мстит — она очищает. Это внутренняя решимость разорвать петлю, убрать наносное, стереть то, что мешает жизни. Чтобы на пепле взошло новое.\n\nНастроение: Сила, решимость, разрушение во имя жизни, освобождение, воля, очищение, тьма как сила\n\nCall to Action: Разрушь то, что должно быть разрушено. Сделай место для нового.\nСотри. Освободи. Начни заново.",
+      "en": "A counterpart to the dancing goddess: the same figure, but with different attributes. Not everything that lives should remain. This strategy is about the force with which you destroy the old, unnecessary, and dead. Not from rage, but from clarity. You become the one who says: “Enough.” The one who cuts into the living because she knows renewal will follow. This is not hysteria or rebellion. It is will. The capacity to become an instrument of rebirth. Kali does not take revenge—she purifies. This is the inner resolve to break the loop, remove the accumulated excess, erase what prevents life, so that something new can grow from the ashes.\n\nMood: Force, resolve, destruction in service of life, liberation, will, purification, darkness as power.\n\nCall to Action: Destroy what must be destroyed. Make room for the new.\nErase. Liberate. Begin again."
     },
     "quote": {
       "ru": "",
       "en": ""
     },
     "body": {
-      "ru": [],
-      "en": []
+      "ru": [
+        "Пара к танцующей богине, такая же фигура, но другие атрибуты. Не всё, что живо, должно остаться. Эта стратегия — про силу, с которой ты разрушаешь старое, ненужное, мёртвое. Не из ярости, а из ясности. Ты становишься тем, кто говорит: «Хватит». Кто рубит по живому, потому что знает — за этим придёт обновление. Это не про истерику и бунт. Это про волю. Про способность быть орудием перерождения. Кали не мстит — она очищает. Это внутренняя решимость разорвать петлю, убрать наносное, стереть то, что мешает жизни. Чтобы на пепле взошло новое."
+      ],
+      "en": [
+        "A counterpart to the dancing goddess: the same figure, but with different attributes. Not everything that lives should remain. This strategy is about the force with which you destroy the old, unnecessary, and dead. Not from rage, but from clarity. You become the one who says: “Enough.” The one who cuts into the living because she knows renewal will follow. This is not hysteria or rebellion. It is will. The capacity to become an instrument of rebirth. Kali does not take revenge—she purifies. This is the inner resolve to break the loop, remove the accumulated excess, erase what prevents life, so that something new can grow from the ashes."
+      ]
     },
     "pullquote": {
-      "ru": "",
-      "en": ""
+      "ru": "Разрушь то, что должно быть разрушено. Сделай место для нового.\nСотри. Освободи. Начни заново.",
+      "en": "Destroy what must be destroyed. Make room for the new.\nErase. Liberate. Begin again."
     },
     "outro": {
       "ru": [],
@@ -929,11 +985,11 @@
     },
     "margins": {
       "ru": {
-        "presentCondition": "",
+        "presentCondition": "Настроение: Сила, решимость, разрушение во имя жизни, освобождение, воля, очищение, тьма как сила",
         "hiddenProcesses": []
       },
       "en": {
-        "presentCondition": "",
+        "presentCondition": "Mood: Force, resolve, destruction in service of life, liberation, will, purification, darkness as power.",
         "hiddenProcesses": []
       }
     },
@@ -941,7 +997,12 @@
       "ru": "",
       "en": ""
     },
-    "_ru_translation_status": "untranslated"
+    "_ru_translation_status": "filled_from_ideas_docx",
+    "contentTitle": {
+      "ru": "Богиня разрушения Sveta",
+      "en": "Goddess of Destruction"
+    },
+    "_ideas_source_section": "59. Богиня разрушения Sveta"
   },
   {
     "id": 15,
@@ -951,16 +1012,28 @@
       "en": "Cocoon"
     },
     "text": {
-      "ru": "Текст карты на русском.",
-      "en": "Card text in English."
+      "ru": "Образ более мягкой трансформации - кокон. Можно сделать красивую иллюстрацию про содержимое кокона.\n\nКокон почти на всю страницу и Делен в процессе трансформации.(отсылка к Вавилону 5)\n\nНо стратегию и месседж/ответ от оракула все равно надо дописать.\n\nЕсть такая притча,про гусениц, которые ползли на гору и не могли доползти, а одна окуклилась вместо того, чтобы ползти, все над ней смеялись, а потом взяла и полетела. Иногда стратегия глубокой внутренней трансформации и незаметна для окружающих, может казаться что это потеря времени, но это качественное изменение, которое ведет к кратному росту.\n\nВ чем-то похожа на pearl diver,  менее депрессивная но также предполагает остановку и замедление и глубокое погружение во внутренние процессы.",
+      "en": "An image of a softer transformation: the cocoon. It could become a beautiful illustration of the cocoon’s contents.\n\nThe cocoon takes up almost the whole page, and Delenn is in the process of transformation. A reference to Babylon 5.\n\nThe strategy and the oracle message still need to be completed.\n\nThere is a parable about caterpillars crawling up a mountain and failing to reach the top. One of them made a cocoon instead of crawling; everyone laughed at it, and then it flew. Sometimes the strategy of deep inner transformation is invisible to others and may look like wasted time, but it is a qualitative change that leads to exponential growth.\n\nIn some ways it resembles Pearl Diver: less depressive, but it also implies stopping, slowing down, and deep immersion in inner processes."
     },
     "quote": {
       "ru": "",
       "en": ""
     },
     "body": {
-      "ru": [],
-      "en": []
+      "ru": [
+        "Образ более мягкой трансформации - кокон. Можно сделать красивую иллюстрацию про содержимое кокона.",
+        "Кокон почти на всю страницу и Делен в процессе трансформации.(отсылка к Вавилону 5)",
+        "Но стратегию и месседж/ответ от оракула все равно надо дописать.",
+        "Есть такая притча,про гусениц, которые ползли на гору и не могли доползти, а одна окуклилась вместо того, чтобы ползти, все над ней смеялись, а потом взяла и полетела. Иногда стратегия глубокой внутренней трансформации и незаметна для окружающих, может казаться что это потеря времени, но это качественное изменение, которое ведет к кратному росту.",
+        "В чем-то похожа на pearl diver,  менее депрессивная но также предполагает остановку и замедление и глубокое погружение во внутренние процессы."
+      ],
+      "en": [
+        "An image of a softer transformation: the cocoon. It could become a beautiful illustration of the cocoon’s contents.",
+        "The cocoon takes up almost the whole page, and Delenn is in the process of transformation. A reference to Babylon 5.",
+        "The strategy and the oracle message still need to be completed.",
+        "There is a parable about caterpillars crawling up a mountain and failing to reach the top. One of them made a cocoon instead of crawling; everyone laughed at it, and then it flew. Sometimes the strategy of deep inner transformation is invisible to others and may look like wasted time, but it is a qualitative change that leads to exponential growth.",
+        "In some ways it resembles Pearl Diver: less depressive, but it also implies stopping, slowing down, and deep immersion in inner processes."
+      ]
     },
     "pullquote": {
       "ru": "",
@@ -984,7 +1057,12 @@
       "ru": "",
       "en": ""
     },
-    "_ru_translation_status": "untranslated"
+    "_ru_translation_status": "filled_from_ideas_docx",
+    "contentTitle": {
+      "ru": "Кокон Лев",
+      "en": "Cocoon"
+    },
+    "_ideas_source_section": "14. Кокон Лев"
   },
   {
     "id": 16,
@@ -994,20 +1072,33 @@
       "en": "Dancing Shiva"
     },
     "text": {
-      "ru": "Текст карты на русском.",
-      "en": "Card text in English."
+      "ru": "Иногда всё слишком. Слишком сложно. Слишком быстро. Слишком запутано. Или слишком медленно и безжезненно.\nИ тогда единственный способ остаться живым — двигаться.\nНе разгадывать. Не контролировать. Не объяснять.\nА просто пустить тело в ритм.\nДышать. Слушать. Танцевать.\n\nМысль и эмоция тоже могут быть превращены в танец.\nЭто стратегия — не про результат.\nЭто способ быть с жизнью, когда слов больше нет. Отпускать и принимать, ловить в этом естественный ритм.\nТы можешь просто спонтанно двигаться в моменте психически и физически, доверяя ритму, телу, дыханию.\nВ этом — правда. В этом — свобода.\n\nНастроение: Свобода, импульс, импровизация, телесность, живость, доверие, поток\n\nCall to Action: Отключи анализ. Включи тело, почувствуй ритм, двигайся естественно и спонтанно.",
+      "en": "Sometimes everything is too much. Too complicated. Too fast. Too tangled. Or too slow and lifeless.\n\nThen the only way to stay alive is to move.\n\nNot to decipher. Not to control. Not to explain.\n\nJust let the body enter the rhythm.\n\nBreathe. Listen. Dance.\n\nThought and emotion can also be turned into dance.\n\nThis strategy is not about the result. It is a way of being with life when words are no longer enough. To release and receive, to catch a natural rhythm within it.\n\nYou can simply move spontaneously in the moment, mentally and physically, trusting rhythm, body, and breath.\n\nIn this is truth. In this is freedom.\n\nMood: Freedom, impulse, improvisation, embodiment, aliveness, trust, flow.\n\nCall to Action: Turn off analysis. Turn on the body. Feel the rhythm. Move naturally and spontaneously."
     },
     "quote": {
       "ru": "",
       "en": ""
     },
     "body": {
-      "ru": [],
-      "en": []
+      "ru": [
+        "Иногда всё слишком. Слишком сложно. Слишком быстро. Слишком запутано. Или слишком медленно и безжезненно.\nИ тогда единственный способ остаться живым — двигаться.\nНе разгадывать. Не контролировать. Не объяснять.\nА просто пустить тело в ритм.\nДышать. Слушать. Танцевать.",
+        "Мысль и эмоция тоже могут быть превращены в танец.\nЭто стратегия — не про результат.\nЭто способ быть с жизнью, когда слов больше нет. Отпускать и принимать, ловить в этом естественный ритм.\nТы можешь просто спонтанно двигаться в моменте психически и физически, доверяя ритму, телу, дыханию.\nВ этом — правда. В этом — свобода."
+      ],
+      "en": [
+        "Sometimes everything is too much. Too complicated. Too fast. Too tangled. Or too slow and lifeless.",
+        "Then the only way to stay alive is to move.",
+        "Not to decipher. Not to control. Not to explain.",
+        "Just let the body enter the rhythm.",
+        "Breathe. Listen. Dance.",
+        "Thought and emotion can also be turned into dance.",
+        "This strategy is not about the result. It is a way of being with life when words are no longer enough. To release and receive, to catch a natural rhythm within it.",
+        "You can simply move spontaneously in the moment, mentally and physically, trusting rhythm, body, and breath.",
+        "In this is truth. In this is freedom."
+      ]
     },
     "pullquote": {
-      "ru": "",
-      "en": ""
+      "ru": "Отключи анализ. Включи тело, почувствуй ритм, двигайся естественно и спонтанно.",
+      "en": "Turn off analysis. Turn on the body. Feel the rhythm. Move naturally and spontaneously."
     },
     "outro": {
       "ru": [],
@@ -1015,11 +1106,11 @@
     },
     "margins": {
       "ru": {
-        "presentCondition": "",
+        "presentCondition": "Настроение: Свобода, импульс, импровизация, телесность, живость, доверие, поток",
         "hiddenProcesses": []
       },
       "en": {
-        "presentCondition": "",
+        "presentCondition": "Mood: Freedom, impulse, improvisation, embodiment, aliveness, trust, flow.",
         "hiddenProcesses": []
       }
     },
@@ -1027,7 +1118,12 @@
       "ru": "",
       "en": ""
     },
-    "_ru_translation_status": "untranslated"
+    "_ru_translation_status": "filled_from_ideas_docx",
+    "contentTitle": {
+      "ru": "Танец Sveta",
+      "en": "Dance"
+    },
+    "_ideas_source_section": "16. Танец Sveta"
   },
   {
     "id": 17,
@@ -1219,16 +1315,24 @@
       "en": "Desert by Day"
     },
     "text": {
-      "ru": "Текст карты на русском.",
-      "en": "Card text in English."
+      "ru": "про ограниченность ресурса на сложном пути\n\nНо стратегию и месседж/ответ от оракула все равно надо дописать.\n\nВремя рачительно распоряжаться ресурсами, планировать наперед, оценить объективно то, что имеешь, построить план, понять что сейчас - самый ценный ресурс и какие задачи в приоритете. Be practical. Практичность, прямолинейность, сосредоточенность в сравнении с “Пустыней ночью” - расслабить сознание, дать образам родиться. Использовать не бессознательное, а разум и логику.",
+      "en": "This is about limited resources on a difficult path.\n\nThe strategy and oracle message still need to be written.\n\nIt is time to manage resources carefully, plan ahead, assess objectively what you have, build a plan, understand what the most valuable resource is right now, and which tasks are priorities. Be practical. Practicality, directness, and concentration—in contrast to Desert at Night, which asks you to relax consciousness and allow images to arise. Use not the unconscious, but reason and logic."
     },
     "quote": {
       "ru": "",
       "en": ""
     },
     "body": {
-      "ru": [],
-      "en": []
+      "ru": [
+        "про ограниченность ресурса на сложном пути",
+        "Но стратегию и месседж/ответ от оракула все равно надо дописать.",
+        "Время рачительно распоряжаться ресурсами, планировать наперед, оценить объективно то, что имеешь, построить план, понять что сейчас - самый ценный ресурс и какие задачи в приоритете. Be practical. Практичность, прямолинейность, сосредоточенность в сравнении с “Пустыней ночью” - расслабить сознание, дать образам родиться. Использовать не бессознательное, а разум и логику."
+      ],
+      "en": [
+        "This is about limited resources on a difficult path.",
+        "The strategy and oracle message still need to be written.",
+        "It is time to manage resources carefully, plan ahead, assess objectively what you have, build a plan, understand what the most valuable resource is right now, and which tasks are priorities. Be practical. Practicality, directness, and concentration—in contrast to Desert at Night, which asks you to relax consciousness and allow images to arise. Use not the unconscious, but reason and logic."
+      ]
     },
     "pullquote": {
       "ru": "",
@@ -1252,7 +1356,12 @@
       "ru": "",
       "en": ""
     },
-    "_ru_translation_status": "untranslated"
+    "_ru_translation_status": "filled_from_ideas_docx",
+    "contentTitle": {
+      "ru": "Пустыня днем Sveta",
+      "en": "Desert by Day"
+    },
+    "_ideas_source_section": "5. Пустыня днем Sveta"
   },
   {
     "id": 20,
@@ -1262,20 +1371,34 @@
       "en": "Door"
     },
     "text": {
-      "ru": "Текст карты на русском.",
-      "en": "Card text in English."
+      "ru": "Закрой глаза. Представь, что ты выходишь из знакомого пространства. Ты идёшь — сначала по тропинке, потом по полю, потом сквозь деревья. Лес редеет — и снова открывается пространство. Всё глубже и глубже ты проникаешь во внутренний пейзаж.\n\nСтановится тише. Пространство вокруг словно зовёт, но не навязывает. Ты просто идёшь. Всё, что ты оставил позади, остаётся — ты уже не там.(Красивый погружающий текст)\n\nИ вот ты видишь дверь. Ты не знаешь, что за ней. Но ты чувствуешь — там есть что-то, что хочет быть увиденным. Это может быть образ, символ, место, человек, существо, чувство или энергия.\n\nЕсли ты готов — открой дверь. Войди. Заметь, что перед тобой.\nНе нужно понимать — просто смотри.\nЗапомни этот символ. Это — послание твоего бессознательного.\n\nЧто оно значит — узнаешь не сразу. Возможно, позже. А может, ты уже знаешь.\n\nНастроение: Медитативность, трансовость, контакт с тайным, лёгкая тревога, доверие, магия, тихая сила, загадка.\n\nCall to Action: Посмотри, что ждёт тебя за дверью.\nОткройся неизвестному.",
+      "en": "Close your eyes. Imagine that you are leaving a familiar space. You walk—first along a path, then through a field, then through trees. The forest thins, and open space appears again. Deeper and deeper, you enter an inner landscape.\n\nIt becomes quieter. The space around you seems to call, but does not insist. You simply walk. Everything you left behind remains there—you are no longer there.\n\nAnd then you see a door. You do not know what is behind it. But you feel that something there wants to be seen. It may be an image, a symbol, a place, a person, a being, a feeling, or an energy.\n\nIf you are ready, open the door. Enter. Notice what stands before you.\n\nYou do not need to understand. Just look.\n\nRemember this symbol. It is a message from your unconscious.\n\nWhat it means, you may not know immediately. Perhaps later. Perhaps you already know.\n\nMood: Meditative quality, trance, contact with the hidden, slight unease, trust, magic, quiet strength, mystery.\n\nCall to Action: Look at what is waiting for you behind the door.\nOpen yourself to the unknown."
     },
     "quote": {
       "ru": "",
       "en": ""
     },
     "body": {
-      "ru": [],
-      "en": []
+      "ru": [
+        "Закрой глаза. Представь, что ты выходишь из знакомого пространства. Ты идёшь — сначала по тропинке, потом по полю, потом сквозь деревья. Лес редеет — и снова открывается пространство. Всё глубже и глубже ты проникаешь во внутренний пейзаж.",
+        "Становится тише. Пространство вокруг словно зовёт, но не навязывает. Ты просто идёшь. Всё, что ты оставил позади, остаётся — ты уже не там.(Красивый погружающий текст)",
+        "И вот ты видишь дверь. Ты не знаешь, что за ней. Но ты чувствуешь — там есть что-то, что хочет быть увиденным. Это может быть образ, символ, место, человек, существо, чувство или энергия.",
+        "Если ты готов — открой дверь. Войди. Заметь, что перед тобой.\nНе нужно понимать — просто смотри.\nЗапомни этот символ. Это — послание твоего бессознательного.",
+        "Что оно значит — узнаешь не сразу. Возможно, позже. А может, ты уже знаешь."
+      ],
+      "en": [
+        "Close your eyes. Imagine that you are leaving a familiar space. You walk—first along a path, then through a field, then through trees. The forest thins, and open space appears again. Deeper and deeper, you enter an inner landscape.",
+        "It becomes quieter. The space around you seems to call, but does not insist. You simply walk. Everything you left behind remains there—you are no longer there.",
+        "And then you see a door. You do not know what is behind it. But you feel that something there wants to be seen. It may be an image, a symbol, a place, a person, a being, a feeling, or an energy.",
+        "If you are ready, open the door. Enter. Notice what stands before you.",
+        "You do not need to understand. Just look.",
+        "Remember this symbol. It is a message from your unconscious.",
+        "What it means, you may not know immediately. Perhaps later. Perhaps you already know."
+      ]
     },
     "pullquote": {
-      "ru": "",
-      "en": ""
+      "ru": "Посмотри, что ждёт тебя за дверью.\nОткройся неизвестному.",
+      "en": "Look at what is waiting for you behind the door.\nOpen yourself to the unknown."
     },
     "outro": {
       "ru": [],
@@ -1283,11 +1406,11 @@
     },
     "margins": {
       "ru": {
-        "presentCondition": "",
+        "presentCondition": "Настроение: Медитативность, трансовость, контакт с тайным, лёгкая тревога, доверие, магия, тихая сила, загадка.",
         "hiddenProcesses": []
       },
       "en": {
-        "presentCondition": "",
+        "presentCondition": "Mood: Meditative quality, trance, contact with the hidden, slight unease, trust, magic, quiet strength, mystery.",
         "hiddenProcesses": []
       }
     },
@@ -1295,7 +1418,12 @@
       "ru": "",
       "en": ""
     },
-    "_ru_translation_status": "untranslated"
+    "_ru_translation_status": "filled_from_ideas_docx",
+    "contentTitle": {
+      "ru": "Дверь (Откройся неизвестному) Лев",
+      "en": "Door (Open to the Unknown)"
+    },
+    "_ideas_source_section": "85. Дверь (Откройся неизвестному) Лев"
   },
   {
     "id": 21,
@@ -1305,20 +1433,25 @@
       "en": "Emperor"
     },
     "text": {
-      "ru": "Текст карты на русском.",
-      "en": "Card text in English."
+      "ru": "Мир держится на опорах. Там, где есть порядок и структура, можно строить дальше. Столпы не сияют, но они несут вес. Они задают рамку, архитектуру, внутри которой рождается свобода.\nЭта карта напоминает: твоя сила — в ясности и устойчивости. Иногда важно не бежать за импульсом, а выстроить систему, обозначить границы, назвать правила. На прочном фундаменте идеи и дела обретают долгую жизнь.\n\nНастроение: структура, твёрдость, надёжность, защита, ясность\n\nCall to Action: укрепи свой фундамент — задай рамку, которая удержит твою силу. Красивая архитектурная карта с готическими витражами и сюжетами\nПара – Сад Лакшми",
+      "en": "The world rests on supports. Where there is order and structure, something further can be built. Pillars do not shine, but they carry weight. They create the frame, the architecture within which freedom can be born.\n\nThis card reminds you: your strength lies in clarity and stability. Sometimes it is important not to chase impulse, but to build a system, define boundaries, name the rules. On a solid foundation, ideas and works gain longevity.\n\nMood: Structure, firmness, reliability, protection, clarity.\n\nCall to Action: Strengthen your foundation: set the frame that can hold your power."
     },
     "quote": {
       "ru": "",
       "en": ""
     },
     "body": {
-      "ru": [],
-      "en": []
+      "ru": [
+        "Мир держится на опорах. Там, где есть порядок и структура, можно строить дальше. Столпы не сияют, но они несут вес. Они задают рамку, архитектуру, внутри которой рождается свобода.\nЭта карта напоминает: твоя сила — в ясности и устойчивости. Иногда важно не бежать за импульсом, а выстроить систему, обозначить границы, назвать правила. На прочном фундаменте идеи и дела обретают долгую жизнь."
+      ],
+      "en": [
+        "The world rests on supports. Where there is order and structure, something further can be built. Pillars do not shine, but they carry weight. They create the frame, the architecture within which freedom can be born.",
+        "This card reminds you: your strength lies in clarity and stability. Sometimes it is important not to chase impulse, but to build a system, define boundaries, name the rules. On a solid foundation, ideas and works gain longevity."
+      ]
     },
     "pullquote": {
-      "ru": "",
-      "en": ""
+      "ru": "укрепи свой фундамент — задай рамку, которая удержит твою силу. Красивая архитектурная карта с готическими витражами и сюжетами\nПара – Сад Лакшми",
+      "en": "Strengthen your foundation: set the frame that can hold your power."
     },
     "outro": {
       "ru": [],
@@ -1326,11 +1459,11 @@
     },
     "margins": {
       "ru": {
-        "presentCondition": "",
+        "presentCondition": "Настроение: структура, твёрдость, надёжность, защита, ясность",
         "hiddenProcesses": []
       },
       "en": {
-        "presentCondition": "",
+        "presentCondition": "Mood: Structure, firmness, reliability, protection, clarity.",
         "hiddenProcesses": []
       }
     },
@@ -1338,7 +1471,12 @@
       "ru": "",
       "en": ""
     },
-    "_ru_translation_status": "untranslated"
+    "_ru_translation_status": "filled_from_ideas_docx",
+    "contentTitle": {
+      "ru": "Император/трон/тронный зал",
+      "en": "Emperor / Throne / Throne Room"
+    },
+    "_ideas_source_section": "83. Император/трон/тронный зал"
   },
   {
     "id": 22,
@@ -1502,20 +1640,25 @@
       "en": "Fragility"
     },
     "text": {
-      "ru": "Текст карты на русском.",
-      "en": "Card text in English."
+      "ru": "Нам хочется быть сильными. Спокойными. Мудрыми. Но не всегда мы там. Иногда нам просто больно. Эта стратегия — не про великодушие. Она про честность: перед собой, перед ситуацией, перед своей внутренней «маленькой частью». Иногда ты не можешь нести мир — потому что сам разбит. И это не ошибка. Уязвимость — не слабость, если ты её видишь. Если ты способен не отвернуться, а подойти, подставить себе плечо, признать: «я сейчас не герой». Тогда начинается подлинная интеграция.\nСкорость твоего пути определяется не самой сильной, а самой слабой частью. Напитай её. Там — точка роста.\n\nНастроение: Хрупкость, ранимость, живость, тепло к себе, способность обогреть\n\nCall to Action: Сними маску силы. Подойди к себе настоящему. Побудь рядом.\nУвидь слабое. Там начинается сила.",
+      "en": "We want to be strong. Calm. Wise. But we are not always there. Sometimes we are simply in pain. This strategy is not about magnanimity. It is about honesty: with yourself, with the situation, with the small inner part of you. Sometimes you cannot carry peace because you yourself are broken. And that is not a mistake. Vulnerability is not weakness if you can see it. If you are able not to turn away, but to come closer, offer yourself support, and admit, “I am not the hero right now,” then true integration begins.\n\nThe pace of your path is determined not by your strongest part, but by your weakest one. Nourish it. That is where growth begins.\n\nMood: Fragility, sensitivity, aliveness, warmth toward yourself, the ability to warm what is cold.\n\nCall to Action: Take off the mask of strength. Come closer to your real self. Stay nearby.\nSee the weak place. That is where strength begins."
     },
     "quote": {
       "ru": "",
       "en": ""
     },
     "body": {
-      "ru": [],
-      "en": []
+      "ru": [
+        "Нам хочется быть сильными. Спокойными. Мудрыми. Но не всегда мы там. Иногда нам просто больно. Эта стратегия — не про великодушие. Она про честность: перед собой, перед ситуацией, перед своей внутренней «маленькой частью». Иногда ты не можешь нести мир — потому что сам разбит. И это не ошибка. Уязвимость — не слабость, если ты её видишь. Если ты способен не отвернуться, а подойти, подставить себе плечо, признать: «я сейчас не герой». Тогда начинается подлинная интеграция.\nСкорость твоего пути определяется не самой сильной, а самой слабой частью. Напитай её. Там — точка роста."
+      ],
+      "en": [
+        "We want to be strong. Calm. Wise. But we are not always there. Sometimes we are simply in pain. This strategy is not about magnanimity. It is about honesty: with yourself, with the situation, with the small inner part of you. Sometimes you cannot carry peace because you yourself are broken. And that is not a mistake. Vulnerability is not weakness if you can see it. If you are able not to turn away, but to come closer, offer yourself support, and admit, “I am not the hero right now,” then true integration begins.",
+        "The pace of your path is determined not by your strongest part, but by your weakest one. Nourish it. That is where growth begins."
+      ]
     },
     "pullquote": {
-      "ru": "",
-      "en": ""
+      "ru": "Сними маску силы. Подойди к себе настоящему. Побудь рядом.\nУвидь слабое. Там начинается сила.",
+      "en": "Take off the mask of strength. Come closer to your real self. Stay nearby.\nSee the weak place. That is where strength begins."
     },
     "outro": {
       "ru": [],
@@ -1523,11 +1666,11 @@
     },
     "margins": {
       "ru": {
-        "presentCondition": "",
+        "presentCondition": "Настроение: Хрупкость, ранимость, живость, тепло к себе, способность обогреть",
         "hiddenProcesses": []
       },
       "en": {
-        "presentCondition": "",
+        "presentCondition": "Mood: Fragility, sensitivity, aliveness, warmth toward yourself, the ability to warm what is cold.",
         "hiddenProcesses": []
       }
     },
@@ -1535,7 +1678,12 @@
       "ru": "",
       "en": ""
     },
-    "_ru_translation_status": "untranslated"
+    "_ru_translation_status": "filled_from_ideas_docx",
+    "contentTitle": {
+      "ru": "Уязвимость/Хрупкость",
+      "en": "Vulnerability / Fragility"
+    },
+    "_ideas_source_section": "64. Уязвимость/Хрупкость"
   },
   {
     "id": 25,
@@ -1545,20 +1693,36 @@
       "en": "Fulcrum"
     },
     "text": {
-      "ru": "Текст карты на русском.",
-      "en": "Card text in English."
+      "ru": "Иногда всё зыбко. Опоры нет. Внешняя поддержка не работает.\n\nВокруг — туман, внутри — вязкость.\n\nИ вдруг ты вспоминаешь невозможное:\n\nвытянуть себя за волосы из болота.\n\nКак Брон Мюнхгаузен, ты совершаешь то, что не поддаётся законам физики — но подчиняется законам души.\n\nЭто не про логику.\n\nЭто про решимость жить, даже когда не на что опереться.\n\nНастроение: Воля, сверхусилие, вера в себя, чудо, тело\n\nCall to Action: Точка опоры — это ты.",
+      "en": "Sometimes everything is unstable. There is no support. External help does not work.\n\nFog outside, viscosity within.\n\nAnd suddenly you remember the impossible:\n\nto pull yourself out of the swamp by your own hair.\n\nLike Baron Munchausen, you do something that defies the laws of physics but obeys the laws of the soul.\n\nThis is not about logic.\n\nIt is about the resolve to live even when there is nothing to lean on.\n\nMood: Will, supreme effort, faith in yourself, miracle, body.\n\nCall to Action: The fulcrum is you."
     },
     "quote": {
       "ru": "",
       "en": ""
     },
     "body": {
-      "ru": [],
-      "en": []
+      "ru": [
+        "Иногда всё зыбко. Опоры нет. Внешняя поддержка не работает.",
+        "Вокруг — туман, внутри — вязкость.",
+        "И вдруг ты вспоминаешь невозможное:",
+        "вытянуть себя за волосы из болота.",
+        "Как Брон Мюнхгаузен, ты совершаешь то, что не поддаётся законам физики — но подчиняется законам души.",
+        "Это не про логику.",
+        "Это про решимость жить, даже когда не на что опереться."
+      ],
+      "en": [
+        "Sometimes everything is unstable. There is no support. External help does not work.",
+        "Fog outside, viscosity within.",
+        "And suddenly you remember the impossible:",
+        "to pull yourself out of the swamp by your own hair.",
+        "Like Baron Munchausen, you do something that defies the laws of physics but obeys the laws of the soul.",
+        "This is not about logic.",
+        "It is about the resolve to live even when there is nothing to lean on."
+      ]
     },
     "pullquote": {
-      "ru": "",
-      "en": ""
+      "ru": "Точка опоры — это ты.",
+      "en": "The fulcrum is you."
     },
     "outro": {
       "ru": [],
@@ -1566,11 +1730,11 @@
     },
     "margins": {
       "ru": {
-        "presentCondition": "",
+        "presentCondition": "Настроение: Воля, сверхусилие, вера в себя, чудо, тело",
         "hiddenProcesses": []
       },
       "en": {
-        "presentCondition": "",
+        "presentCondition": "Mood: Will, supreme effort, faith in yourself, miracle, body.",
         "hiddenProcesses": []
       }
     },
@@ -1578,7 +1742,12 @@
       "ru": "",
       "en": ""
     },
-    "_ru_translation_status": "untranslated"
+    "_ru_translation_status": "filled_from_ideas_docx",
+    "contentTitle": {
+      "ru": "Точка опоры.",
+      "en": "Fulcrum"
+    },
+    "_ideas_source_section": "70. Точка опоры."
   },
   {
     "id": 26,
@@ -1588,20 +1757,32 @@
       "en": "Goddess"
     },
     "text": {
-      "ru": "Текст карты на русском.",
-      "en": "Card text in English."
+      "ru": "Ты — не только тело, ум, контроль.\nТы — танец, множество проявлений, грация многорукой богини,\nкоторая одновременно держит чашку, запускает фейерверк, пишет стихи и улыбается гостям. Иногда движение идет через преодоление, а иногда - через удовольствие. Эта стратегия — про расширение себя через радость.\nКогда ты не выживаешь, а живёшь.\nКогда ты не сражаешься, а творишь и празднуешь.\nТы способен быть множеством — и не теряться.\nТвоя сила — в лёгкости.\nВ танце. В потоке. В удовольствии.\nПозволь себе игру, наслаждение, праздник бытия,\nгде всё получается не потому что ты напрягся, а потому что соединился с жизнью.\n\nНастроение: Лёгкость, поток, красота, изобилие, движение, женская многозадачность, праздничность, присутствие в моменте\n\nCall to Action: Двигайся через удовольствие",
+      "en": "You are not only body, mind, control.\n\nYou are dance, many manifestations, the grace of a many-armed goddess who can hold a cup, launch fireworks, write poems, and smile at guests all at once.\n\nSometimes movement comes through overcoming, and sometimes through pleasure. This strategy is about expanding yourself through joy.\n\nWhen you are not surviving, but living.\n\nWhen you are not fighting, but creating and celebrating.\n\nYou can be many things and not lose yourself.\n\nYour strength is in lightness.\n\nIn dance. In flow. In pleasure.\n\nAllow yourself play, enjoyment, the celebration of being, where things work not because you strained, but because you joined with life.\n\nMood: Lightness, flow, beauty, abundance, movement, feminine multitasking, festivity, presence in the moment.\n\nCall to Action: Move through pleasure."
     },
     "quote": {
       "ru": "",
       "en": ""
     },
     "body": {
-      "ru": [],
-      "en": []
+      "ru": [
+        "Ты — не только тело, ум, контроль.\nТы — танец, множество проявлений, грация многорукой богини,\nкоторая одновременно держит чашку, запускает фейерверк, пишет стихи и улыбается гостям. Иногда движение идет через преодоление, а иногда - через удовольствие. Эта стратегия — про расширение себя через радость.\nКогда ты не выживаешь, а живёшь.\nКогда ты не сражаешься, а творишь и празднуешь.\nТы способен быть множеством — и не теряться.\nТвоя сила — в лёгкости.\nВ танце. В потоке. В удовольствии.\nПозволь себе игру, наслаждение, праздник бытия,\nгде всё получается не потому что ты напрягся, а потому что соединился с жизнью."
+      ],
+      "en": [
+        "You are not only body, mind, control.",
+        "You are dance, many manifestations, the grace of a many-armed goddess who can hold a cup, launch fireworks, write poems, and smile at guests all at once.",
+        "Sometimes movement comes through overcoming, and sometimes through pleasure. This strategy is about expanding yourself through joy.",
+        "When you are not surviving, but living.",
+        "When you are not fighting, but creating and celebrating.",
+        "You can be many things and not lose yourself.",
+        "Your strength is in lightness.",
+        "In dance. In flow. In pleasure.",
+        "Allow yourself play, enjoyment, the celebration of being, where things work not because you strained, but because you joined with life."
+      ]
     },
     "pullquote": {
-      "ru": "",
-      "en": ""
+      "ru": "Двигайся через удовольствие",
+      "en": "Move through pleasure."
     },
     "outro": {
       "ru": [],
@@ -1609,11 +1790,11 @@
     },
     "margins": {
       "ru": {
-        "presentCondition": "",
+        "presentCondition": "Настроение: Лёгкость, поток, красота, изобилие, движение, женская многозадачность, праздничность, присутствие в моменте",
         "hiddenProcesses": []
       },
       "en": {
-        "presentCondition": "",
+        "presentCondition": "Mood: Lightness, flow, beauty, abundance, movement, feminine multitasking, festivity, presence in the moment.",
         "hiddenProcesses": []
       }
     },
@@ -1621,7 +1802,12 @@
       "ru": "",
       "en": ""
     },
-    "_ru_translation_status": "untranslated"
+    "_ru_translation_status": "filled_from_ideas_docx",
+    "contentTitle": {
+      "ru": "Многорукая богиня",
+      "en": "Many-Armed Goddess"
+    },
+    "_ideas_source_section": "7. Многорукая богиня"
   },
   {
     "id": 27,
@@ -1631,16 +1817,20 @@
       "en": "Grace"
     },
     "text": {
-      "ru": "Текст карты на русском.",
-      "en": "Card text in English."
+      "ru": "Cultivate your gifts — with style. A touch of beauty, wit, or refinement can shift the course of things more than force ever could. Now is the time to polish your talents, write that letter, raise your glass with flair, take the dance class, read the book, compose the music. The muses are watching. Charm them — and yourself — into becoming more. It will do you worlds of good, no matter the outcome.",
+      "en": "Cultivate your gifts—with style. A touch of beauty, wit, or refinement can shift the course of things more than force ever could. Now is the time to polish your talents, write that letter, raise your glass with flair, take the dance class, read the book, compose the music. The muses are watching. Charm them—and yourself—into becoming more. It will do you worlds of good, no matter the outcome."
     },
     "quote": {
       "ru": "",
       "en": ""
     },
     "body": {
-      "ru": [],
-      "en": []
+      "ru": [
+        "Cultivate your gifts — with style. A touch of beauty, wit, or refinement can shift the course of things more than force ever could. Now is the time to polish your talents, write that letter, raise your glass with flair, take the dance class, read the book, compose the music. The muses are watching. Charm them — and yourself — into becoming more. It will do you worlds of good, no matter the outcome."
+      ],
+      "en": [
+        "Cultivate your gifts—with style. A touch of beauty, wit, or refinement can shift the course of things more than force ever could. Now is the time to polish your talents, write that letter, raise your glass with flair, take the dance class, read the book, compose the music. The muses are watching. Charm them—and yourself—into becoming more. It will do you worlds of good, no matter the outcome."
+      ]
     },
     "pullquote": {
       "ru": "",
@@ -1664,7 +1854,12 @@
       "ru": "",
       "en": ""
     },
-    "_ru_translation_status": "untranslated"
+    "_ru_translation_status": "filled_from_ideas_docx",
+    "contentTitle": {
+      "ru": "Изящество",
+      "en": "Grace"
+    },
+    "_ideas_source_section": "45. Изящество"
   },
   {
     "id": 28,
@@ -1751,20 +1946,24 @@
       "en": "Grounding"
     },
     "text": {
-      "ru": "Текст карты на русском.",
-      "en": "Card text in English."
+      "ru": "Пора перестать витaть в идеях — и начать действовать здесь и сейчас. Эта стратегия — про материализацию: ты берёшь абстрактное и делаешь его ощутимым. Мечта становится делом, идея — гвоздём в стене, проект — документом, разговором, шагом. Не важно, как велик план — важно, что ты сделаешь сегодня руками. Даже самый мощный замысел нуждается в опоре: в земле, в теле, в конкретном действии. Доверься простому, делай то, что видно и ощущается.\n\nНастроение: Простота, основательность, телесность, фокус, ритм, ясность, спокойная сила\n\nCall to Action: Опусти идею на землю. Возьми и сделай.",
+      "en": "It is time to stop floating in ideas and begin acting here and now. This strategy is about materialization: you take the abstract and make it tangible. A dream becomes a task, an idea becomes a nail in the wall, a project becomes a document, a conversation, a step. It does not matter how vast the plan is; what matters is what you will do with your hands today. Even the most powerful vision needs support: earth, body, concrete action. Trust the simple. Do what can be seen and felt.\n\nMood: Simplicity, solidity, embodiment, focus, rhythm, clarity, calm strength.\n\nCall to Action: Bring the idea down to earth. Take it and do it."
     },
     "quote": {
       "ru": "",
       "en": ""
     },
     "body": {
-      "ru": [],
-      "en": []
+      "ru": [
+        "Пора перестать витaть в идеях — и начать действовать здесь и сейчас. Эта стратегия — про материализацию: ты берёшь абстрактное и делаешь его ощутимым. Мечта становится делом, идея — гвоздём в стене, проект — документом, разговором, шагом. Не важно, как велик план — важно, что ты сделаешь сегодня руками. Даже самый мощный замысел нуждается в опоре: в земле, в теле, в конкретном действии. Доверься простому, делай то, что видно и ощущается."
+      ],
+      "en": [
+        "It is time to stop floating in ideas and begin acting here and now. This strategy is about materialization: you take the abstract and make it tangible. A dream becomes a task, an idea becomes a nail in the wall, a project becomes a document, a conversation, a step. It does not matter how vast the plan is; what matters is what you will do with your hands today. Even the most powerful vision needs support: earth, body, concrete action. Trust the simple. Do what can be seen and felt."
+      ]
     },
     "pullquote": {
-      "ru": "",
-      "en": ""
+      "ru": "Опусти идею на землю. Возьми и сделай.",
+      "en": "Bring the idea down to earth. Take it and do it."
     },
     "outro": {
       "ru": [],
@@ -1772,11 +1971,11 @@
     },
     "margins": {
       "ru": {
-        "presentCondition": "",
+        "presentCondition": "Настроение: Простота, основательность, телесность, фокус, ритм, ясность, спокойная сила",
         "hiddenProcesses": []
       },
       "en": {
-        "presentCondition": "",
+        "presentCondition": "Mood: Simplicity, solidity, embodiment, focus, rhythm, clarity, calm strength.",
         "hiddenProcesses": []
       }
     },
@@ -1784,7 +1983,12 @@
       "ru": "",
       "en": ""
     },
-    "_ru_translation_status": "untranslated"
+    "_ru_translation_status": "filled_from_ideas_docx",
+    "contentTitle": {
+      "ru": "Заземление",
+      "en": "Grounding"
+    },
+    "_ideas_source_section": "54. Заземление"
   },
   {
     "id": 30,
@@ -1794,20 +1998,25 @@
       "en": "Hearth"
     },
     "text": {
-      "ru": "Текст карты на русском.",
-      "en": "Card text in English."
+      "ru": "В сердце дома горит невидимый огонь. Он не слепит и не зовёт в путь, но дарит тепло тем, кто рядом. Это пространство тишины и присутствия, где простые действия становятся ритуалами: зажечь свечу, вскипятить чай, расставить вещи на свои места.\nЭта карта напоминает: дом — это не стены, а состояние внутреннего очага. Где бы ты ни был, ты можешь зажечь этот огонь внутри и почувствовать себя в центре мира.\n\nНастроение: спокойствие, уют, внутренняя устойчивость, мягкий свет\n\nCall to Action: зажги свой очаг — создай пространство, где тебе и другим тепло быть.",
+      "en": "At the heart of the home, an invisible fire burns. It does not blind or call you onto the road, but it gives warmth to those nearby. This is a space of silence and presence, where simple actions become rituals: lighting a candle, boiling tea, putting things in their places.\n\nThis card reminds you: home is not walls, but a state of the inner hearth. Wherever you are, you can kindle this fire within and feel yourself at the center of the world.\n\nMood: Calm, coziness, inner stability, soft light.\n\nCall to Action: Light your hearth: create a space where it is warm for you and others to be."
     },
     "quote": {
       "ru": "",
       "en": ""
     },
     "body": {
-      "ru": [],
-      "en": []
+      "ru": [
+        "В сердце дома горит невидимый огонь. Он не слепит и не зовёт в путь, но дарит тепло тем, кто рядом. Это пространство тишины и присутствия, где простые действия становятся ритуалами: зажечь свечу, вскипятить чай, расставить вещи на свои места.\nЭта карта напоминает: дом — это не стены, а состояние внутреннего очага. Где бы ты ни был, ты можешь зажечь этот огонь внутри и почувствовать себя в центре мира."
+      ],
+      "en": [
+        "At the heart of the home, an invisible fire burns. It does not blind or call you onto the road, but it gives warmth to those nearby. This is a space of silence and presence, where simple actions become rituals: lighting a candle, boiling tea, putting things in their places.",
+        "This card reminds you: home is not walls, but a state of the inner hearth. Wherever you are, you can kindle this fire within and feel yourself at the center of the world."
+      ]
     },
     "pullquote": {
-      "ru": "",
-      "en": ""
+      "ru": "зажги свой очаг — создай пространство, где тебе и другим тепло быть.",
+      "en": "Light your hearth: create a space where it is warm for you and others to be."
     },
     "outro": {
       "ru": [],
@@ -1815,11 +2024,11 @@
     },
     "margins": {
       "ru": {
-        "presentCondition": "",
+        "presentCondition": "Настроение: спокойствие, уют, внутренняя устойчивость, мягкий свет",
         "hiddenProcesses": []
       },
       "en": {
-        "presentCondition": "",
+        "presentCondition": "Mood: Calm, coziness, inner stability, soft light.",
         "hiddenProcesses": []
       }
     },
@@ -1827,7 +2036,12 @@
       "ru": "",
       "en": ""
     },
-    "_ru_translation_status": "untranslated"
+    "_ru_translation_status": "filled_from_ideas_docx",
+    "contentTitle": {
+      "ru": "Домашний очаг",
+      "en": "Hearth"
+    },
+    "_ideas_source_section": "82. Домашний очаг"
   },
   {
     "id": 31,
@@ -2068,20 +2282,24 @@
       "en": "Independence"
     },
     "text": {
-      "ru": "Текст карты на русском.",
-      "en": "Card text in English."
+      "ru": "Ты не всегда идёшь с группой — и это не ошибка. Эта стратегия — про соединённость с собой в любой динамике. Иногда стоит сесть на общий поезд, иногда — поехать своим ходом. Важно одно: не терять контакт со своими задачами, своими ритмами, своими ценностями из-за контакта с другими людьми. Независимость — это не одиночество и не упрямство. Это способность почувствовать: где твой путь совпадает с общим, а где — расходится. Уметь включаться, когда это питает. И выходить, когда это расходует. Это зрелость быть в мире — и быть собой.\n\nНастроение: Цельность, ясность, внутренняя опора, уважение к себе, зрелость, включённость без растворения\n\nCall to Action: То есть в случае “Независимость” речь про способность быть отдельно от коллектива или независимость внутри коллектива, когда нужно. “Все сейчас в магазин, а у меня все есть, мне в аптеку.“ Также имеется в виду независимость, как отсутствие зависимости - независимость от сигарет или созависимые отношения. В случае “Аутентичность” - про захваченность социальной маской или ролью. “Занимаюсь нелюбимым делом ради статуса/престижа, а хотел бы открыть кафе и делать вкусный рамен” «Независимость» — горизонталь (ты и социум). «Аутентичность» — вертикаль (ты и твоя внутренняя правда).",
+      "en": "You do not always move with the group—and that is not a mistake. This strategy is about staying connected to yourself in any dynamic. Sometimes it is right to board the common train; sometimes it is right to travel on your own. One thing matters: do not lose contact with your own tasks, rhythms, and values because of contact with other people. Independence is not loneliness or stubbornness. It is the ability to feel where your path coincides with the common one, and where it diverges. To join when it nourishes. To leave when it drains. This is the maturity of being in the world while remaining yourself.\n\nMood: Wholeness, clarity, inner support, self-respect, maturity, participation without dissolution.\n\nCall to Action: Do not lose yourself in the collective. Move in your own rhythm."
     },
     "quote": {
       "ru": "",
       "en": ""
     },
     "body": {
-      "ru": [],
-      "en": []
+      "ru": [
+        "Ты не всегда идёшь с группой — и это не ошибка. Эта стратегия — про соединённость с собой в любой динамике. Иногда стоит сесть на общий поезд, иногда — поехать своим ходом. Важно одно: не терять контакт со своими задачами, своими ритмами, своими ценностями из-за контакта с другими людьми. Независимость — это не одиночество и не упрямство. Это способность почувствовать: где твой путь совпадает с общим, а где — расходится. Уметь включаться, когда это питает. И выходить, когда это расходует. Это зрелость быть в мире — и быть собой."
+      ],
+      "en": [
+        "You do not always move with the group—and that is not a mistake. This strategy is about staying connected to yourself in any dynamic. Sometimes it is right to board the common train; sometimes it is right to travel on your own. One thing matters: do not lose contact with your own tasks, rhythms, and values because of contact with other people. Independence is not loneliness or stubbornness. It is the ability to feel where your path coincides with the common one, and where it diverges. To join when it nourishes. To leave when it drains. This is the maturity of being in the world while remaining yourself."
+      ]
     },
     "pullquote": {
-      "ru": "",
-      "en": ""
+      "ru": "То есть в случае “Независимость” речь про способность быть отдельно от коллектива или независимость внутри коллектива, когда нужно. “Все сейчас в магазин, а у меня все есть, мне в аптеку.“ Также имеется в виду независимость, как отсутствие зависимости - независимость от сигарет или созависимые отношения. В случае “Аутентичность” - про захваченность социальной маской или ролью. “Занимаюсь нелюбимым делом ради статуса/престижа, а хотел бы открыть кафе и делать вкусный рамен” «Независимость» — горизонталь (ты и социум). «Аутентичность» — вертикаль (ты и твоя внутренняя правда).",
+      "en": "Do not lose yourself in the collective. Move in your own rhythm."
     },
     "outro": {
       "ru": [],
@@ -2089,19 +2307,24 @@
     },
     "margins": {
       "ru": {
-        "presentCondition": "",
+        "presentCondition": "Настроение: Цельность, ясность, внутренняя опора, уважение к себе, зрелость, включённость без растворения",
         "hiddenProcesses": []
       },
       "en": {
-        "presentCondition": "",
+        "presentCondition": "Mood: Wholeness, clarity, inner support, self-respect, maturity, participation without dissolution.",
         "hiddenProcesses": []
       }
     },
     "oracleComment": {
-      "ru": "",
+      "ru": "Независимость – про способность оставаться на своём пути, даже если группа движется иначе; Аутентичность – не про социум напрямую, а про подлинность перед собой; Свобода от слияния с коллективом vs Свобода от подмены и самопредательства.",
       "en": ""
     },
-    "_ru_translation_status": "untranslated"
+    "_ru_translation_status": "filled_from_ideas_docx",
+    "contentTitle": {
+      "ru": "Независимость Лев",
+      "en": "Independence"
+    },
+    "_ideas_source_section": "62. Независимость Лев"
   },
   {
     "id": 35,
@@ -2352,20 +2575,25 @@
       "en": "Lakshmi's Garden"
     },
     "text": {
-      "ru": "Текст карты на русском.",
-      "en": "Card text in English."
+      "ru": "Энергия жизни переполняет землю. Всё зреет, цветёт, рождается. Это не усилие, а естественный процесс: то, что посеяно, приносит плоды. Сад — это не только место вовне, но и состояние внутри. Изобилие или нехватка начинаются в уме.\nЭта карта напоминает: ты можешь культивировать состояние изобилия так же, как ухаживаешь за садом. Забота, внимание и благодарность превращают скудность в полноту, а ожидание — в урожай.\n\nНастроение: полнота, мягкость, чувственность, тёплая уверенность, лето\n\nCall to Action: взращивай в себе сад изобилия — то, чему даёшь внимание, будет цвести.",
+      "en": "Life energy overflows the earth. Everything ripens, blooms, and is born. This is not effort, but a natural process: what has been sown bears fruit. The garden is not only a place outside, but a state within. Abundance and lack both begin in the mind.\n\nThis card reminds you: you can cultivate a state of abundance as you would tend a garden. Care, attention, and gratitude transform scarcity into fullness, and waiting into harvest.\n\nMood: Fullness, softness, sensuality, warm confidence, summer.\n\nCall to Action: Cultivate the garden of abundance within yourself: what you give attention to will bloom."
     },
     "quote": {
       "ru": "",
       "en": ""
     },
     "body": {
-      "ru": [],
-      "en": []
+      "ru": [
+        "Энергия жизни переполняет землю. Всё зреет, цветёт, рождается. Это не усилие, а естественный процесс: то, что посеяно, приносит плоды. Сад — это не только место вовне, но и состояние внутри. Изобилие или нехватка начинаются в уме.\nЭта карта напоминает: ты можешь культивировать состояние изобилия так же, как ухаживаешь за садом. Забота, внимание и благодарность превращают скудность в полноту, а ожидание — в урожай."
+      ],
+      "en": [
+        "Life energy overflows the earth. Everything ripens, blooms, and is born. This is not effort, but a natural process: what has been sown bears fruit. The garden is not only a place outside, but a state within. Abundance and lack both begin in the mind.",
+        "This card reminds you: you can cultivate a state of abundance as you would tend a garden. Care, attention, and gratitude transform scarcity into fullness, and waiting into harvest."
+      ]
     },
     "pullquote": {
-      "ru": "",
-      "en": ""
+      "ru": "взращивай в себе сад изобилия — то, чему даёшь внимание, будет цвести.",
+      "en": "Cultivate the garden of abundance within yourself: what you give attention to will bloom."
     },
     "outro": {
       "ru": [],
@@ -2373,19 +2601,24 @@
     },
     "margins": {
       "ru": {
-        "presentCondition": "",
+        "presentCondition": "Настроение: полнота, мягкость, чувственность, тёплая уверенность, лето",
         "hiddenProcesses": []
       },
       "en": {
-        "presentCondition": "",
+        "presentCondition": "Mood: Fullness, softness, sensuality, warm confidence, summer.",
         "hiddenProcesses": []
       }
     },
     "oracleComment": {
-      "ru": "",
+      "ru": "Пара - Император taken by sveta У нас была идея делать 4 сезона. 4 карты с временами года. Но, получается что зиму и весну(new beginning) уже нарисовали 2 разных иллюстратора и кажется их не спарить по сезонам визуально, но может сделать пасхалку и сделать одинаковое дерево в «буквице» но в разных сезонах. С осенью надо только решить",
       "en": ""
     },
-    "_ru_translation_status": "untranslated"
+    "_ru_translation_status": "filled_from_ideas_docx",
+    "contentTitle": {
+      "ru": "Сад Лакшми",
+      "en": "Lakshmi’s Garden"
+    },
+    "_ideas_source_section": "81. Сад Лакшми taken by sveta"
   },
   {
     "id": 39,
@@ -2472,20 +2705,25 @@
       "en": "Lovers"
     },
     "text": {
-      "ru": "Текст карты на русском.",
-      "en": "Card text in English."
+      "ru": "На перепутье путей ты встречаешь другого. Выбор — не только о том, куда идти, но и с кем идти.\nЭта карта напоминает: сила рождается не в одиночестве, а в соединении. Союз — это риск открыться, довериться, переплести свою дорогу с чужой. В переплетении тел и душ возникает особый плод — близость, которая не может появиться в одиночку.\n\nНастроение: любовь, близость, теплота, мужское и женское, единство противоположностей, нежная чувственность, сексуальность\n\nCall to Action: Посмотри в свои любовные отношения, там есть нужный ресурс.",
+      "en": "At a crossroads of paths, you meet another. The choice is not only about where to go, but whom to go with.\n\nThis card reminds you: strength is born not in isolation, but in union. A bond is the risk of opening, trusting, and weaving your road together with another’s. In the intertwining of bodies and souls, a special fruit appears: intimacy, which cannot arise alone.\n\nMood: Love, intimacy, warmth, masculine and feminine, union of opposites, tender sensuality, sexuality.\n\nCall to Action: Look into your love relationship; there is a needed resource there."
     },
     "quote": {
       "ru": "",
       "en": ""
     },
     "body": {
-      "ru": [],
-      "en": []
+      "ru": [
+        "На перепутье путей ты встречаешь другого. Выбор — не только о том, куда идти, но и с кем идти.\nЭта карта напоминает: сила рождается не в одиночестве, а в соединении. Союз — это риск открыться, довериться, переплести свою дорогу с чужой. В переплетении тел и душ возникает особый плод — близость, которая не может появиться в одиночку."
+      ],
+      "en": [
+        "At a crossroads of paths, you meet another. The choice is not only about where to go, but whom to go with.",
+        "This card reminds you: strength is born not in isolation, but in union. A bond is the risk of opening, trusting, and weaving your road together with another’s. In the intertwining of bodies and souls, a special fruit appears: intimacy, which cannot arise alone."
+      ]
     },
     "pullquote": {
-      "ru": "",
-      "en": ""
+      "ru": "Посмотри в свои любовные отношения, там есть нужный ресурс.",
+      "en": "Look into your love relationship; there is a needed resource there."
     },
     "outro": {
       "ru": [],
@@ -2493,11 +2731,11 @@
     },
     "margins": {
       "ru": {
-        "presentCondition": "",
+        "presentCondition": "Настроение: любовь, близость, теплота, мужское и женское, единство противоположностей, нежная чувственность, сексуальность",
         "hiddenProcesses": []
       },
       "en": {
-        "presentCondition": "",
+        "presentCondition": "Mood: Love, intimacy, warmth, masculine and feminine, union of opposites, tender sensuality, sexuality.",
         "hiddenProcesses": []
       }
     },
@@ -2505,7 +2743,12 @@
       "ru": "",
       "en": ""
     },
-    "_ru_translation_status": "untranslated"
+    "_ru_translation_status": "filled_from_ideas_docx",
+    "contentTitle": {
+      "ru": "Lovers",
+      "en": "Lovers"
+    },
+    "_ideas_source_section": "76. Lovers taken by sveta"
   },
   {
     "id": 41,
@@ -2515,16 +2758,26 @@
       "en": "Manifestation"
     },
     "text": {
-      "ru": "Текст карты на русском.",
-      "en": "Card text in English."
+      "ru": "Стратегия про как не бояться высказаться, быть заметным, свободным в своих проявлениях\n\nТы хочешь быть увиденным, но боишься. Это нормально. Но если ты не проявишь себя - тебя не найдут. Мир не читает мысли.\n\nСмелость - не отсутствие страха, а выбор действовать, несмотря на него. Покажи себя. Мир не всегда готов, но ты - уже готов.\n\nПример.Ты художник, но всё держишь в столе, потому что «недостаточно хорошо». Или тебе есть что сказать в группе, но ты молчишь, думая, что кто-то умнее. Эта карта говорит: пора выйти на свет. Твоя задача - не быть лучшим, а быть собой.",
+      "en": "A strategy for not being afraid to speak, to be visible, to be free in your expression.\n\nYou want to be seen, but you are afraid. That is normal. But if you do not manifest yourself, you will not be found. The world does not read minds.\n\nCourage is not the absence of fear, but the choice to act despite it. Show yourself. The world may not always be ready, but you are already ready.\n\nExample: you are an artist, but you keep everything in a drawer because it is “not good enough.” Or you have something to say in a group, but remain silent because you think someone else is smarter. This card says: it is time to step into the light. Your task is not to be the best, but to be yourself."
     },
     "quote": {
       "ru": "",
       "en": ""
     },
     "body": {
-      "ru": [],
-      "en": []
+      "ru": [
+        "Стратегия про как не бояться высказаться, быть заметным, свободным в своих проявлениях",
+        "Ты хочешь быть увиденным, но боишься. Это нормально. Но если ты не проявишь себя - тебя не найдут. Мир не читает мысли.",
+        "Смелость - не отсутствие страха, а выбор действовать, несмотря на него. Покажи себя. Мир не всегда готов, но ты - уже готов.",
+        "Пример.Ты художник, но всё держишь в столе, потому что «недостаточно хорошо». Или тебе есть что сказать в группе, но ты молчишь, думая, что кто-то умнее. Эта карта говорит: пора выйти на свет. Твоя задача - не быть лучшим, а быть собой."
+      ],
+      "en": [
+        "A strategy for not being afraid to speak, to be visible, to be free in your expression.",
+        "You want to be seen, but you are afraid. That is normal. But if you do not manifest yourself, you will not be found. The world does not read minds.",
+        "Courage is not the absence of fear, but the choice to act despite it. Show yourself. The world may not always be ready, but you are already ready.",
+        "Example: you are an artist, but you keep everything in a drawer because it is “not good enough.” Or you have something to say in a group, but remain silent because you think someone else is smarter. This card says: it is time to step into the light. Your task is not to be the best, but to be yourself."
+      ]
     },
     "pullquote": {
       "ru": "",
@@ -2548,7 +2801,12 @@
       "ru": "",
       "en": ""
     },
-    "_ru_translation_status": "untranslated"
+    "_ru_translation_status": "filled_from_ideas_docx",
+    "contentTitle": {
+      "ru": "Проявленность",
+      "en": "Manifestation"
+    },
+    "_ideas_source_section": "40. Проявленность"
   },
   {
     "id": 42,
@@ -2714,20 +2972,40 @@
       "en": "New World"
     },
     "text": {
-      "ru": "Текст карты на русском.",
-      "en": "Card text in English."
+      "ru": "Мир, к которому ты привык, может уже умирать.\nТы это чувствуешь — но пытаешься держаться. За старые роли, связи, системы.\n\nНо жизнь не стоит. Она идёт. Она всегда идёт — вперёд.\n\nЭта стратегия — о том, чтобы не застревать в умирающем. Не быть ригидным.\n\nСтарые формы, привычные опоры, чёткие сценарии — всё может измениться.\nИ если ты хочешь остаться с жизнью — тебе придётся идти туда, где она сейчас.\n\nГде не ясно. Где незнакомо. Где живо.\n\nПусть ты не знаешь, что будет — ты знаешь, что старое уже уходит.\nИ у тебя есть выбор: сжаться в страхе или шагнуть в Новый Мир.\n\nНе потому что ты готов.\nА потому что иначе ты останешься в прошлом.\n\nНастроение: движение, живая неизвестность, надежда, преодоление окаменелости\n\nCall to Action: Преодолей ригидность. Пойди за жизнью.\nТвой новый мир уже зовёт тебя. Похожие стратегии:\nГибкость, Прыжок веры Масти:\nЭфир (переход), Вода (доверие жизни, эмоциональное опускание)",
+      "en": "The world you are used to may already be dying.\n\nYou feel it, but you still try to hold on: to old roles, ties, systems.\n\nBut life does not stand still. It moves. It always moves forward.\n\nThis strategy is about not getting stuck in what is dying. Do not become rigid.\n\nOld forms, familiar supports, clear scripts—everything can change.\n\nAnd if you want to remain with life, you will have to go where it is now.\n\nWhere it is unclear. Where it is unfamiliar. Where it is alive.\n\nYou may not know what will happen, but you know the old is already leaving.\n\nYou have a choice: contract in fear or step into the New World.\n\nNot because you are ready.\n\nBecause otherwise you will remain in the past.\n\nMood: Movement, living uncertainty, hope, overcoming petrification.\n\nCall to Action: Overcome rigidity. Follow life.\nYour new world is already calling you."
     },
     "quote": {
       "ru": "",
       "en": ""
     },
     "body": {
-      "ru": [],
-      "en": []
+      "ru": [
+        "Мир, к которому ты привык, может уже умирать.\nТы это чувствуешь — но пытаешься держаться. За старые роли, связи, системы.",
+        "Но жизнь не стоит. Она идёт. Она всегда идёт — вперёд.",
+        "Эта стратегия — о том, чтобы не застревать в умирающем. Не быть ригидным.",
+        "Старые формы, привычные опоры, чёткие сценарии — всё может измениться.\nИ если ты хочешь остаться с жизнью — тебе придётся идти туда, где она сейчас.",
+        "Где не ясно. Где незнакомо. Где живо.",
+        "Пусть ты не знаешь, что будет — ты знаешь, что старое уже уходит.\nИ у тебя есть выбор: сжаться в страхе или шагнуть в Новый Мир.",
+        "Не потому что ты готов.\nА потому что иначе ты останешься в прошлом."
+      ],
+      "en": [
+        "The world you are used to may already be dying.",
+        "You feel it, but you still try to hold on: to old roles, ties, systems.",
+        "But life does not stand still. It moves. It always moves forward.",
+        "This strategy is about not getting stuck in what is dying. Do not become rigid.",
+        "Old forms, familiar supports, clear scripts—everything can change.",
+        "And if you want to remain with life, you will have to go where it is now.",
+        "Where it is unclear. Where it is unfamiliar. Where it is alive.",
+        "You may not know what will happen, but you know the old is already leaving.",
+        "You have a choice: contract in fear or step into the New World.",
+        "Not because you are ready.",
+        "Because otherwise you will remain in the past."
+      ]
     },
     "pullquote": {
-      "ru": "",
-      "en": ""
+      "ru": "Преодолей ригидность. Пойди за жизнью.\nТвой новый мир уже зовёт тебя. Похожие стратегии:\nГибкость, Прыжок веры Масти:\nЭфир (переход), Вода (доверие жизни, эмоциональное опускание)",
+      "en": "Overcome rigidity. Follow life.\nYour new world is already calling you."
     },
     "outro": {
       "ru": [],
@@ -2735,11 +3013,11 @@
     },
     "margins": {
       "ru": {
-        "presentCondition": "",
+        "presentCondition": "Настроение: движение, живая неизвестность, надежда, преодоление окаменелости",
         "hiddenProcesses": []
       },
       "en": {
-        "presentCondition": "",
+        "presentCondition": "Mood: Movement, living uncertainty, hope, overcoming petrification.",
         "hiddenProcesses": []
       }
     },
@@ -2747,7 +3025,12 @@
       "ru": "",
       "en": ""
     },
-    "_ru_translation_status": "untranslated"
+    "_ru_translation_status": "filled_from_ideas_docx",
+    "contentTitle": {
+      "ru": "Новый мир",
+      "en": "New World"
+    },
+    "_ideas_source_section": "84. Новый мир"
   },
   {
     "id": 45,
@@ -2757,16 +3040,26 @@
       "en": "Now"
     },
     "text": {
-      "ru": "Текст карты на русском.",
-      "en": "Card text in English."
+      "ru": "Если ты думаешь когда ЭТО сделать, сделай это прямо сейчас.\n\nВизуальная идея - добавить бернеровские часы с надписью NOW.\n\nПро важность момента сейчас,  ни про решимость. это даже не прокрастинация, с чем эта карта борется, а я бы сказал overthinking и нерешительность. Ты думаешь я еще не готов, он еще не готов, и лучше еще подумать. Но почти в каждый момент, есть что-то что можно пойти и сделать. А иногда лучше сделать сейчас будучи не готовым, чем потом. Это такое азартное чувство, а пойдем захуячим!\n\nПро образ мы думали часы (наручные или настенные), где вместо стрелки написано NOW - это прикол Burning man, там все используют такие часы, как напоминание, что самое важное всегда здесь и сейчас. Второй вариант использования - ты хочешь что-то сделать, смотришь на часы - а там надпись NOW,  то есть буквально - вставай и иди. То есть это одновременно обе эти стратегии, но базовая - вернуться в настоящий момент и начать действовать из него.",
+      "en": "If you are thinking about when to do this, do it right now.\n\nVisual idea: add Burning Man-style clocks with the word NOW.\n\nThis is about the importance of the present moment, not quite about resolve. The card fights not even procrastination, but rather overthinking and indecision. You think: I am not ready yet, he is not ready yet, maybe it is better to think some more. But in almost every moment, there is something you can go and do. Sometimes it is better to do it now while unprepared than later. It has that charged feeling of: let’s go and do the thing.\n\nFor the image we considered a clock—wristwatch or wall clock—where instead of hands it says NOW. It is a Burning Man joke: people use such clocks as a reminder that the most important time is always here and now. A second use: you want to do something, look at the clock, and it says NOW; literally, get up and go. So it carries both strategies at once, but the basic one is to return to the present moment and begin acting from it."
     },
     "quote": {
       "ru": "",
       "en": ""
     },
     "body": {
-      "ru": [],
-      "en": []
+      "ru": [
+        "Если ты думаешь когда ЭТО сделать, сделай это прямо сейчас.",
+        "Визуальная идея - добавить бернеровские часы с надписью NOW.",
+        "Про важность момента сейчас,  ни про решимость. это даже не прокрастинация, с чем эта карта борется, а я бы сказал overthinking и нерешительность. Ты думаешь я еще не готов, он еще не готов, и лучше еще подумать. Но почти в каждый момент, есть что-то что можно пойти и сделать. А иногда лучше сделать сейчас будучи не готовым, чем потом. Это такое азартное чувство, а пойдем захуячим!",
+        "Про образ мы думали часы (наручные или настенные), где вместо стрелки написано NOW - это прикол Burning man, там все используют такие часы, как напоминание, что самое важное всегда здесь и сейчас. Второй вариант использования - ты хочешь что-то сделать, смотришь на часы - а там надпись NOW,  то есть буквально - вставай и иди. То есть это одновременно обе эти стратегии, но базовая - вернуться в настоящий момент и начать действовать из него."
+      ],
+      "en": [
+        "If you are thinking about when to do this, do it right now.",
+        "Visual idea: add Burning Man-style clocks with the word NOW.",
+        "This is about the importance of the present moment, not quite about resolve. The card fights not even procrastination, but rather overthinking and indecision. You think: I am not ready yet, he is not ready yet, maybe it is better to think some more. But in almost every moment, there is something you can go and do. Sometimes it is better to do it now while unprepared than later. It has that charged feeling of: let’s go and do the thing.",
+        "For the image we considered a clock—wristwatch or wall clock—where instead of hands it says NOW. It is a Burning Man joke: people use such clocks as a reminder that the most important time is always here and now. A second use: you want to do something, look at the clock, and it says NOW; literally, get up and go. So it carries both strategies at once, but the basic one is to return to the present moment and begin acting from it."
+      ]
     },
     "pullquote": {
       "ru": "",
@@ -2790,7 +3083,12 @@
       "ru": "",
       "en": ""
     },
-    "_ru_translation_status": "untranslated"
+    "_ru_translation_status": "filled_from_ideas_docx",
+    "contentTitle": {
+      "ru": "NOW",
+      "en": "NOW"
+    },
+    "_ideas_source_section": "24. NOW"
   },
   {
     "id": 46,
@@ -2879,20 +3177,28 @@
       "en": "Pause / The Void"
     },
     "text": {
-      "ru": "Текст карты на русском.",
-      "en": "Card text in English."
+      "ru": "Ты сделал всё, что мог. Ты прошёл этап. Теперь — пауза. Не потому что ты пассивен, а потому что дальше — не твоя очередь. Эта стратегия — про доверие к моменту, где нельзя ускорить рост. Ты завис в воздухе, как Повешенный. Или стоишь на границе, как Aditya, в архетипе пустоты. Это нелегко — удерживать себя в неведении, не скатываться в тревогу, не заполнять паузу лишним. Но именно в этой тишине что-то собирается. Это место — не про действие. Это место — про выносливость духа.\nПро способность быть в пустом, не пытаясь его заменить.\n\nвысшая точка на качеле\n\nНастроение: Зависание, пустота, тишина, напряжённая готовность, терпение, доверие, медитация, сила в недеянии\n\nCall to Action: Ничего не происходит — и это тоже движение. Побудь. Выдержи.\nНе торопи. Побудь. Дополнение\nЭта стратегия описывает лиминальное состояние — особое пространство перехода, когда завершённый этап уже остался позади, а новый ещё не оформлен. Некое такое “между мирами”: момент, когда старые формы рушатся или утрачивают силу, но контуры будущего пока не различимы. В такой неопределённости рождается задача не столько действовать, сколько выдерживать. Не наполнять пустоту тревожными движениями, не стремиться искусственно ускорить процесс, а довериться паузе как опыту и встретиться с ней напрямую. Парадокс в том, что именно в этой остановке бессознательное продолжает работать — но уже не через активный «ян», а через скрытые процессы. Из этой тишины может постепенно прорасти инсайт или обозначиться новое направление. Стратегия же состоит в том, чтобы выдержать промежуток и позволить процессу развернуться в своём темпе.",
+      "en": "You have done everything you could. You have passed through a stage. Now: pause. Not because you are passive, but because it is no longer your turn. This strategy is about trusting the moment in which growth cannot be accelerated. You are suspended in the air, like the Hanged Man. Or standing on a threshold, like Aditya, in the archetype of the void. It is not easy to hold yourself in not-knowing, not slide into anxiety, not fill the pause with excess. But in this silence, something is assembling. This place is not about action. It is about endurance of spirit.\n\nThe capacity to be in emptiness without trying to replace it.\n\nThe highest point of the swing.\n\nThis strategy describes a liminal state: a special space of transition, when a completed stage is already behind you, but the new one has not yet taken shape. A kind of “between worlds”: a moment when old forms collapse or lose force, while the contours of the future are still indistinct. In such uncertainty, the task is not so much to act as to endure. Not to fill the void with anxious movement, not to artificially accelerate the process, but to trust the pause as an experience and meet it directly. The paradox is that in this very stillness, the unconscious continues to work—not through active yang, but through hidden processes. From this silence, insight or a new direction may gradually emerge. The strategy is to withstand the interval and allow the process to unfold at its own pace.\n\nMood: Suspension, emptiness, silence, tense readiness, patience, trust, meditation, strength in non-action.\n\nCall to Action: Nothing is happening—and that, too, is movement. Stay. Endure.\nDo not rush it. Stay."
     },
     "quote": {
       "ru": "",
       "en": ""
     },
     "body": {
-      "ru": [],
-      "en": []
+      "ru": [
+        "Ты сделал всё, что мог. Ты прошёл этап. Теперь — пауза. Не потому что ты пассивен, а потому что дальше — не твоя очередь. Эта стратегия — про доверие к моменту, где нельзя ускорить рост. Ты завис в воздухе, как Повешенный. Или стоишь на границе, как Aditya, в архетипе пустоты. Это нелегко — удерживать себя в неведении, не скатываться в тревогу, не заполнять паузу лишним. Но именно в этой тишине что-то собирается. Это место — не про действие. Это место — про выносливость духа.\nПро способность быть в пустом, не пытаясь его заменить.",
+        "высшая точка на качеле"
+      ],
+      "en": [
+        "You have done everything you could. You have passed through a stage. Now: pause. Not because you are passive, but because it is no longer your turn. This strategy is about trusting the moment in which growth cannot be accelerated. You are suspended in the air, like the Hanged Man. Or standing on a threshold, like Aditya, in the archetype of the void. It is not easy to hold yourself in not-knowing, not slide into anxiety, not fill the pause with excess. But in this silence, something is assembling. This place is not about action. It is about endurance of spirit.",
+        "The capacity to be in emptiness without trying to replace it.",
+        "The highest point of the swing.",
+        "This strategy describes a liminal state: a special space of transition, when a completed stage is already behind you, but the new one has not yet taken shape. A kind of “between worlds”: a moment when old forms collapse or lose force, while the contours of the future are still indistinct. In such uncertainty, the task is not so much to act as to endure. Not to fill the void with anxious movement, not to artificially accelerate the process, but to trust the pause as an experience and meet it directly. The paradox is that in this very stillness, the unconscious continues to work—not through active yang, but through hidden processes. From this silence, insight or a new direction may gradually emerge. The strategy is to withstand the interval and allow the process to unfold at its own pace."
+      ]
     },
     "pullquote": {
-      "ru": "",
-      "en": ""
+      "ru": "Ничего не происходит — и это тоже движение. Побудь. Выдержи.\nНе торопи. Побудь. Дополнение\nЭта стратегия описывает лиминальное состояние — особое пространство перехода, когда завершённый этап уже остался позади, а новый ещё не оформлен. Некое такое “между мирами”: момент, когда старые формы рушатся или утрачивают силу, но контуры будущего пока не различимы. В такой неопределённости рождается задача не столько действовать, сколько выдерживать. Не наполнять пустоту тревожными движениями, не стремиться искусственно ускорить процесс, а довериться паузе как опыту и встретиться с ней напрямую. Парадокс в том, что именно в этой остановке бессознательное продолжает работать — но уже не через активный «ян», а через скрытые процессы. Из этой тишины может постепенно прорасти инсайт или обозначиться новое направление. Стратегия же состоит в том, чтобы выдержать промежуток и позволить процессу развернуться в своём темпе.",
+      "en": "Nothing is happening—and that, too, is movement. Stay. Endure.\nDo not rush it. Stay."
     },
     "outro": {
       "ru": [],
@@ -2900,11 +3206,11 @@
     },
     "margins": {
       "ru": {
-        "presentCondition": "",
+        "presentCondition": "Настроение: Зависание, пустота, тишина, напряжённая готовность, терпение, доверие, медитация, сила в недеянии",
         "hiddenProcesses": []
       },
       "en": {
-        "presentCondition": "",
+        "presentCondition": "Mood: Suspension, emptiness, silence, tense readiness, patience, trust, meditation, strength in non-action.",
         "hiddenProcesses": []
       }
     },
@@ -2912,7 +3218,12 @@
       "ru": "",
       "en": ""
     },
-    "_ru_translation_status": "untranslated"
+    "_ru_translation_status": "filled_from_ideas_docx",
+    "contentTitle": {
+      "ru": "Пауза в пустоте",
+      "en": "Pause in the Void"
+    },
+    "_ideas_source_section": "60. Пауза в пустоте"
   },
   {
     "id": 48,
@@ -3291,20 +3602,24 @@
       "en": "Responsibility"
     },
     "text": {
-      "ru": "Текст карты на русском.",
-      "en": "Card text in English."
+      "ru": "Иногда кажется, что что-то вне зоны твоего влияния. Что обстоятельства, другие люди, «жизнь такая» управляют ходом событий. Но сила приходит в тот момент, когда ты выбираешь взять ответственность — не за всех, а за свою позицию, за своё движение, за своё «я выбираю». Это не про вину и не про тяжесть — это лайфхак: почувствуй, что всё зависит от тебя. Даже если нет. Просто почувствуй. И иди вперёд на этой энергии. Потому что она даёт внутренний контроль, вектор, способность влиять, творить, создавать условия.\n\nНастроение: Сила, зрелость, твёрдость, включённость, ясность, внутренняя опора\n\nCall to Action: Возьми руль. Дорога ждёт. Идея - взять ту же карточку, что и Атлас, но с другим текстом.",
+      "en": "Sometimes it seems that something is outside your zone of influence. That circumstances, other people, or “life as it is” control the course of events. But strength arrives at the moment when you choose to take responsibility—not for everyone, but for your position, your movement, your “I choose.” This is not about guilt or heaviness. It is a life hack: feel that everything depends on you. Even if it does not. Simply feel it. Then move forward on that energy. It gives inner control, direction, the capacity to influence, create, and shape conditions.\n\nMood: Strength, maturity, firmness, engagement, clarity, inner support.\n\nCall to Action: Take the wheel. The road is waiting."
     },
     "quote": {
       "ru": "",
       "en": ""
     },
     "body": {
-      "ru": [],
-      "en": []
+      "ru": [
+        "Иногда кажется, что что-то вне зоны твоего влияния. Что обстоятельства, другие люди, «жизнь такая» управляют ходом событий. Но сила приходит в тот момент, когда ты выбираешь взять ответственность — не за всех, а за свою позицию, за своё движение, за своё «я выбираю». Это не про вину и не про тяжесть — это лайфхак: почувствуй, что всё зависит от тебя. Даже если нет. Просто почувствуй. И иди вперёд на этой энергии. Потому что она даёт внутренний контроль, вектор, способность влиять, творить, создавать условия."
+      ],
+      "en": [
+        "Sometimes it seems that something is outside your zone of influence. That circumstances, other people, or “life as it is” control the course of events. But strength arrives at the moment when you choose to take responsibility—not for everyone, but for your position, your movement, your “I choose.” This is not about guilt or heaviness. It is a life hack: feel that everything depends on you. Even if it does not. Simply feel it. Then move forward on that energy. It gives inner control, direction, the capacity to influence, create, and shape conditions."
+      ]
     },
     "pullquote": {
-      "ru": "",
-      "en": ""
+      "ru": "Возьми руль. Дорога ждёт. Идея - взять ту же карточку, что и Атлас, но с другим текстом.",
+      "en": "Take the wheel. The road is waiting."
     },
     "outro": {
       "ru": [],
@@ -3312,11 +3627,11 @@
     },
     "margins": {
       "ru": {
-        "presentCondition": "",
+        "presentCondition": "Настроение: Сила, зрелость, твёрдость, включённость, ясность, внутренняя опора",
         "hiddenProcesses": []
       },
       "en": {
-        "presentCondition": "",
+        "presentCondition": "Mood: Strength, maturity, firmness, engagement, clarity, inner support.",
         "hiddenProcesses": []
       }
     },
@@ -3324,7 +3639,12 @@
       "ru": "",
       "en": ""
     },
-    "_ru_translation_status": "untranslated"
+    "_ru_translation_status": "filled_from_ideas_docx",
+    "contentTitle": {
+      "ru": "Взять ответственность Лев",
+      "en": "Take Responsibility"
+    },
+    "_ideas_source_section": "55. Взять ответственность Лев"
   },
   {
     "id": 54,
@@ -3413,16 +3733,22 @@
       "en": "Shaman"
     },
     "text": {
-      "ru": "Текст карты на русском.",
-      "en": "Card text in English."
+      "ru": "Идея для визуала - рамка орнаменты племени Шипибо и можно не только шипибо, но взять и мексиканские и бразильские шаманские визуальные традиции.  По центру старая женщина с резной трубкой в руках.\n\nМудрость это не знание, это определенное состояние, открытости, включенности в мир, соединенности с собой. Когда человек приходит в это состояние, ответы на вопросы больше не требуют измышлений, они приходят как очевидные истины. Оракул в этом месте говорит - я не дам тебе ответ, ты должен отправиться в путешествие за мудростью и ответ придет сам.",
+      "en": "Visual idea: a frame with Shipibo ornaments, and not only Shipibo—one could also draw from Mexican and Brazilian shamanic visual traditions. At the center, an old woman holding a carved pipe.\n\nWisdom is not knowledge. It is a particular state of openness, participation in the world, and connection with oneself. When a person enters this state, answers no longer require speculation; they arrive as obvious truths. At this point the oracle says: I will not give you the answer. You must set out on a journey toward wisdom, and the answer will come by itself."
     },
     "quote": {
       "ru": "",
       "en": ""
     },
     "body": {
-      "ru": [],
-      "en": []
+      "ru": [
+        "Идея для визуала - рамка орнаменты племени Шипибо и можно не только шипибо, но взять и мексиканские и бразильские шаманские визуальные традиции.  По центру старая женщина с резной трубкой в руках.",
+        "Мудрость это не знание, это определенное состояние, открытости, включенности в мир, соединенности с собой. Когда человек приходит в это состояние, ответы на вопросы больше не требуют измышлений, они приходят как очевидные истины. Оракул в этом месте говорит - я не дам тебе ответ, ты должен отправиться в путешествие за мудростью и ответ придет сам."
+      ],
+      "en": [
+        "Visual idea: a frame with Shipibo ornaments, and not only Shipibo—one could also draw from Mexican and Brazilian shamanic visual traditions. At the center, an old woman holding a carved pipe.",
+        "Wisdom is not knowledge. It is a particular state of openness, participation in the world, and connection with oneself. When a person enters this state, answers no longer require speculation; they arrive as obvious truths. At this point the oracle says: I will not give you the answer. You must set out on a journey toward wisdom, and the answer will come by itself."
+      ]
     },
     "pullquote": {
       "ru": "",
@@ -3446,7 +3772,12 @@
       "ru": "",
       "en": ""
     },
-    "_ru_translation_status": "untranslated"
+    "_ru_translation_status": "filled_from_ideas_docx",
+    "contentTitle": {
+      "ru": "Шаманская карта, seek wisdom",
+      "en": "Shamanic Card / Seek Wisdom"
+    },
+    "_ideas_source_section": "42. Шаманская карта, seek wisdom"
   },
   {
     "id": 56,
@@ -3456,16 +3787,30 @@
       "en": "Skull"
     },
     "text": {
-      "ru": "Текст карты на русском.",
-      "en": "Card text in English."
+      "ru": "Смерть. Череп (можно неизвестного существа или человеческий, но с тремя глазницами). Трава и цветы из глазниц.\n\nУ черепа есть для нас два дара, можем использовать один или оба\n\nВстретиться с ощущением собственной смертности. Memento mori как он есть. Смерть неизбежна и может наступить в любой момент.\n\nСоединенность с этой простой истинной возвращает тебя в настоящий момент, дает возможность правильно расставить приоритеты.\n\nВторой дар это возможность прожить процесс смерти, пока что не целиком, а только частично, похоронив одну из своих субличностей или представлений о себе.\n\nНужно прожить смерть прошлого себя себя, . Умереть, закопать и отгоревать и только тогда по-настоящему освободится место для чего-то нового.",
+      "en": "Death. A skull—perhaps of an unknown creature, or human, but with three eye sockets. Grass and flowers grow from the sockets.\n\nThe skull has two gifts for us; we may use one or both.\n\nThe first is to meet the sense of one’s own mortality. Memento mori as it is. Death is inevitable and may come at any moment.\n\nConnection with this simple truth returns you to the present moment and makes it possible to set priorities correctly.\n\nThe second gift is the possibility of undergoing the process of death—not entirely, but partially—by burying one of your subpersonalities or ideas about yourself.\n\nYou must live through the death of your former self. Die, bury it, and mourn it. Only then will real space be freed for something new."
     },
     "quote": {
       "ru": "",
       "en": ""
     },
     "body": {
-      "ru": [],
-      "en": []
+      "ru": [
+        "Смерть. Череп (можно неизвестного существа или человеческий, но с тремя глазницами). Трава и цветы из глазниц.",
+        "У черепа есть для нас два дара, можем использовать один или оба",
+        "Встретиться с ощущением собственной смертности. Memento mori как он есть. Смерть неизбежна и может наступить в любой момент.",
+        "Соединенность с этой простой истинной возвращает тебя в настоящий момент, дает возможность правильно расставить приоритеты.",
+        "Второй дар это возможность прожить процесс смерти, пока что не целиком, а только частично, похоронив одну из своих субличностей или представлений о себе.",
+        "Нужно прожить смерть прошлого себя себя, . Умереть, закопать и отгоревать и только тогда по-настоящему освободится место для чего-то нового."
+      ],
+      "en": [
+        "Death. A skull—perhaps of an unknown creature, or human, but with three eye sockets. Grass and flowers grow from the sockets.",
+        "The skull has two gifts for us; we may use one or both.",
+        "The first is to meet the sense of one’s own mortality. Memento mori as it is. Death is inevitable and may come at any moment.",
+        "Connection with this simple truth returns you to the present moment and makes it possible to set priorities correctly.",
+        "The second gift is the possibility of undergoing the process of death—not entirely, but partially—by burying one of your subpersonalities or ideas about yourself.",
+        "You must live through the death of your former self. Die, bury it, and mourn it. Only then will real space be freed for something new."
+      ]
     },
     "pullquote": {
       "ru": "",
@@ -3489,7 +3834,12 @@
       "ru": "",
       "en": ""
     },
-    "_ru_translation_status": "untranslated"
+    "_ru_translation_status": "filled_from_ideas_docx",
+    "contentTitle": {
+      "ru": "Череп",
+      "en": "Skull"
+    },
+    "_ideas_source_section": "19.Череп"
   },
   {
     "id": 57,
@@ -3742,20 +4092,25 @@
       "en": "Test Initiation"
     },
     "text": {
-      "ru": "Текст карты на русском.",
-      "en": "Card text in English."
+      "ru": "Иногда путь сжимается. Условия становятся жёстче, а вызов — сильнее. Ты можешь чувствовать усталость, сомнение, одиночество. Это — испытание. Не потому что ты сделал что-то не так. А потому что ты приближаешься к порогу. Испытания не наказывают. Они закаляют, очищают, раскрывают. Эта стратегия — не про борьбу, а про выдержку. Пройди сквозь. В этом сжатии рождается новая сила. Как уголь становится алмазом.\nЭто не конец. Это — переход.\n\nНастроение: Сжатие, напряжение, сила в моменте, воля\n\nCall to Action: Испытание — знак перехода.",
+      "en": "Sometimes the path narrows. Conditions become harsher, and the challenge grows stronger. You may feel fatigue, doubt, loneliness. This is a trial. Not because you did something wrong, but because you are approaching a threshold. Trials do not punish. They temper, purify, reveal. This strategy is not about fighting, but about endurance. Pass through. In this compression, new strength is born. As coal becomes diamond.\n\nThis is not the end. It is a transition.\n\nMood: Compression, tension, strength in the moment, will.\n\nCall to Action: The trial is a sign of transition."
     },
     "quote": {
       "ru": "",
       "en": ""
     },
     "body": {
-      "ru": [],
-      "en": []
+      "ru": [
+        "Иногда путь сжимается. Условия становятся жёстче, а вызов — сильнее. Ты можешь чувствовать усталость, сомнение, одиночество. Это — испытание. Не потому что ты сделал что-то не так. А потому что ты приближаешься к порогу. Испытания не наказывают. Они закаляют, очищают, раскрывают. Эта стратегия — не про борьбу, а про выдержку. Пройди сквозь. В этом сжатии рождается новая сила. Как уголь становится алмазом.\nЭто не конец. Это — переход."
+      ],
+      "en": [
+        "Sometimes the path narrows. Conditions become harsher, and the challenge grows stronger. You may feel fatigue, doubt, loneliness. This is a trial. Not because you did something wrong, but because you are approaching a threshold. Trials do not punish. They temper, purify, reveal. This strategy is not about fighting, but about endurance. Pass through. In this compression, new strength is born. As coal becomes diamond.",
+        "This is not the end. It is a transition."
+      ]
     },
     "pullquote": {
-      "ru": "",
-      "en": ""
+      "ru": "Испытание — знак перехода.",
+      "en": "The trial is a sign of transition."
     },
     "outro": {
       "ru": [],
@@ -3763,11 +4118,11 @@
     },
     "margins": {
       "ru": {
-        "presentCondition": "",
+        "presentCondition": "Настроение: Сжатие, напряжение, сила в моменте, воля",
         "hiddenProcesses": []
       },
       "en": {
-        "presentCondition": "",
+        "presentCondition": "Mood: Compression, tension, strength in the moment, will.",
         "hiddenProcesses": []
       }
     },
@@ -3775,7 +4130,12 @@
       "ru": "",
       "en": ""
     },
-    "_ru_translation_status": "untranslated"
+    "_ru_translation_status": "filled_from_ideas_docx",
+    "contentTitle": {
+      "ru": "Испытание",
+      "en": "Trial"
+    },
+    "_ideas_source_section": "67. Испытание taken by Sveta"
   },
   {
     "id": 61,
@@ -3785,16 +4145,26 @@
       "en": "The Observer"
     },
     "text": {
-      "ru": "Текст карты на русском.",
-      "en": "Card text in English."
+      "ru": "Иногда ситуация захватывает слишком сильно, что ведет к поспешным выводам и действиям, отступи на шаг, вернись в точку баланса и действуй сообразно своим истинным интересам.\n\nИ чем это отличается от Баланс/Ясность выше?\n\nЭто карточка про важность перспективы, и освобождение от захваченности. Стратегия - не решать проблему сразу, остановиться, отдышаться, успокоиться. Попытаться подняться над ситуацией, увидеть себя со стороны. Помимо тактических преимуществ, такая стратегия позволяет легче справляться с ситуацией, она перестает быть тотальной. Ты становишься зрителем в кинозале, в котором показывают твою жизнь. Появляется возможность, отделить себя от переживаний и этот небольшой зазор, возникающий между наблюдателем и наблюдаемым - может оказаться очень целительным и ресурсным.\n\nТакже это позволяет увидеть связи, закономерности, динамику и совершить на самом деле эффективный шаг.\n\nНастроение: Эта карточка близка к ясности и балансу. Возможно мы в итоге оставим 2 из 3.",
+      "en": "Sometimes a situation captures you too strongly, leading to hasty conclusions and actions. Step back, return to a point of balance, and act in accordance with your true interests.\n\nHow is this different from Balance / Clarity above?\n\nThis card is about the importance of perspective and release from being captured by the situation. The strategy is not to solve the problem immediately, but to stop, breathe, calm down. Try to rise above the situation and see yourself from the outside. Beyond the tactical benefits, this strategy makes the situation easier to bear: it stops being total. You become a viewer in a cinema watching your own life. It becomes possible to separate yourself from your experiences, and that small gap between observer and observed can be deeply healing and resource-giving.\n\nIt also allows you to see connections, patterns, dynamics, and then make a genuinely effective move.\n\nMood: Detachment, balance, harmony, clarity."
     },
     "quote": {
       "ru": "",
       "en": ""
     },
     "body": {
-      "ru": [],
-      "en": []
+      "ru": [
+        "Иногда ситуация захватывает слишком сильно, что ведет к поспешным выводам и действиям, отступи на шаг, вернись в точку баланса и действуй сообразно своим истинным интересам.",
+        "И чем это отличается от Баланс/Ясность выше?",
+        "Это карточка про важность перспективы, и освобождение от захваченности. Стратегия - не решать проблему сразу, остановиться, отдышаться, успокоиться. Попытаться подняться над ситуацией, увидеть себя со стороны. Помимо тактических преимуществ, такая стратегия позволяет легче справляться с ситуацией, она перестает быть тотальной. Ты становишься зрителем в кинозале, в котором показывают твою жизнь. Появляется возможность, отделить себя от переживаний и этот небольшой зазор, возникающий между наблюдателем и наблюдаемым - может оказаться очень целительным и ресурсным.",
+        "Также это позволяет увидеть связи, закономерности, динамику и совершить на самом деле эффективный шаг."
+      ],
+      "en": [
+        "Sometimes a situation captures you too strongly, leading to hasty conclusions and actions. Step back, return to a point of balance, and act in accordance with your true interests.",
+        "How is this different from Balance / Clarity above?",
+        "This card is about the importance of perspective and release from being captured by the situation. The strategy is not to solve the problem immediately, but to stop, breathe, calm down. Try to rise above the situation and see yourself from the outside. Beyond the tactical benefits, this strategy makes the situation easier to bear: it stops being total. You become a viewer in a cinema watching your own life. It becomes possible to separate yourself from your experiences, and that small gap between observer and observed can be deeply healing and resource-giving.",
+        "It also allows you to see connections, patterns, dynamics, and then make a genuinely effective move."
+      ]
     },
     "pullquote": {
       "ru": "",
@@ -3806,11 +4176,11 @@
     },
     "margins": {
       "ru": {
-        "presentCondition": "",
+        "presentCondition": "Настроение: Эта карточка близка к ясности и балансу. Возможно мы в итоге оставим 2 из 3.",
         "hiddenProcesses": []
       },
       "en": {
-        "presentCondition": "",
+        "presentCondition": "Mood: Detachment, balance, harmony, clarity.",
         "hiddenProcesses": []
       }
     },
@@ -3818,7 +4188,12 @@
       "ru": "",
       "en": ""
     },
-    "_ru_translation_status": "untranslated"
+    "_ru_translation_status": "filled_from_ideas_docx",
+    "contentTitle": {
+      "ru": "Наблюдатель",
+      "en": "The Observer"
+    },
+    "_ideas_source_section": "28. Наблюдатель"
   },
   {
     "id": 62,
@@ -3828,20 +4203,26 @@
       "en": "The Omen"
     },
     "text": {
-      "ru": "Текст карты на русском.",
-      "en": "Card text in English."
+      "ru": "Ждать знака из внешнего мира.\n\nВнутреннее решение уже почти созрело, но последнее слово — за внешним миром. Ты будто смотришь в окно и ждёшь, когда мимо пройдёт нужная птица, выпадет фраза в разговоре, или судьба подмигнёт случайным совпадением. Эта стратегия — про настройку на синхроничность, внимательность к символам и доверие к тому, что Вселенная шепнёт нужное. Но это не про полную пассивность — ты как натянутая струна: чуткий, внимательный, готовый услышать знак и откликнуться.\n\nНастроение: Ожидание, тонкая чувствительность, настороженность, поэтичность, суеверная вера, мистическая открытость\n\nCall to Action: Остановись. Смотри. Прислушайся. Знак уже рядом —  доверься отклику.",
+      "en": "Wait for a sign from the external world.\n\nThe inner decision is almost ripe, but the last word belongs to the outside world. It is as if you are looking out the window, waiting for the right bird to pass, for a phrase to fall out of a conversation, or for fate to wink through coincidence. This strategy is about attunement to synchronicity, attentiveness to symbols, and trust that the universe will whisper what is needed. But it is not full passivity—you are like a taut string: sensitive, attentive, ready to hear the sign and respond.\n\nMood: Waiting, subtle sensitivity, alertness, poetic feeling, superstitious faith, mystical openness.\n\nCall to Action: Stop. Look. Listen. The sign is already near—trust the response."
     },
     "quote": {
       "ru": "",
       "en": ""
     },
     "body": {
-      "ru": [],
-      "en": []
+      "ru": [
+        "Ждать знака из внешнего мира.",
+        "Внутреннее решение уже почти созрело, но последнее слово — за внешним миром. Ты будто смотришь в окно и ждёшь, когда мимо пройдёт нужная птица, выпадет фраза в разговоре, или судьба подмигнёт случайным совпадением. Эта стратегия — про настройку на синхроничность, внимательность к символам и доверие к тому, что Вселенная шепнёт нужное. Но это не про полную пассивность — ты как натянутая струна: чуткий, внимательный, готовый услышать знак и откликнуться."
+      ],
+      "en": [
+        "Wait for a sign from the external world.",
+        "The inner decision is almost ripe, but the last word belongs to the outside world. It is as if you are looking out the window, waiting for the right bird to pass, for a phrase to fall out of a conversation, or for fate to wink through coincidence. This strategy is about attunement to synchronicity, attentiveness to symbols, and trust that the universe will whisper what is needed. But it is not full passivity—you are like a taut string: sensitive, attentive, ready to hear the sign and respond."
+      ]
     },
     "pullquote": {
-      "ru": "",
-      "en": ""
+      "ru": "Остановись. Смотри. Прислушайся. Знак уже рядом —  доверься отклику.",
+      "en": "Stop. Look. Listen. The sign is already near—trust the response."
     },
     "outro": {
       "ru": [],
@@ -3849,11 +4230,11 @@
     },
     "margins": {
       "ru": {
-        "presentCondition": "",
+        "presentCondition": "Настроение: Ожидание, тонкая чувствительность, настороженность, поэтичность, суеверная вера, мистическая открытость",
         "hiddenProcesses": []
       },
       "en": {
-        "presentCondition": "",
+        "presentCondition": "Mood: Waiting, subtle sensitivity, alertness, poetic feeling, superstitious faith, mystical openness.",
         "hiddenProcesses": []
       }
     },
@@ -3861,7 +4242,12 @@
       "ru": "",
       "en": ""
     },
-    "_ru_translation_status": "untranslated"
+    "_ru_translation_status": "filled_from_ideas_docx",
+    "contentTitle": {
+      "ru": "Омен",
+      "en": "Omen"
+    },
+    "_ideas_source_section": "46. Омен"
   },
   {
     "id": 63,
@@ -4025,20 +4411,25 @@
       "en": "China Vase"
     },
     "text": {
-      "ru": "Текст карты на русском.",
-      "en": "Card text in English."
+      "ru": "Нам хочется быть сильными. Спокойными. Мудрыми. Но не всегда мы там. Иногда нам просто больно. Эта стратегия — не про великодушие. Она про честность: перед собой, перед ситуацией, перед своей внутренней «маленькой частью». Иногда ты не можешь нести мир — потому что сам разбит. И это не ошибка. Уязвимость — не слабость, если ты её видишь. Если ты способен не отвернуться, а подойти, подставить себе плечо, признать: «я сейчас не герой». Тогда начинается подлинная интеграция.\nСкорость твоего пути определяется не самой сильной, а самой слабой частью. Напитай её. Там — точка роста.\n\nНастроение: Хрупкость, ранимость, живость, тепло к себе, способность обогреть\n\nCall to Action: Сними маску силы. Подойди к себе настоящему. Побудь рядом.\nУвидь слабое. Там начинается сила.",
+      "en": "We want to be strong. Calm. Wise. But we are not always there. Sometimes we are simply in pain. This strategy is not about magnanimity. It is about honesty: with yourself, with the situation, with the small inner part of you. Sometimes you cannot carry peace because you yourself are broken. And that is not a mistake. Vulnerability is not weakness if you can see it. If you are able not to turn away, but to come closer, offer yourself support, and admit, “I am not the hero right now,” then true integration begins.\n\nThe pace of your path is determined not by your strongest part, but by your weakest one. Nourish it. That is where growth begins.\n\nMood: Fragility, sensitivity, aliveness, warmth toward yourself, the ability to warm what is cold.\n\nCall to Action: Take off the mask of strength. Come closer to your real self. Stay nearby.\nSee the weak place. That is where strength begins."
     },
     "quote": {
       "ru": "",
       "en": ""
     },
     "body": {
-      "ru": [],
-      "en": []
+      "ru": [
+        "Нам хочется быть сильными. Спокойными. Мудрыми. Но не всегда мы там. Иногда нам просто больно. Эта стратегия — не про великодушие. Она про честность: перед собой, перед ситуацией, перед своей внутренней «маленькой частью». Иногда ты не можешь нести мир — потому что сам разбит. И это не ошибка. Уязвимость — не слабость, если ты её видишь. Если ты способен не отвернуться, а подойти, подставить себе плечо, признать: «я сейчас не герой». Тогда начинается подлинная интеграция.\nСкорость твоего пути определяется не самой сильной, а самой слабой частью. Напитай её. Там — точка роста."
+      ],
+      "en": [
+        "We want to be strong. Calm. Wise. But we are not always there. Sometimes we are simply in pain. This strategy is not about magnanimity. It is about honesty: with yourself, with the situation, with the small inner part of you. Sometimes you cannot carry peace because you yourself are broken. And that is not a mistake. Vulnerability is not weakness if you can see it. If you are able not to turn away, but to come closer, offer yourself support, and admit, “I am not the hero right now,” then true integration begins.",
+        "The pace of your path is determined not by your strongest part, but by your weakest one. Nourish it. That is where growth begins."
+      ]
     },
     "pullquote": {
-      "ru": "",
-      "en": ""
+      "ru": "Сними маску силы. Подойди к себе настоящему. Побудь рядом.\nУвидь слабое. Там начинается сила.",
+      "en": "Take off the mask of strength. Come closer to your real self. Stay nearby.\nSee the weak place. That is where strength begins."
     },
     "outro": {
       "ru": [],
@@ -4046,11 +4437,11 @@
     },
     "margins": {
       "ru": {
-        "presentCondition": "",
+        "presentCondition": "Настроение: Хрупкость, ранимость, живость, тепло к себе, способность обогреть",
         "hiddenProcesses": []
       },
       "en": {
-        "presentCondition": "",
+        "presentCondition": "Mood: Fragility, sensitivity, aliveness, warmth toward yourself, the ability to warm what is cold.",
         "hiddenProcesses": []
       }
     },
@@ -4058,7 +4449,12 @@
       "ru": "",
       "en": ""
     },
-    "_ru_translation_status": "untranslated"
+    "_ru_translation_status": "filled_from_ideas_docx",
+    "contentTitle": {
+      "ru": "Уязвимость/Хрупкость",
+      "en": "Vulnerability / Fragility"
+    },
+    "_ideas_source_section": "64. Уязвимость/Хрупкость"
   },
   {
     "id": 66,
@@ -4068,20 +4464,26 @@
       "en": "Egypt"
     },
     "text": {
-      "ru": "Текст карты на русском.",
-      "en": "Card text in English."
+      "ru": "Действовать по инструкции - максимально так, как подразумевает эта ситуация\n\nИногда лучший выбор — не искать креатив, а просто сделать всё по плану. Эта стратегия — про трезвость, дисциплину и уважение к уже проверенной структуре. Здесь не нужно изобретать велосипед, нужно его починить, надуть шины и поехать по маршруту. Действовать, как требует ситуация, — это зрелость. Это не про скуку, а про ясность, порядок и эффективность. Иногда прогресс — это просто правильно выполненные шаги.\n\nНастроение: Сосредоточенность, надёжность, спокойствие, структурность, практичность, доверие к порядку\n\nCall to Action: Следуй шаг за шагом. Сделай, как написано. Иногда самое мудрое — не усложнять.",
+      "en": "Act according to the instructions—as fully as the situation implies.\n\nSometimes the best choice is not to seek creativity, but simply to follow the plan. This strategy is about sobriety, discipline, and respect for a structure that has already been tested. Here there is no need to reinvent the bicycle; you need to repair it, inflate the tires, and ride the route. Acting as the situation requires is maturity. It is not about boredom, but about clarity, order, and effectiveness. Sometimes progress is simply correctly performed steps.\n\nMood: Concentration, reliability, calm, structure, practicality, trust in order.\n\nCall to Action: Follow step by step. Do it as written. Sometimes the wisest move is not to complicate."
     },
     "quote": {
       "ru": "",
       "en": ""
     },
     "body": {
-      "ru": [],
-      "en": []
+      "ru": [
+        "Действовать по инструкции - максимально так, как подразумевает эта ситуация",
+        "Иногда лучший выбор — не искать креатив, а просто сделать всё по плану. Эта стратегия — про трезвость, дисциплину и уважение к уже проверенной структуре. Здесь не нужно изобретать велосипед, нужно его починить, надуть шины и поехать по маршруту. Действовать, как требует ситуация, — это зрелость. Это не про скуку, а про ясность, порядок и эффективность. Иногда прогресс — это просто правильно выполненные шаги."
+      ],
+      "en": [
+        "Act according to the instructions—as fully as the situation implies.",
+        "Sometimes the best choice is not to seek creativity, but simply to follow the plan. This strategy is about sobriety, discipline, and respect for a structure that has already been tested. Here there is no need to reinvent the bicycle; you need to repair it, inflate the tires, and ride the route. Acting as the situation requires is maturity. It is not about boredom, but about clarity, order, and effectiveness. Sometimes progress is simply correctly performed steps."
+      ]
     },
     "pullquote": {
-      "ru": "",
-      "en": ""
+      "ru": "Следуй шаг за шагом. Сделай, как написано. Иногда самое мудрое — не усложнять.",
+      "en": "Follow step by step. Do it as written. Sometimes the wisest move is not to complicate."
     },
     "outro": {
       "ru": [],
@@ -4089,11 +4491,11 @@
     },
     "margins": {
       "ru": {
-        "presentCondition": "",
+        "presentCondition": "Настроение: Сосредоточенность, надёжность, спокойствие, структурность, практичность, доверие к порядку",
         "hiddenProcesses": []
       },
       "en": {
-        "presentCondition": "",
+        "presentCondition": "Mood: Concentration, reliability, calm, structure, practicality, trust in order.",
         "hiddenProcesses": []
       }
     },
@@ -4101,7 +4503,12 @@
       "ru": "",
       "en": ""
     },
-    "_ru_translation_status": "untranslated"
+    "_ru_translation_status": "filled_from_ideas_docx",
+    "contentTitle": {
+      "ru": "По инструкции",
+      "en": "By the Instructions"
+    },
+    "_ideas_source_section": "48. По инструкции taken by Sveta"
   },
   {
     "id": 67,
@@ -4336,20 +4743,24 @@
       "en": "Road"
     },
     "text": {
-      "ru": "Текст карты на русском.",
-      "en": "Card text in English."
+      "ru": "Ты не в начале. И не в конце. Ты — в пути. Эта стратегия — про то, чтобы видеть свой путь целиком, а не судить о себе по текущей точке. Сегодня может быть подъем, завтра — тупик. Но это всё — этапы одной дороги. Иногда нужно проиграть сражение, чтобы выиграть войну. Иногда — отпустить, отступить, замедлиться. Важно не то, где ты прямо сейчас, а куда ты движешься. Это стратегия выносливости, внутреннего курса, зрелого фокуса. Не теряй дальнюю цель — всё остальное пройдёт.\n\nНастроение: Выносливость, стратегичность, долгий горизонт, внутренняя дисциплина, видение дистанции целиком\n\nCall to Action: Не суди путь по одному отрезку. Держи вектор. Ты всё ещё идёшь. Это только точка. Путь — больше.",
+      "en": "You are not at the beginning. And not at the end. You are on the road. This strategy is about seeing the whole path, rather than judging yourself by the current segment. Today may be an ascent; tomorrow, a dead end. But all of it is part of one road. Sometimes you must lose a battle to win the war. Sometimes you must let go, retreat, slow down. What matters is not where you are right now, but where you are moving. This is a strategy of endurance, inner course, mature focus. Do not lose the long goal; everything else will pass.\n\nMood: Endurance, strategy, long horizon, inner discipline, seeing the whole distance.\n\nCall to Action: Do not judge the path by one segment. Hold the vector. You are still walking. This is only a point. The path is larger."
     },
     "quote": {
       "ru": "",
       "en": ""
     },
     "body": {
-      "ru": [],
-      "en": []
+      "ru": [
+        "Ты не в начале. И не в конце. Ты — в пути. Эта стратегия — про то, чтобы видеть свой путь целиком, а не судить о себе по текущей точке. Сегодня может быть подъем, завтра — тупик. Но это всё — этапы одной дороги. Иногда нужно проиграть сражение, чтобы выиграть войну. Иногда — отпустить, отступить, замедлиться. Важно не то, где ты прямо сейчас, а куда ты движешься. Это стратегия выносливости, внутреннего курса, зрелого фокуса. Не теряй дальнюю цель — всё остальное пройдёт."
+      ],
+      "en": [
+        "You are not at the beginning. And not at the end. You are on the road. This strategy is about seeing the whole path, rather than judging yourself by the current segment. Today may be an ascent; tomorrow, a dead end. But all of it is part of one road. Sometimes you must lose a battle to win the war. Sometimes you must let go, retreat, slow down. What matters is not where you are right now, but where you are moving. This is a strategy of endurance, inner course, mature focus. Do not lose the long goal; everything else will pass."
+      ]
     },
     "pullquote": {
-      "ru": "",
-      "en": ""
+      "ru": "Не суди путь по одному отрезку. Держи вектор. Ты всё ещё идёшь. Это только точка. Путь — больше.",
+      "en": "Do not judge the path by one segment. Hold the vector. You are still walking. This is only a point. The path is larger."
     },
     "outro": {
       "ru": [],
@@ -4357,11 +4768,11 @@
     },
     "margins": {
       "ru": {
-        "presentCondition": "",
+        "presentCondition": "Настроение: Выносливость, стратегичность, долгий горизонт, внутренняя дисциплина, видение дистанции целиком",
         "hiddenProcesses": []
       },
       "en": {
-        "presentCondition": "",
+        "presentCondition": "Mood: Endurance, strategy, long horizon, inner discipline, seeing the whole distance.",
         "hiddenProcesses": []
       }
     },
@@ -4369,7 +4780,12 @@
       "ru": "",
       "en": ""
     },
-    "_ru_translation_status": "untranslated"
+    "_ru_translation_status": "filled_from_ideas_docx",
+    "contentTitle": {
+      "ru": "Дистанция",
+      "en": "Distance"
+    },
+    "_ideas_source_section": "65. Дистанция taken by Sveta"
   },
   {
     "id": 71,
@@ -4379,20 +4795,28 @@
       "en": "Serenity"
     },
     "text": {
-      "ru": "Текст карты на русском.",
-      "en": "Card text in English."
+      "ru": "принимать, отпускать\n\nДыши. Вдох — принятие. Выдох — отпускание. Иногда не нужно ничего решать, додавливать или исправлять. Достаточно войти в ритм жизни, в ритм тела. Эта стратегия — про мягкое движение через принятие. Про то, как переживание может пройти сквозь тебя, если ты не схватишься за него. Про то, как решение может прийти, когда ты перестанешь его выжимать. Как боль может смягчиться, если ты позволишь себе просто быть. Не задерживай. Не ускоряй. Дыши.\n\nДыхание как связь психического и физического\n\nНастроение: Мягкость, связь с телом, ритм, освобождение, пауза, доверие\n\nCall to Action: Вдохни. Прими. Выдохни. Отпусти. LET IT BE.",
+      "en": "Accepting, releasing.\n\nBreathe. Inhale: acceptance. Exhale: release. Sometimes nothing needs to be solved, forced, or fixed. It is enough to enter the rhythm of life, the rhythm of the body. This strategy is about gentle movement through acceptance. About how an experience can pass through you if you do not grasp it. About how a solution can arrive when you stop squeezing it out. About how pain can soften if you allow yourself simply to be. Do not hold. Do not accelerate. Breathe.\n\nBreath as the link between the psychic and the physical.\n\nMood: Softness, connection with the body, rhythm, release, pause, trust.\n\nCall to Action: Inhale. Accept. Exhale. Release. LET IT BE."
     },
     "quote": {
       "ru": "",
       "en": ""
     },
     "body": {
-      "ru": [],
-      "en": []
+      "ru": [
+        "принимать, отпускать",
+        "Дыши. Вдох — принятие. Выдох — отпускание. Иногда не нужно ничего решать, додавливать или исправлять. Достаточно войти в ритм жизни, в ритм тела. Эта стратегия — про мягкое движение через принятие. Про то, как переживание может пройти сквозь тебя, если ты не схватишься за него. Про то, как решение может прийти, когда ты перестанешь его выжимать. Как боль может смягчиться, если ты позволишь себе просто быть. Не задерживай. Не ускоряй. Дыши.",
+        "Дыхание как связь психического и физического"
+      ],
+      "en": [
+        "Accepting, releasing.",
+        "Breathe. Inhale: acceptance. Exhale: release. Sometimes nothing needs to be solved, forced, or fixed. It is enough to enter the rhythm of life, the rhythm of the body. This strategy is about gentle movement through acceptance. About how an experience can pass through you if you do not grasp it. About how a solution can arrive when you stop squeezing it out. About how pain can soften if you allow yourself simply to be. Do not hold. Do not accelerate. Breathe.",
+        "Breath as the link between the psychic and the physical."
+      ]
     },
     "pullquote": {
-      "ru": "",
-      "en": ""
+      "ru": "Вдохни. Прими. Выдохни. Отпусти. LET IT BE.",
+      "en": "Inhale. Accept. Exhale. Release. LET IT BE."
     },
     "outro": {
       "ru": [],
@@ -4400,11 +4824,11 @@
     },
     "margins": {
       "ru": {
-        "presentCondition": "",
+        "presentCondition": "Настроение: Мягкость, связь с телом, ритм, освобождение, пауза, доверие",
         "hiddenProcesses": []
       },
       "en": {
-        "presentCondition": "",
+        "presentCondition": "Mood: Softness, connection with the body, rhythm, release, pause, trust.",
         "hiddenProcesses": []
       }
     },
@@ -4412,7 +4836,12 @@
       "ru": "",
       "en": ""
     },
-    "_ru_translation_status": "untranslated"
+    "_ru_translation_status": "filled_from_ideas_docx",
+    "contentTitle": {
+      "ru": "Дыхание",
+      "en": "Breath"
+    },
+    "_ideas_source_section": "56. Дыхание taken by Sveta"
   },
   {
     "id": 72,
