@@ -287,3 +287,7 @@ h3 { font-size: 17px; margin-bottom: 12px; }
   color: var(--text);
   font-weight: 450;
 }
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
