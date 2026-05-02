@@ -275,3 +275,15 @@ h3 { font-size: 17px; margin-bottom: 12px; }
   border-bottom: 1px solid rgba(128, 128, 128, 0.2);
   pointer-events: none;
 }
+.text-outro {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(128, 128, 128, 0.15);
+}
+
+.text-outro p {
+  font-size: 16.5px;
+  line-height: 1.65;
+  color: var(--text);
+  font-weight: 450;
+}
