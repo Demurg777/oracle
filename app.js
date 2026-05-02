@@ -262,50 +262,76 @@ function renderCardScreen() {
   });
 }
 
+function isNonEmptyText(value) {
+  return value != null && String(value).trim() !== "";
+}
+
+function sameText(a, b) {
+  return String(a || "").trim().replace(/\s+/g, " ") === String(b || "").trim().replace(/\s+/g, " ");
+}
+
+function localizedObjectField(obj, lang) {
+  if (!obj) return "";
+  if (typeof obj === "string") return obj;
+  return obj[lang] || obj.en || obj.ru || "";
+}
+
+function localizedArrayField(obj, lang) {
+  const value = localizedObjectField(obj, lang);
+  if (!value) return [];
+  return Array.isArray(value) ? value : [value];
+}
+
+function renderParagraphs(arr, className) {
+  const clean = (arr || []).filter(function(p) { return isNonEmptyText(p); });
+  if (!clean.length) return "";
+
+  let html = '<div class="' + className + '">';
+  clean.forEach(function(p) {
+    html += '<p>' + escapeHTML(p) + '</p>';
+  });
+  html += '</div>';
+  return html;
+}
+
 function buildTextHTML() {
   const lang = currentLang;
   const card = selectedCard;
   let html = '<div class="text-content">';
 
-  // эпиграф (короткая цитата сверху)
-  const quote = card.quote && (card.quote[lang] || card.quote.en || card.quote.ru);
-  if (quote) {
+  // Эпиграф — короткая цитата сверху.
+  const quote = localizedObjectField(card.quote, lang);
+  if (isNonEmptyText(quote)) {
     html += '<div class="text-quote">' + escapeHTML(quote) + '</div>';
   }
 
-  // вступительные абзацы
-  const body = card.body && (card.body[lang] || card.body.en || card.body.ru);
-  if (body) {
-    const bodyArr = Array.isArray(body) ? body : [body];
-    if (bodyArr.length && bodyArr.some(function(p) { return p && p.trim(); })) {
-      html += '<div class="text-body">';
-      bodyArr.forEach(function(p) {
-        if (p && p.trim()) html += '<p>' + escapeHTML(p) + '</p>';
-      });
-      html += '</div>';
-    }
+  // Основной вступительный текст.
+  const bodyArr = localizedArrayField(card.body, lang);
+  html += renderParagraphs(bodyArr, "text-body");
+
+  // Первая выделенная цитата.
+  const pullquote = localizedObjectField(card.pullquote, lang);
+  if (isNonEmptyText(pullquote)) {
+    html += '<div class="text-pullquote">' + escapeHTML(pullquote) + '</div>';
   }
 
-  // выделенная цитата
-  const pq = card.pullquote && (card.pullquote[lang] || card.pullquote.en || card.pullquote.ru);
-  if (pq && pq.trim()) {
-    html += '<div class="text-pullquote">' + escapeHTML(pq) + '</div>';
+  // Второй выделенный комментарий оракула.
+  // Важно: он рендерится отдельно, а не как обычный outro.
+  const oracleComment = localizedObjectField(card.oracleComment, lang);
+
+  // Обычные финальные абзацы.
+  // Убираем из outro абзац, совпадающий с oracleComment, чтобы он не дублировался.
+  // Не используем класс text-outro, потому что в текущем CSS он делает все абзацы жирными.
+  const outroArr = localizedArrayField(card.outro, lang).filter(function(p) {
+    return isNonEmptyText(p) && !sameText(p, oracleComment);
+  });
+  html += renderParagraphs(outroArr, "text-body");
+
+  if (isNonEmptyText(oracleComment)) {
+    html += '<div class="text-pullquote text-oracle-comment">' + escapeHTML(oracleComment) + '</div>';
   }
 
-  // финальные абзацы
-  const outro = card.outro && (card.outro[lang] || card.outro.en || card.outro.ru);
-  if (outro) {
-    const outroArr = Array.isArray(outro) ? outro : [outro];
-    if (outroArr.length && outroArr.some(function(p) { return p && p.trim(); })) {
-      html +='<div class="text-body text-outro">';
-      outroArr.forEach(function(p) {
-        if (p && p.trim()) html += '<p>' + escapeHTML(p) + '</p>';
-      });
-      html += '</div>';
-    }
-  }
-
-  // margins (поля)
+  // Margins / поля.
   const m = card.margins && (card.margins[lang] || card.margins.en || card.margins.ru);
   if (m) {
     let marginsHTML = '';
@@ -333,15 +359,16 @@ function buildTextHTML() {
     }
   }
 
-  // если структурные поля пусты — fallback на простой text
-  const hasStructured = (quote && quote.trim()) ||
-    (body && (Array.isArray(body) ? body.some(function(p){return p && p.trim();}) : body.trim())) ||
-    (pq && pq.trim()) ||
-    (outro && (Array.isArray(outro) ? outro.some(function(p){return p && p.trim();}) : outro.trim())) ||
+  const hasStructured = isNonEmptyText(quote) ||
+    bodyArr.some(isNonEmptyText) ||
+    isNonEmptyText(pullquote) ||
+    outroArr.some(isNonEmptyText) ||
+    isNonEmptyText(oracleComment) ||
     m;
 
+  // Если структурные поля пусты — fallback на простой text.
   if (!hasStructured) {
-    const fallback = (card.text && (card.text[lang] || card.text.en || card.text.ru)) || "";
+    const fallback = localizedObjectField(card.text, lang);
     if (fallback && fallback.trim() && fallback !== "Текст карты на русском." && fallback !== "Card text in English.") {
       html += '<p style="font-size:16px;line-height:1.55;white-space:pre-line;">' + escapeHTML(fallback) + '</p>';
     } else {
@@ -363,7 +390,6 @@ function toggleCardText() {
     isTextShown = true;
     $("card-stage").style.display = "none";
 
-    // показываем название над текстом
     $("text-stage").style.display = "block";
     $("text-stage").innerHTML =
       (title ? '<div class="card-title text-title-inside">' + escapeHTML(title) + '</div>' : '') +
