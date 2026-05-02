@@ -100,6 +100,13 @@ function escapeHTML(s) {
     .replace(/'/g, "&#39;");
 }
 
+// Получаем красивое название карты — сначала смотрим contentTitle, потом title
+function getCardTitle(card) {
+  const ct = card.contentTitle && (card.contentTitle[currentLang] || card.contentTitle.en || card.contentTitle.ru);
+  if (ct) return ct;
+  return localized(card.title, "");
+}
+
 function renderDeck() {
   const track = $("coverflow-track");
   if (!track) return;
@@ -207,7 +214,7 @@ function handleCardClick() {
 }
 
 function renderCardScreen() {
-  const title = localized(selectedCard.title, "");
+  const title = getCardTitle(selectedCard);
 
   $("card-stage").style.display = "block";
   $("card-stage").innerHTML =
@@ -260,61 +267,86 @@ function buildTextHTML() {
   const card = selectedCard;
   let html = '<div class="text-content">';
 
+  // эпиграф (короткая цитата сверху)
   const quote = card.quote && (card.quote[lang] || card.quote.en || card.quote.ru);
   if (quote) {
     html += '<div class="text-quote">' + escapeHTML(quote) + '</div>';
   }
 
+  // вступительные абзацы
   const body = card.body && (card.body[lang] || card.body.en || card.body.ru);
   if (body) {
-    html += '<div class="text-body">';
-    if (Array.isArray(body)) {
-      body.forEach(function(p) {
-        html += '<p>' + escapeHTML(p) + '</p>';
+    const bodyArr = Array.isArray(body) ? body : [body];
+    if (bodyArr.length && bodyArr.some(function(p) { return p && p.trim(); })) {
+      html += '<div class="text-body">';
+      bodyArr.forEach(function(p) {
+        if (p && p.trim()) html += '<p>' + escapeHTML(p) + '</p>';
       });
-    } else {
-      html += '<p>' + escapeHTML(body) + '</p>';
+      html += '</div>';
     }
-    html += '</div>';
   }
 
+  // выделенная цитата
   const pq = card.pullquote && (card.pullquote[lang] || card.pullquote.en || card.pullquote.ru);
-  if (pq) {
+  if (pq && pq.trim()) {
     html += '<div class="text-pullquote">' + escapeHTML(pq) + '</div>';
   }
 
+  // финальные абзацы
   const outro = card.outro && (card.outro[lang] || card.outro.en || card.outro.ru);
   if (outro) {
-    html += '<div class="text-body">';
-    if (Array.isArray(outro)) {
-      outro.forEach(function(p) {
-        html += '<p>' + escapeHTML(p) + '</p>';
+    const outroArr = Array.isArray(outro) ? outro : [outro];
+    if (outroArr.length && outroArr.some(function(p) { return p && p.trim(); })) {
+      html += '<div class="text-body">';
+      outroArr.forEach(function(p) {
+        if (p && p.trim()) html += '<p>' + escapeHTML(p) + '</p>';
       });
-    } else {
-      html += '<p>' + escapeHTML(outro) + '</p>';
+      html += '</div>';
     }
-    html += '</div>';
   }
 
+  // margins (поля)
   const m = card.margins && (card.margins[lang] || card.margins.en || card.margins.ru);
   if (m) {
-    html += '<div class="text-margins">';
-    if (m.presentCondition) {
-      html += '<h4>' + t("presentCondition") + '</h4>';
-      html += '<p>' + escapeHTML(m.presentCondition) + '</p>';
+    let marginsHTML = '';
+    if (m.presentCondition && m.presentCondition.trim()) {
+      marginsHTML += '<h4>' + t("presentCondition") + '</h4>';
+      marginsHTML += '<p>' + escapeHTML(m.presentCondition) + '</p>';
     }
     if (m.hiddenProcesses && m.hiddenProcesses.length) {
-      html += '<h4>' + t("hiddenProcesses") + '</h4>';
-      m.hiddenProcesses.forEach(function(item) {
-        html += '<div class="margin-item"><strong>' + escapeHTML(item.title) + '</strong> — ' + escapeHTML(item.desc) + '</div>';
+      const validProcesses = m.hiddenProcesses.filter(function(item) {
+        return item && item.title && item.title.trim();
       });
+      if (validProcesses.length) {
+        marginsHTML += '<h4>' + t("hiddenProcesses") + '</h4>';
+        validProcesses.forEach(function(item) {
+          marginsHTML += '<div class="margin-item"><strong>' + escapeHTML(item.title) + '</strong>';
+          if (item.desc && item.desc.trim()) {
+            marginsHTML += ' — ' + escapeHTML(item.desc);
+          }
+          marginsHTML += '</div>';
+        });
+      }
     }
-    html += '</div>';
+    if (marginsHTML) {
+      html += '<div class="text-margins">' + marginsHTML + '</div>';
+    }
   }
 
-  if (!quote && !body && !pq && !outro && !m) {
+  // если структурные поля пусты — fallback на простой text
+  const hasStructured = (quote && quote.trim()) ||
+    (body && (Array.isArray(body) ? body.some(function(p){return p && p.trim();}) : body.trim())) ||
+    (pq && pq.trim()) ||
+    (outro && (Array.isArray(outro) ? outro.some(function(p){return p && p.trim();}) : outro.trim())) ||
+    m;
+
+  if (!hasStructured) {
     const fallback = (card.text && (card.text[lang] || card.text.en || card.text.ru)) || "";
-    html += '<p style="font-size:16px;line-height:1.55;">' + escapeHTML(fallback) + '</p>';
+    if (fallback && fallback.trim() && fallback !== "Текст карты на русском." && fallback !== "Card text in English.") {
+      html += '<p style="font-size:16px;line-height:1.55;white-space:pre-line;">' + escapeHTML(fallback) + '</p>';
+    } else {
+      html += '<p style="font-size:15px;color:var(--hint);text-align:center;font-style:italic;">' + (lang === "ru" ? "Текст этой карты пока не заполнен" : "Text for this card is not yet available") + '</p>';
+    }
   }
 
   html += '<div class="text-tap-hint">' + t("tapToHide") + '</div>';
@@ -325,14 +357,17 @@ function buildTextHTML() {
 function toggleCardText() {
   if (tg.HapticFeedback) tg.HapticFeedback.impactOccurred("medium");
 
-  const title = localized(selectedCard.title, "");
+  const title = getCardTitle(selectedCard);
 
   if (!isTextShown) {
     isTextShown = true;
     $("card-stage").style.display = "none";
 
+    // показываем название над текстом
     $("text-stage").style.display = "block";
-    $("text-stage").innerHTML = buildTextHTML();
+    $("text-stage").innerHTML =
+      (title ? '<div class="card-title text-title-inside">' + escapeHTML(title) + '</div>' : '') +
+      buildTextHTML();
     $("text-stage").addEventListener("click", toggleCardText, { once: true });
 
     const hint = $("card-hint");
