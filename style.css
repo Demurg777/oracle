@@ -268,3 +268,10 @@ h3 { font-size: 17px; margin-bottom: 12px; }
   margin-top: 8px;
   min-height: 20px;
 }
+.text-title-inside {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+  pointer-events: none;
+}
