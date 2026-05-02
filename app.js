@@ -297,7 +297,7 @@ function buildTextHTML() {
   if (outro) {
     const outroArr = Array.isArray(outro) ? outro : [outro];
     if (outroArr.length && outroArr.some(function(p) { return p && p.trim(); })) {
-      html += '<div class="text-body">';
+      html +='<div class="text-body text-outro">';
       outroArr.forEach(function(p) {
         if (p && p.trim()) html += '<p>' + escapeHTML(p) + '</p>';
       });
