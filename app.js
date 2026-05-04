@@ -6,7 +6,7 @@ const tg = (window.Telegram && window.Telegram.WebApp) ? window.Telegram.WebApp 
 tg.ready();
 tg.expand();
 
-const FEEDBACK_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLScaYQ_RJoR4w8cA0xtrSWDKV9cIbFADQFUJ3zgNCpMHVcSNFg//formResponse";
+const FEEDBACK_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLScaYQ_RJoR4w8cA0xtrSWDKV9cIbFADQFUJ3zgNCpMHVcSNFg/formResponse";
 const FEEDBACK_FIELDS = {
   name: "entry.1441169149",
   card: "entry.1042147433",
