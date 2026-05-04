@@ -6,11 +6,11 @@ const tg = (window.Telegram && window.Telegram.WebApp) ? window.Telegram.WebApp 
 tg.ready();
 tg.expand();
 
-const FEEDBACK_FORM_URL = "https://forms.gle/oYKyAbjhAbviJxhFA";
+const FEEDBACK_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLScaYQ_RJoR4w8cA0xtrSWDKV9cIbFADQFUJ3zgNCpMHVcSNFg//formResponse";
 const FEEDBACK_FIELDS = {
   name: "entry.1441169149",
   card: "entry.1042147433",
-  text: "entry.1042147433"
+  text: "entry.1660563876"
 };
 
 const i18n = {
@@ -24,7 +24,7 @@ const i18n = {
     feedbackTitle: "Поделиться впечатлением",
     openFeedback: "Оставить комментарий",
     feedbackName: "Ваше имя",
-    feedbackText: "Что эта карта значит для вас?",
+    feedbackText: "Понятно ли послание оракула? Получили ли вы ответ на вопрос, если нет - по возможности скажите какой был вопрос?",
     feedbackSubmit: "Отправить",
     feedbackThanks: "Спасибо за отзыв",
     feedbackError: "Не удалось отправить, попробуйте ещё раз",
@@ -45,7 +45,7 @@ const i18n = {
     feedbackTitle: "Share your reflection",
     openFeedback: "Leave a comment",
     feedbackName: "Your name",
-    feedbackText: "What does this card mean to you?",
+    feedbackText: "Is the oracle's message clear? Did you receive an answer to your question? If not, please share what your question was.",
     feedbackSubmit: "Send",
     feedbackThanks: "Thank you",
     feedbackError: "Could not send, please try again",
