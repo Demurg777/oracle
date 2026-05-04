@@ -8,9 +8,9 @@ tg.expand();
 
 const FEEDBACK_FORM_URL = "https://docs.google.com/forms/d/e/ВАШ_ID/formResponse";
 const FEEDBACK_FIELDS = {
-  name: "entry.0000000000",
-  card: "entry.0000000000",
-  text: "entry.0000000000"
+  name: "entry.1441169149",
+  card: "entry.1042147433",
+  text: "entry.1042147433"
 };
 
 const i18n = {
