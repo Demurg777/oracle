@@ -266,6 +266,18 @@ function renderCardScreen() {
   });
 }
 
+function normalizeTextForCompare(s) {
+  return String(s || "")
+    .replace(/\s+/g, " ")
+    .replace(/[“”]/g, '"')
+    .replace(/[‘’]/g, "'")
+    .trim();
+}
+
+function sameTextBlock(a, b) {
+  return normalizeTextForCompare(a) === normalizeTextForCompare(b);
+}
+
 function buildTextHTML() {
   const lang = currentLang;
   const card = selectedCard;
@@ -290,28 +302,43 @@ function buildTextHTML() {
     }
   }
 
-  // выделенная цитата
+  // первая выделенная цитата
   const pq = card.pullquote && (card.pullquote[lang] || card.pullquote.en || card.pullquote.ru);
   if (pq && pq.trim()) {
     html += '<div class="text-pullquote">' + escapeHTML(pq) + '</div>';
   }
 
-  // финальные абзацы — обычным текстом, без .text-outro, чтобы CSS не делал их жирными
+  // второй выделенный комментарий оракула
+  const oc = card.oracleComment && (card.oracleComment[lang] || card.oracleComment.en || card.oracleComment.ru);
+  let oracleCommentWasRendered = false;
+
+  // финальные абзацы — обычным текстом.
+  // Если один из абзацев outro совпадает с oracleComment, он НЕ повторяется обычным текстом,
+  // а выводится на этом же месте как выделенный блок.
   const outro = card.outro && (card.outro[lang] || card.outro.en || card.outro.ru);
   if (outro) {
     const outroArr = Array.isArray(outro) ? outro : [outro];
     if (outroArr.length && outroArr.some(function(p) { return p && p.trim(); })) {
       html += '<div class="text-body">';
       outroArr.forEach(function(p) {
-        if (p && p.trim()) html += '<p>' + escapeHTML(p) + '</p>';
+        if (!p || !p.trim()) return;
+
+        if (oc && oc.trim() && sameTextBlock(p, oc)) {
+          html += '</div>';
+          html += '<div class="text-pullquote text-oracle-comment">' + escapeHTML(oc) + '</div>';
+          html += '<div class="text-body">';
+          oracleCommentWasRendered = true;
+        } else {
+          html += '<p>' + escapeHTML(p) + '</p>';
+        }
       });
       html += '</div>';
     }
   }
 
-  // второй выделенный комментарий оракула
-  const oc = card.oracleComment && (card.oracleComment[lang] || card.oracleComment.en || card.oracleComment.ru);
-  if (oc && oc.trim()) {
+  // Если oracleComment не был найден внутри outro, выводим его отдельным блоком после outro.
+  // Это запасной режим для карт, где oracleComment есть, но не включён в массив outro.
+  if (oc && oc.trim() && !oracleCommentWasRendered) {
     html += '<div class="text-pullquote text-oracle-comment">' + escapeHTML(oc) + '</div>';
   }
 
