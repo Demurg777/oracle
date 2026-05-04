@@ -5092,5 +5092,248 @@
       "en": "Wave Rider, hear the singing pearls: The tide is rising in your favor. The sea is tuning to your heartbeat. Cast off the nets of hesitation. Move, and the world will move with you. When you feel the swell rising, act. Harness this gift of destiny—and shape it, steer it, let it lift you."
     },
     "_ru_translation_status": "translated"
+  },
+  {
+    "id": 75,
+    "image": "images/Attraction.jpg",
+    "title": {
+      "ru": "Attraction",
+      "en": "Attraction"
+    },
+    "text": {
+      "ru": "Чарующая жемчужина\n\nДао ничего не делает, и всё же ничто не остаётся несделанным.\n\nМир собирается вокруг твоего мягкого сияния, Чарующая жемчужина. Но твой ум плетёт смутную тоску по неведомому. Ты вздыхаешь, разрываясь между опаловым ложем, породившим твою красоту, и гулом далёких морей. Какие сокровища лежат на чужих берегах, думаешь ты. В радости и печали твой дух магнетичен. Твоя тоска разворачивается через огромные пространства — сердечная музыка далёкой звезды. Небеса слышат тебя.\n\nИх ответ на твою меланхолию — мягкая улыбка. Не насмешка, а ожидание. Ты откроешь, что была создана для блаженства. Космос вылепил тебя лёгкой и точной рукой кружевницы. Звёзды даровали тебе мерцающую загадочность. Моря — свободное стремление. Нежные цветы наполнили тебя амброзийной сладостью. Драгоценные металлы укрепили тебя вечным блеском. Каждое сокровище уже твоё, потому что вселенная любит тебя.\n\nТвоя душа — чаша из лунного камня, лунный свет, сгущённый из ночного воздуха. Она задаёт приливы без усилия. То, что ей принадлежит, приближается: речь смягчается, двери уступают, помощь приходит. Не толкай. Обрати сосуд внутрь. Следуй за приливом. Перестань искать желанное вдали. Нырни глубоко в своё ядро. Коснись силы с золотыми прожилками, которая даёт тебе жизнь, и скажи:\n\nТо, чего я желаю, приходит ко мне.\n\nЧарующая жемчужина, твоя тоска рождает бури. Борьба и рывки к желанному лишь мутят воду. Твоё притяжение уже ведёт к тебе существ и благословения. Тебе нужно только дать им безопасный проход.\n\nЧарующая жемчужина, расслабься в своём сиянии: не хватайся за желания — притягивай их. Сила не всегда борьба. Иногда она означает позволить миру прийти к тебе. Но не пассивным ожиданием: никто не плывёт к бесплодному острову. Взращивай свою красоту и магнетизм. Опирайся на восприимчивость: гармонизировать — значит притягивать.\n\nНе оставляй своё перламутровое сердце замурованным в твёрдой раковине. Отправляй на далёкие берега послания в бутылках, написанные языком, который поймут лишь немногие. Отвечай на тоску и пытливые взгляды, как луна. Учись её искусству. Она не поджигает себя — её серебро рождается из отражения солнца.\n\nПусть каждый найдёт в твоём тончайшем свете то, чего жаждет. Они последуют за тобой, притянутые твоим сиянием, как мотыльки к пламени.",
+      "en": "Bewitching Pearl\n\nThe Tao does nothing, yet nothing is left undone.\n\nThe world coalesces around your soft radiance, Bewitching Pearl! Yet your mind weaves a vague yearning for things unknown. You sigh, torn between the opaline bed that cast your beauty and the rumble of distant seas. What treasures lie on stranger shores, you wonder. In joy and sadness, your spirit is magnetic. Your ache unfurls through vast domains—the heartsore music of a distant star. The heavens hear you.\n\nTheir answer to your melancholy is a gentle smile. Not of mockery, but of expectation. You will discover that you were crafted for bliss. The cosmos sculpted you with the feathery and meticulous hand of a lace-maker. The stars bestowed upon you lambent intrigue. The seas—unfettered aspiration. Delicate blooms infused you with ambrosial sweetness. Precious metals fortified you with a timeless gleam. Every treasure is already yours, for you are beloved by the universe.\n\nYour soul is a chalice of moonstone — moonlight condensed from night air. It sets the tides without effort. What belongs to it draws near: speech softens, doors yield, help arrives. Do not push. Turn the vessel inward. Follow the tide. Stop searching for desiderata in the distance. Dive deep into your core. Touch the gold-laced force that gives you life, and say\n\nWhat I desire comes to me.\n\nBewitching Pearl, your longing begets storms. Struggling and thrashing toward your wishes only muddies the waters. Your gravitational pull already draws beings and blessings your way. You must only grant them a safe passage.\n\nBewitching Pearl, relax into your radiance: don’t grasp at your desires—instead, draw them in. Strength isn’t struggle. Sometimes, it means allowing the world to come to you. Not by waiting passively—no one sails toward a barren island. Cultivate your beauty and your magnetism. Lean into receptivity—to harmonize is to attract.\n\nDon’t leave your nacreous heart immured in a hard shell. Send bottled messages to faraway shores, written in a language only a select few will understand. Answer to yearning and inquisitive looks like the moon. Learn her art. She doesn’t set herself ablaze—her silver is born from mirroring the sun.\n\nLet each find what they long for in your gossamer light. They will follow you—drawn to your light like moths to a flame."
+    },
+    "quote": {
+      "ru": "Дао ничего не делает, и всё же ничто не остаётся несделанным.",
+      "en": "The Tao does nothing, yet nothing is left undone."
+    },
+    "body": {
+      "ru": [
+        "Мир собирается вокруг твоего мягкого сияния, Чарующая жемчужина. Но твой ум плетёт смутную тоску по неведомому. Ты вздыхаешь, разрываясь между опаловым ложем, породившим твою красоту, и гулом далёких морей. Какие сокровища лежат на чужих берегах, думаешь ты. В радости и печали твой дух магнетичен. Твоя тоска разворачивается через огромные пространства — сердечная музыка далёкой звезды. Небеса слышат тебя.",
+        "Их ответ на твою меланхолию — мягкая улыбка. Не насмешка, а ожидание. Ты откроешь, что была создана для блаженства. Космос вылепил тебя лёгкой и точной рукой кружевницы. Звёзды даровали тебе мерцающую загадочность. Моря — свободное стремление. Нежные цветы наполнили тебя амброзийной сладостью. Драгоценные металлы укрепили тебя вечным блеском. Каждое сокровище уже твоё, потому что вселенная любит тебя.",
+        "Твоя душа — чаша из лунного камня, лунный свет, сгущённый из ночного воздуха. Она задаёт приливы без усилия. То, что ей принадлежит, приближается: речь смягчается, двери уступают, помощь приходит. Не толкай. Обрати сосуд внутрь. Следуй за приливом. Перестань искать желанное вдали. Нырни глубоко в своё ядро. Коснись силы с золотыми прожилками, которая даёт тебе жизнь, и скажи:"
+      ],
+      "en": [
+        "The world coalesces around your soft radiance, Bewitching Pearl! Yet your mind weaves a vague yearning for things unknown. You sigh, torn between the opaline bed that cast your beauty and the rumble of distant seas. What treasures lie on stranger shores, you wonder. In joy and sadness, your spirit is magnetic. Your ache unfurls through vast domains—the heartsore music of a distant star. The heavens hear you.",
+        "Their answer to your melancholy is a gentle smile. Not of mockery, but of expectation. You will discover that you were crafted for bliss. The cosmos sculpted you with the feathery and meticulous hand of a lace-maker. The stars bestowed upon you lambent intrigue. The seas—unfettered aspiration. Delicate blooms infused you with ambrosial sweetness. Precious metals fortified you with a timeless gleam. Every treasure is already yours, for you are beloved by the universe.",
+        "Your soul is a chalice of moonstone — moonlight condensed from night air. It sets the tides without effort. What belongs to it draws near: speech softens, doors yield, help arrives. Do not push. Turn the vessel inward. Follow the tide. Stop searching for desiderata in the distance. Dive deep into your core. Touch the gold-laced force that gives you life, and say"
+      ]
+    },
+    "pullquote": {
+      "ru": "То, чего я желаю, приходит ко мне.",
+      "en": "What I desire comes to me."
+    },
+    "outro": {
+      "ru": [
+        "Чарующая жемчужина, твоя тоска рождает бури. Борьба и рывки к желанному лишь мутят воду. Твоё притяжение уже ведёт к тебе существ и благословения. Тебе нужно только дать им безопасный проход.",
+        "Чарующая жемчужина, расслабься в своём сиянии: не хватайся за желания — притягивай их. Сила не всегда борьба. Иногда она означает позволить миру прийти к тебе. Но не пассивным ожиданием: никто не плывёт к бесплодному острову. Взращивай свою красоту и магнетизм. Опирайся на восприимчивость: гармонизировать — значит притягивать.",
+        "Не оставляй своё перламутровое сердце замурованным в твёрдой раковине. Отправляй на далёкие берега послания в бутылках, написанные языком, который поймут лишь немногие. Отвечай на тоску и пытливые взгляды, как луна. Учись её искусству. Она не поджигает себя — её серебро рождается из отражения солнца.",
+        "Пусть каждый найдёт в твоём тончайшем свете то, чего жаждет. Они последуют за тобой, притянутые твоим сиянием, как мотыльки к пламени."
+      ],
+      "en": [
+        "Bewitching Pearl, your longing begets storms. Struggling and thrashing toward your wishes only muddies the waters. Your gravitational pull already draws beings and blessings your way. You must only grant them a safe passage.",
+        "Bewitching Pearl, relax into your radiance: don’t grasp at your desires—instead, draw them in. Strength isn’t struggle. Sometimes, it means allowing the world to come to you. Not by waiting passively—no one sails toward a barren island. Cultivate your beauty and your magnetism. Lean into receptivity—to harmonize is to attract.",
+        "Don’t leave your nacreous heart immured in a hard shell. Send bottled messages to faraway shores, written in a language only a select few will understand. Answer to yearning and inquisitive looks like the moon. Learn her art. She doesn’t set herself ablaze—her silver is born from mirroring the sun.",
+        "Let each find what they long for in your gossamer light. They will follow you—drawn to your light like moths to a flame."
+      ]
+    },
+    "margins": {
+      "ru": {
+        "presentCondition": "Мягкость, доверие и принятие; раздражение от неудовлетворённых требований; попытки форсировать результат; борьба за достижение целей; обогащение внутренней жизни; фрустрация от погони за желаниями; продуктивный досуг; ожидание как действие.",
+        "hiddenProcesses": [
+          {
+            "title": "Муки Тантала",
+            "desc": "Период, когда чем сильнее человек борется за цель, тем дальше она отступает."
+          },
+          {
+            "title": "Владычица чаш",
+            "desc": "Образ мягкости и восприимчивости."
+          }
+        ]
+      },
+      "en": {
+        "presentCondition": "Softness, trust, and acceptance; frustrated demands; forcing outcomes; struggling to reach goals; working on enriching inner life; frustration with pursuit of desires; productive leisure; waiting as activity.",
+        "hiddenProcesses": [
+          {
+            "title": "Tantalus’ Anguish",
+            "desc": "A time when the more one struggles toward a goal, the further it recedes from them."
+          },
+          {
+            "title": "Lady of Cups",
+            "desc": "An image of softness and receptivity."
+          }
+        ]
+      }
+    },
+    "contentTitle": {
+      "ru": "Чарующая жемчужина",
+      "en": "Bewitching Pearl"
+    },
+    "oracleComment": {
+      "ru": "Чарующая жемчужина, расслабься в своём сиянии: не хватайся за желания — притягивай их. Сила не всегда борьба. Иногда она означает позволить миру прийти к тебе. Но не пассивным ожиданием: никто не плывёт к бесплодному острову. Взращивай свою красоту и магнетизм. Опирайся на восприимчивость: гармонизировать — значит притягивать.",
+      "en": "Bewitching Pearl, relax into your radiance: don’t grasp at your desires—instead, draw them in. Strength isn’t struggle. Sometimes, it means allowing the world to come to you. Not by waiting passively—no one sails toward a barren island. Cultivate your beauty and your magnetism. Lean into receptivity—to harmonize is to attract."
+    },
+    "_source_section": "Attraction / Bewitching Pearl"
+  },
+  {
+    "id": 76,
+    "image": "images/purification.jpg",
+    "title": {
+      "ru": "Purification",
+      "en": "Purification"
+    },
+    "text": {
+      "ru": "Очищающий свет\n\nПовторяющиеся циклы становятся звеньями цепи.\n\nТы живёшь в заросшем саду, Очищающий свет. Булыжная дорожка стала палимпсестом плюща и ежевики. Привычные маршруты, отполированные шагами, переписаны извивистыми строками усиков и прерваны бутонами в ободке шипов. Пруд томится в гниении, покрытый кружевом водорослей. Ползучие лозы углубляют трещины в стареющих каменных стенах. Укрытая мхом статуя водоноса медленно роняет струю ила на сонную поверхность пруда. Ты не сажал этот сад, Очищающий свет, и не ты позволил ему прийти в упадок. Но его судьба в твоих руках.\n\nПомни: никакое разложение не бывает слишком глубоким для очищения.\n\nРазрушение твоего сада — наследие поколений. Его застой — мозаика самоуспокоенности. Беды передавались от наследника к наследнику, становясь всё крупнее и причудливее с каждой уступкой. Бесплодные узоры, энергия, потраченная без смысла и порядка, лишь укрепляли кажущуюся мудрость небрежения.\n\nНо ты отличаешься от предков, Очищающий свет. Ты отказываешься привыкать к гнили. Ты отказываешься рвать ежевику голыми руками, как это делали до тебя, только затем, чтобы смириться с её подавляющим переплетением.\n\nПусть история Персиваля направит твои усилия. В первые дни своего рыцарства Персиваль встретил на реке Короля-рыбака. Короля мучила таинственная рана, и его болезнь опустошила всё королевство. Урожаи увядали, реки мелели, сама земля становилась бесплодной. Королевство ждало облегчения, застыв в муке. Король пригласил Персиваля в замок, где тот увидел странную процессию. Из одной комнаты в другую несли кровоточащее копьё. Затем — канделябр, который держали двое мальчиков. Дева несла светящийся, искусно вырезанный Грааль. Другая дева несла серебряное блюдо. Они молча проходили через зал при каждой перемене блюд, а Персиваль, воспитанный в учтивости и боявшийся нарушить приличия, ничего не спросил.\n\nНа обратной дороге девушка в трауре остановила Персиваля страшными словами: его молчание подвело Короля. Один вопрос исцелил бы рану. Но он не спросил, и страдание продолжилось.\n\nОчищающий свет, пусть ошибка Персиваля станет уроком: осмелься осветить углы, на которые никто до тебя не решался смотреть. Осторожность иногда ценна, но перед застоем она губительна. Любопытство может открыть рану десятилетий; но ясность очистит её, а целенаправленная работа исцелит.\n\nТолько увидев вещи такими, каковы они есть, ты сможешь сделать их такими, какими они должны быть.",
+      "en": "Cleansing Light\n\nRepeating cycles become links in a chain.\n\nYou dwell in an overgrown garden, Cleansing Light. The cobblestone is a palimpsest of ivy and brambles. Habitual journeys burnished onto it are overwritten by winding scripts of tendrils and punctuated by thorn-rimmed buds. The pond languishes in putrescence, coated with the lacework of algae. Crawling vines deepen the faults within aging stone walls. A moss-draped water bearer statue spills a slow drip of sludge over the pond’s somniferous surface. You did not plant this garden, Cleansing Light, nor did you let it fall into ruin. Still, its fate lies in your hands.\n\nRemember, no decay is too profound for purification.\n\nThe undoing of your garden is the legacy of generations. Its stagnation is a mosaic of complacency. Troubles transferred from heir to heir, growing larger and more baroque with each concession. Futile patterns, energies expended without rhyme or reason only reinforced the seeming wisdom of laxity.\n\nYet you are different from your ancestors, Cleansing Light. You refuse to inure yourself to rot. You refuse to claw at the brambles with bare hands, as your predecessors had done, only to resign yourself to the overpowering tangle.\n\nLet the tale of Percival guide your efforts. In the early days of his knighthood, Percival encountered the Fisher King upon a river. The king was plagued by a mysterious wound, and his ailment laid waste to his kingdom. Crops withered, rivers ran thin, the very earth grew barren. The kingdom itself waited for respite, suspended in agony. The king invited Percival to his castle, where he witnessed a strange procession. A bleeding lance was carried from one chamber to another. Then, a candelabra borne by two boys. A maiden carried a numinous and elaborately carved graal. Another maiden bore a silver platter. They moved silently through the hall at each course of the meal, while Percival, schooled in courtesy and fearful of impropriety, asked nothing.\n\nOn the road home, a girl in mourning stopped Percival with terrible words: his silence had failed the King. A single question would have healed the wound. But he did not ask, and so the suffering continued.\n\nCleansing Light, let Percival’s error be a lesson: dare to illuminate corners which none before you dared to behold. Caution, while sometimes valuable, is ruinous when dealing with stagnation. Curiosity can open a wound of decades; yet clarity will cleanse it and deliberate work will heal it.\n\nOnly by seeing things as they are will you be able to make them as they should be."
+    },
+    "quote": {
+      "ru": "Повторяющиеся циклы становятся звеньями цепи.",
+      "en": "Repeating cycles become links in a chain."
+    },
+    "body": {
+      "ru": [
+        "Ты живёшь в заросшем саду, Очищающий свет. Булыжная дорожка стала палимпсестом плюща и ежевики. Привычные маршруты, отполированные шагами, переписаны извивистыми строками усиков и прерваны бутонами в ободке шипов. Пруд томится в гниении, покрытый кружевом водорослей. Ползучие лозы углубляют трещины в стареющих каменных стенах. Укрытая мхом статуя водоноса медленно роняет струю ила на сонную поверхность пруда. Ты не сажал этот сад, Очищающий свет, и не ты позволил ему прийти в упадок. Но его судьба в твоих руках."
+      ],
+      "en": [
+        "You dwell in an overgrown garden, Cleansing Light. The cobblestone is a palimpsest of ivy and brambles. Habitual journeys burnished onto it are overwritten by winding scripts of tendrils and punctuated by thorn-rimmed buds. The pond languishes in putrescence, coated with the lacework of algae. Crawling vines deepen the faults within aging stone walls. A moss-draped water bearer statue spills a slow drip of sludge over the pond’s somniferous surface. You did not plant this garden, Cleansing Light, nor did you let it fall into ruin. Still, its fate lies in your hands."
+      ]
+    },
+    "pullquote": {
+      "ru": "Помни: никакое разложение не бывает слишком глубоким для очищения.",
+      "en": "Remember, no decay is too profound for purification."
+    },
+    "outro": {
+      "ru": [
+        "Разрушение твоего сада — наследие поколений. Его застой — мозаика самоуспокоенности. Беды передавались от наследника к наследнику, становясь всё крупнее и причудливее с каждой уступкой. Бесплодные узоры, энергия, потраченная без смысла и порядка, лишь укрепляли кажущуюся мудрость небрежения.",
+        "Но ты отличаешься от предков, Очищающий свет. Ты отказываешься привыкать к гнили. Ты отказываешься рвать ежевику голыми руками, как это делали до тебя, только затем, чтобы смириться с её подавляющим переплетением.",
+        "Пусть история Персиваля направит твои усилия. В первые дни своего рыцарства Персиваль встретил на реке Короля-рыбака. Короля мучила таинственная рана, и его болезнь опустошила всё королевство. Урожаи увядали, реки мелели, сама земля становилась бесплодной. Королевство ждало облегчения, застыв в муке. Король пригласил Персиваля в замок, где тот увидел странную процессию. Из одной комнаты в другую несли кровоточащее копьё. Затем — канделябр, который держали двое мальчиков. Дева несла светящийся, искусно вырезанный Грааль. Другая дева несла серебряное блюдо. Они молча проходили через зал при каждой перемене блюд, а Персиваль, воспитанный в учтивости и боявшийся нарушить приличия, ничего не спросил.",
+        "На обратной дороге девушка в трауре остановила Персиваля страшными словами: его молчание подвело Короля. Один вопрос исцелил бы рану. Но он не спросил, и страдание продолжилось.",
+        "Очищающий свет, пусть ошибка Персиваля станет уроком: осмелься осветить углы, на которые никто до тебя не решался смотреть. Осторожность иногда ценна, но перед застоем она губительна. Любопытство может открыть рану десятилетий; но ясность очистит её, а целенаправленная работа исцелит.",
+        "Только увидев вещи такими, каковы они есть, ты сможешь сделать их такими, какими они должны быть."
+      ],
+      "en": [
+        "The undoing of your garden is the legacy of generations. Its stagnation is a mosaic of complacency. Troubles transferred from heir to heir, growing larger and more baroque with each concession. Futile patterns, energies expended without rhyme or reason only reinforced the seeming wisdom of laxity.",
+        "Yet you are different from your ancestors, Cleansing Light. You refuse to inure yourself to rot. You refuse to claw at the brambles with bare hands, as your predecessors had done, only to resign yourself to the overpowering tangle.",
+        "Let the tale of Percival guide your efforts. In the early days of his knighthood, Percival encountered the Fisher King upon a river. The king was plagued by a mysterious wound, and his ailment laid waste to his kingdom. Crops withered, rivers ran thin, the very earth grew barren. The kingdom itself waited for respite, suspended in agony. The king invited Percival to his castle, where he witnessed a strange procession. A bleeding lance was carried from one chamber to another. Then, a candelabra borne by two boys. A maiden carried a numinous and elaborately carved graal. Another maiden bore a silver platter. They moved silently through the hall at each course of the meal, while Percival, schooled in courtesy and fearful of impropriety, asked nothing.",
+        "On the road home, a girl in mourning stopped Percival with terrible words: his silence had failed the King. A single question would have healed the wound. But he did not ask, and so the suffering continued.",
+        "Cleansing Light, let Percival’s error be a lesson: dare to illuminate corners which none before you dared to behold. Caution, while sometimes valuable, is ruinous when dealing with stagnation. Curiosity can open a wound of decades; yet clarity will cleanse it and deliberate work will heal it.",
+        "Only by seeing things as they are will you be able to make them as they should be."
+      ]
+    },
+    "margins": {
+      "ru": {
+        "presentCondition": "Выход из зоны комфорта; изменение бесплодных паттернов; осознанная работа; встреча с трудными истинами; разрыв с традицией; исправление прошлых ошибок.",
+        "hiddenProcesses": [
+          {
+            "title": "Очищение Авгиевых конюшен",
+            "desc": "Огромное усилие, обращающее вспять десятилетия застоя и распада."
+          },
+          {
+            "title": "Наследование Зевса",
+            "desc": "Конец жестоких семейных циклов."
+          }
+        ]
+      },
+      "en": {
+        "presentCondition": "Leaving one’s comfort zone; changing futile patterns; deliberate work; confronting difficult truths; breaking from tradition; fixing past mistakes.",
+        "hiddenProcesses": [
+          {
+            "title": "Cleansing the Augean Stables",
+            "desc": "A formidable effort which reverses decades of stagnation and decay."
+          },
+          {
+            "title": "Succession of Zeus",
+            "desc": "The end of violent familial cycles."
+          }
+        ]
+      }
+    },
+    "contentTitle": {
+      "ru": "Очищающий свет",
+      "en": "Cleansing Light"
+    },
+    "oracleComment": {
+      "ru": "Очищающий свет, пусть ошибка Персиваля станет уроком: осмелься осветить углы, на которые никто до тебя не решался смотреть. Осторожность иногда ценна, но перед застоем она губительна. Любопытство может открыть рану десятилетий; но ясность очистит её, а целенаправленная работа исцелит.",
+      "en": "Cleansing Light, let Percival’s error be a lesson: dare to illuminate corners which none before you dared to behold. Caution, while sometimes valuable, is ruinous when dealing with stagnation. Curiosity can open a wound of decades; yet clarity will cleanse it and deliberate work will heal it."
+    },
+    "_source_section": "Purification / Cleansing Light"
+  },
+  {
+    "id": 77,
+    "image": "images/the_ending.jpg",
+    "title": {
+      "ru": "The Ending",
+      "en": "The Ending"
+    },
+    "text": {
+      "ru": "Вечерняя звезда\n\nРека, которая стоит на месте, загнивает.\n\nНичто не избегает хода времени, Вечерняя звезда. Древо жизни огромно и щедро на незнакомые приключения. Скрытые среди листвы, они манят сиянием дальних горизонтов. Но когда новый опыт схвачен, достигнут и испробован, остаётся только позволить ему выскользнуть между пальцами. Это легче сказать, чем сделать. Дорогие призраки эхом звучат в пещерах сердца. Вечерняя звезда, всё равно расстанься с ними.\n\nПоблагодари прошлое и отпусти его.\n\nПрощание с прошлым приводит будущее в движение. Новый мир родится из завершённости, потому что сама завершённость — это вид смерти.\n\nВ незапамятные времена мир был россыпью островов, плывущих в море тумана. На двух островах, одном на севере и другом на юге, находились царства. Между ними, в центре туманного моря, был странный маленький остров, а на нём одно-единственное строение — чайная лавка, чьи крыши, заросшие мхом, обрамляли древние сосны. Не менее странным был хозяин чайной лавки: бог хаоса — безголовое существо с четырьмя конечностями и парой крыльев, но без глаз, ушей, носа и рта. Несмотря на необычный вид, он был щедрым хозяином, и драконьи цари Севера и Юга часто приходили к нему, чтобы наслаждаться его чаем, который он предлагал бесплатно, и его танцем. Однажды два правителя решили отплатить богу хаоса за великодушие. «Что, если мы дадим ему способность видеть, слышать и говорить? Его жизнь, должно быть, неполна без этого», — предложил южный драконий царь. Во время следующего визита в чайную лавку правители принесли зачарованный кинжал и вырезали богу хаоса глаза, уши, рот и нос. К их ужасу, он умер, как только открыл нововырезанные глаза, и упал навзничь в море тумана. Внезапно туман яростно забурлил: из него поднялись высокие горы, холмы и огромные травянистые равнины. Так сегодняшний мир родился из мёртвого бога. Молодая трава — волосы могил, и всё новое рождается и питается всем ушедшим.\n\nВечерняя звезда, учись отпускать вещи. Когда ты сделал всё, что мог, когда всё, что могло случиться, уже произошло, поблагодари, закрой дверь и иди дальше.",
+      "en": "Evening Star\n\nA river that stands still will rot.\n\nNothing escapes the passing of time, Evening Star. The tree of life is vast and bountiful with unfamiliar adventures. Hidden among the foliage, they lure one in with the glow of distant horizons. Yet once new experience is grasped, attained, and savored, nothing remains but to let it slip between one’s fingers. This is easier said than done. Dear phantoms echo in the caverns of the heart. Evening Star, part with them regardless.\n\nThank the past and let it go.\n\nBidding farewell to the past sets the future into motion. A new world will be born from completion, for completeness itself is a kind of death.\n\nIn time immemorial, the world was a smattering of islands floating in a sea of fog. Two islands, one in the North and the other in the South, each housed a kingdom. Between these two, at the center of the sea of fog, was a strange small island, upon which was one single building—a tea-shop—its moss-hung eaves flanked by ancient pines. No less strange was the tea-shop’s owner, for he was the god of chaos—a headless being with four limbs and a pair of wings, yet no eyes, ears, nose, or mouth. Despite his odd appearance, he was a generous host, and the dragon-kings of the North and South often visited him to delight in his tea, offered to them free of charge, and his dancing. One day, the two rulers decided they should repay the god of chaos for his magnanimity. “What if we granted him the ability to see, hear, and speak? His life must be incomplete without them,” proposed the Southern dragon-king. During their next visit to the tea-shop, the two rulers brought with them an enchanted dagger, which they used to carve eyes, ears, a mouth, and a nose for the god of chaos. To their horror, he died as soon as he opened his newly-carved eyes, falling backwards into the sea of fog. Suddenly, the fog began to roil furiously—tall mountains, rolling hills, and vast grasslands rose up from it. Thus, the world of today was born from the dead god. For young grass is the hair of graves and all things new are born and nurtured by all things gone.\n\nEvening Star, learn to relinquish things. When you have done all you could, when all that could happen has taken place, give your thanks, close the door, and move on."
+    },
+    "quote": {
+      "ru": "Река, которая стоит на месте, загнивает.",
+      "en": "A river that stands still will rot."
+    },
+    "body": {
+      "ru": [
+        "Ничто не избегает хода времени, Вечерняя звезда. Древо жизни огромно и щедро на незнакомые приключения. Скрытые среди листвы, они манят сиянием дальних горизонтов. Но когда новый опыт схвачен, достигнут и испробован, остаётся только позволить ему выскользнуть между пальцами. Это легче сказать, чем сделать. Дорогие призраки эхом звучат в пещерах сердца. Вечерняя звезда, всё равно расстанься с ними."
+      ],
+      "en": [
+        "Nothing escapes the passing of time, Evening Star. The tree of life is vast and bountiful with unfamiliar adventures. Hidden among the foliage, they lure one in with the glow of distant horizons. Yet once new experience is grasped, attained, and savored, nothing remains but to let it slip between one’s fingers. This is easier said than done. Dear phantoms echo in the caverns of the heart. Evening Star, part with them regardless."
+      ]
+    },
+    "pullquote": {
+      "ru": "Поблагодари прошлое и отпусти его.",
+      "en": "Thank the past and let it go."
+    },
+    "outro": {
+      "ru": [
+        "Прощание с прошлым приводит будущее в движение. Новый мир родится из завершённости, потому что сама завершённость — это вид смерти.",
+        "В незапамятные времена мир был россыпью островов, плывущих в море тумана. На двух островах, одном на севере и другом на юге, находились царства. Между ними, в центре туманного моря, был странный маленький остров, а на нём одно-единственное строение — чайная лавка, чьи крыши, заросшие мхом, обрамляли древние сосны. Не менее странным был хозяин чайной лавки: бог хаоса — безголовое существо с четырьмя конечностями и парой крыльев, но без глаз, ушей, носа и рта. Несмотря на необычный вид, он был щедрым хозяином, и драконьи цари Севера и Юга часто приходили к нему, чтобы наслаждаться его чаем, который он предлагал бесплатно, и его танцем. Однажды два правителя решили отплатить богу хаоса за великодушие. «Что, если мы дадим ему способность видеть, слышать и говорить? Его жизнь, должно быть, неполна без этого», — предложил южный драконий царь. Во время следующего визита в чайную лавку правители принесли зачарованный кинжал и вырезали богу хаоса глаза, уши, рот и нос. К их ужасу, он умер, как только открыл нововырезанные глаза, и упал навзничь в море тумана. Внезапно туман яростно забурлил: из него поднялись высокие горы, холмы и огромные травянистые равнины. Так сегодняшний мир родился из мёртвого бога. Молодая трава — волосы могил, и всё новое рождается и питается всем ушедшим.",
+        "Вечерняя звезда, учись отпускать вещи. Когда ты сделал всё, что мог, когда всё, что могло случиться, уже произошло, поблагодари, закрой дверь и иди дальше."
+      ],
+      "en": [
+        "Bidding farewell to the past sets the future into motion. A new world will be born from completion, for completeness itself is a kind of death.",
+        "In time immemorial, the world was a smattering of islands floating in a sea of fog. Two islands, one in the North and the other in the South, each housed a kingdom. Between these two, at the center of the sea of fog, was a strange small island, upon which was one single building—a tea-shop—its moss-hung eaves flanked by ancient pines. No less strange was the tea-shop’s owner, for he was the god of chaos—a headless being with four limbs and a pair of wings, yet no eyes, ears, nose, or mouth. Despite his odd appearance, he was a generous host, and the dragon-kings of the North and South often visited him to delight in his tea, offered to them free of charge, and his dancing. One day, the two rulers decided they should repay the god of chaos for his magnanimity. “What if we granted him the ability to see, hear, and speak? His life must be incomplete without them,” proposed the Southern dragon-king. During their next visit to the tea-shop, the two rulers brought with them an enchanted dagger, which they used to carve eyes, ears, a mouth, and a nose for the god of chaos. To their horror, he died as soon as he opened his newly-carved eyes, falling backwards into the sea of fog. Suddenly, the fog began to roil furiously—tall mountains, rolling hills, and vast grasslands rose up from it. Thus, the world of today was born from the dead god. For young grass is the hair of graves and all things new are born and nurtured by all things gone.",
+        "Evening Star, learn to relinquish things. When you have done all you could, when all that could happen has taken place, give your thanks, close the door, and move on."
+      ]
+    },
+    "margins": {
+      "ru": {
+        "presentCondition": "Ностальгия; мягкая отстранённость; задерживание; отпускание; освобождение; движение дальше.",
+        "hiddenProcesses": [
+          {
+            "title": "Огненная чаша",
+            "desc": "Ритуальный предмет, в котором сжигают привязанности, записанные на маленьких листках бумаги."
+          },
+          {
+            "title": "Обряды полнолуния",
+            "desc": "Отпускание прошлого и приветствие новых начал."
+          }
+        ]
+      },
+      "en": {
+        "presentCondition": "Nostalgia; gentle detachment; lingering; letting go; liberation; moving on.",
+        "hiddenProcesses": [
+          {
+            "title": "The Burning Bowl",
+            "desc": "A ritual object wherein attachments written on small pieces of paper are burned."
+          },
+          {
+            "title": "Full Moon Rites",
+            "desc": "Letting go of the past and welcoming new beginnings."
+          }
+        ]
+      }
+    },
+    "contentTitle": {
+      "ru": "Вечерняя звезда",
+      "en": "Evening Star"
+    },
+    "oracleComment": {
+      "ru": "Вечерняя звезда, учись отпускать вещи. Когда ты сделал всё, что мог, когда всё, что могло случиться, уже произошло, поблагодари, закрой дверь и иди дальше.",
+      "en": "Evening Star, learn to relinquish things. When you have done all you could, when all that could happen has taken place, give your thanks, close the door, and move on."
+    },
+    "_source_section": "The Ending / Evening Star"
   }
 ]
